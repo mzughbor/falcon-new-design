@@ -1920,7 +1920,7 @@ main::before {
     display: flex;
     align-items: center;
     gap: 32px;
-    padding: 14px var(--nav-padding-x);
+    /*padding: 14px var(--nav-padding-x);*/
     border-radius: var(--radius-pill);
 }
 
@@ -2229,7 +2229,7 @@ main::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    /*box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);*/
 }
 
 .process-icon img {
@@ -2739,7 +2739,7 @@ h2 .show-mobile { display: inline; }
         flex-direction: column;
         gap: 0;
         padding-left: 28px;
-        border-left: 2px solid var(--border);
+        border-left: 2px solid #9974fc;
         margin-left: 20px;
     }
 
@@ -2750,15 +2750,15 @@ h2 .show-mobile { display: inline; }
         background: linear-gradient(135deg, var(--rebecca-purple) 0%, var(--amethyst) 55%, #7b9fd4 100%);
         border-radius: var(--radius);
         padding: 20px 20px 20px 24px;
-        margin: 0 0 20px 16px;
+        margin: 16px 16px 6px 16px;
         position: relative;
         box-shadow: 0 8px 24px rgba(84, 58, 156, 0.2);
     }
 
     .page-about .process-icon {
         position: absolute;
-        left: -52px;
-        top: 18px;
+        left: -72px;
+        top: 35px;
         width: 56px;
         height: 56px;
         margin: 0;
