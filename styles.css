@@ -376,13 +376,13 @@ main::before {
 
 .btn-icon {
     display: inline-flex;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     height:27px;
     width: 27px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .btn-white {
