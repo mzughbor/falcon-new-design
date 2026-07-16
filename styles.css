@@ -20,6 +20,7 @@
     --bg: #ffffff;
     --bg-2: var(--periwinkle);
     --white: #ffffff;
+    --mobile-bar-bg: #f3f0ff;
     --text: #111827;
     --text-muted: #6B7280;
     --border: #E5E7EB;
@@ -226,7 +227,7 @@ main::before {
     display: block;
     width: 22px;
     height: 2px;
-    background: var(--white);
+    background: var(--mobile-bar-bg);
     border-radius: 2px;
 }
 
@@ -244,8 +245,8 @@ main::before {
     justify-content: space-around;
     gap: 2px;
     width: 100%;
-    padding: 10px 8px calc(10px + env(safe-area-inset-bottom, 0px));
-    background: rgba(255, 255, 255, 0.96);
+    padding: 5px 8px calc(10px + env(safe-area-inset-bottom, 0px));
+    background: var(--mobile-bar-bg);
     backdrop-filter: blur(16px);
     border-top: 1px solid rgba(147, 84, 183, 0.08);
     border-radius: 24px 24px 0 0;
@@ -274,7 +275,7 @@ main::before {
     transform: translateX(-50%);
     width: 120px;
     height: 4px;
-    background: #d1d5db;
+    background: #7548aa;
     border-radius: 99px;
     opacity: 0.7;
 }
@@ -1887,15 +1888,23 @@ main::before {
     top: 0;
     left: 0;
     right: 0;
-    height: min(92vh, 920px);
+    height: min(105vh, 1120px);
     background: url("./images/Hero-section.png") 68% top / cover no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+.page-about .about-hero-backdrop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,0.80) 0%, rgba(0,0,0,0) 80%);
     z-index: 0;
     pointer-events: none;
 }
 
 .page-about #site-header {
     position: sticky;
-    top: 16px;
+    top: 0;
     z-index: 100;
     background: transparent;
 }
@@ -1935,7 +1944,7 @@ main::before {
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    width: 33.333%;
+    /*width: 33.333%;*/
     max-width: 33.333%;
     margin: 0;
     padding: 0;
@@ -2548,9 +2557,13 @@ h2 .show-mobile { display: inline; }
         background-position: 72% top;
     }
 
+    .page-about .about-hero-backdrop::before {
+        background: linear-gradient(1deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0) 80%);
+    }
+
     .page-about .about-hero {
         min-height: 100svh;
-        padding: 120px 0 48px;
+        padding: 0 0 120px 0;
         align-items: flex-end;
     }
 
@@ -3824,18 +3837,17 @@ a.contact-card:hover {
     }
 
     .mobile-tab {
-        padding: 6px 2px 14px;
+        padding: 6px 2px 6px;
     }
 
     .nav-links,
-    .btn-nav,
     .nav-toggle {
         display: none !important;
     }
 
     .nav {
-        justify-content: center;
-        padding: 12px 20px;
+        justify-content: space-between;
+        padding: 8px 14px;
     }
 
     .nav.nav-open .nav-links,
