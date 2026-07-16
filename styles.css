@@ -1913,6 +1913,24 @@ main::before {
     background: transparent;
 }
 
+/* About-page specific: transparent, shadowless nav for better hero overlap */
+.page-about .nav {
+    max-width: var(--header-container);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 14px var(--nav-padding-x);
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: var(--radius-pill);
+}
+
+.page-about .nav a,
+.page-about .nav .brand {
+    color: #fff;
+}
+
 .about-hero {
     position: relative;
     z-index: 1;
