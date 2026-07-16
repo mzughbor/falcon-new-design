@@ -372,18 +372,18 @@ main::before {
 
 .btn-lg {
     padding: 14px 26px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .btn-icon {
     display: inline-flex;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    height:27px;
+    width: 27px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 21px;
 }
 
 .btn-white {
@@ -404,11 +404,11 @@ main::before {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 27px;
     background: var(--bg);
     border-radius: 50%;
-    font-size: 10px;
+    font-size: 14px;
     color: var(--text-muted);
 }
 
@@ -954,7 +954,7 @@ main::before {
     transform: rotate(3deg);
     border-radius: var(--radius-lg);
     overflow: hidden;
-    box-shadow: var(--shadow);
+    /*box-shadow: var(--shadow);*/
 }
 
 .about-image img {
@@ -1996,7 +1996,7 @@ main::before {
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.75);
-    margin: 0 0 20px;
+    margin: 0 0 40px;
 }
 
 .about-hero h1 {
@@ -2004,7 +2004,7 @@ main::before {
     font-weight: 800;
     line-height: 1.12;
     letter-spacing: -0.02em;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
 }
 
 .about-hero .text-accent {
@@ -2015,13 +2015,13 @@ main::before {
     font-size: clamp(16px, 2vw, 18px);
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.82);
-    margin: 0 0 32px;
+    margin: 0 0 40px;
     max-width: 52ch;
 }
 
 .about-hero-actions {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 14px;
 }
 
@@ -2054,9 +2054,10 @@ main::before {
 
 .about-image-glow {
     transform: rotate(-4deg);
-    box-shadow:
+    /*box-shadow:
         0 24px 60px rgba(84, 58, 156, 0.28),
         0 0 0 1px rgba(147, 84, 183, 0.12);
+        */
 }
 
 .about-float-card {
@@ -2612,7 +2613,7 @@ h2 .show-mobile { display: inline; }
     }
 
     .page-about .about-hero-frame {
-        padding: 0 20px;
+        padding: 40px 20px;
     }
 
     .page-about .about-hero-content {
@@ -2625,12 +2626,12 @@ h2 .show-mobile { display: inline; }
     }
 
     .page-about .about-hero-actions {
-        flex-direction: column;
+        flex-direction: row;
         width: 100%;
     }
 
     .page-about .about-hero-actions .btn {
-        width: 100%;
+        width: 50%;
         justify-content: center;
     }
 
