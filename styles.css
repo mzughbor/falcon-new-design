@@ -1913,7 +1913,7 @@ main::before {
     background: transparent;
 }
 
-/* About-page specific: transparent, shadowless nav for better hero overlap */
+/* About-page specific: keep layout but do not force background — allow .nav--transparent to control visibility */
 .page-about .nav {
     max-width: var(--header-container);
     margin: 0 auto;
@@ -1921,14 +1921,36 @@ main::before {
     align-items: center;
     gap: 32px;
     padding: 14px var(--nav-padding-x);
-    background: transparent !important;
-    box-shadow: none !important;
     border-radius: var(--radius-pill);
 }
 
-.page-about .nav a,
 .page-about .nav .brand {
     color: #fff;
+}
+
+/* Reusable modifier: make any nav transparent and shadowless */
+.nav--transparent {
+    background: transparent;
+    box-shadow: none;
+    transition: background .24s ease, box-shadow .24s ease;
+}
+.nav--transparent a,
+.nav--transparent .nav-logo,
+.nav--transparent .brand {
+    color: #fff;
+}
+
+/* Ensure header CTA adapts when nav is transparent (over hero) */
+.nav--transparent .btn-nav {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: none;
+}
+.nav--transparent .btn-nav:hover {
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .about-hero {
