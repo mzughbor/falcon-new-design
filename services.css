@@ -35,6 +35,14 @@ a {
     --svc-section-gap: clamp(28px, 3.5vw, 48px);
     --nav-white: #ffffff;
     --nav-mobile-bar-bg: #f3f0ff;
+    /* Shared with style.css mobile key (services page has no style.css) */
+    --mobile-rail: 90%;
+    --mobile-gutter: 20px;
+    --mobile-section-y: 56px;
+    --mobile-section-y-sm: 40px;
+    --mobile-footer-pt: 56px;
+    --mobile-footer-pb: 28px;
+    --mobile-tab-clearance: calc(88px + env(safe-area-inset-bottom, 0px));
 }
 
 
@@ -2457,7 +2465,7 @@ a {
     }
 
     .services-footer {
-        padding: 32px 0 calc(40px + env(safe-area-inset-bottom, 0px));
+        padding: var(--mobile-footer-pt) 0 var(--mobile-footer-pb);
         overflow-x: clip;
     }
 
@@ -2587,8 +2595,14 @@ a {
 }
 
 @media (max-width: 768px) {
+    :root {
+        --svc-section-y: var(--mobile-section-y);
+        --svc-section-gap: var(--mobile-section-y-sm);
+        --svc-rail: var(--mobile-rail);
+    }
+
     body.page-services-list {
-        padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: var(--mobile-tab-clearance);
     }
 
     .mobile-tabbar {
@@ -2610,6 +2624,12 @@ a {
     }
 
     .services-footer {
-        padding-bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+        padding: var(--mobile-footer-pt) 0 var(--mobile-footer-pb);
+    }
+
+    .featured-service,
+    .process-cta {
+        margin-top: var(--mobile-section-y-sm);
+        margin-bottom: var(--mobile-section-y-sm);
     }
 }

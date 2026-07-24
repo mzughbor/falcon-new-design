@@ -5,7 +5,8 @@
  * data-bind hooks:
  *   title, headline, description (lede), hero-image, cta-image,
  *   features-title, features, process-title, process,
- *   tools-title, tools, slogan, cta-support
+ *   tools-title, tools, related-services, other-services,
+ *   slogan, cta-support
  */
 (function () {
     function clearLoading() {
@@ -154,6 +155,44 @@
             .join("");
     }
 
+    function relatedItemHtml(service) {
+        const href = FS.getServicePageHref(service);
+        const blurb = FS.getServiceLede(service);
+        return `
+            <a class="related-service-link" href="${escapeHtml(href)}">
+                <span class="related-service-copy">
+                    <strong>${escapeHtml(service.title || "")}</strong>
+                    <span>${escapeHtml(blurb)}</span>
+                </span>
+                <span class="related-service-arrow" aria-hidden="true">→</span>
+            </a>`;
+    }
+
+    function bindRelatedSection(service, allServices) {
+        const relatedRoot = document.querySelector('[data-bind="related-services"]');
+        const otherRoot = document.querySelector('[data-bind="other-services"]');
+        if (!relatedRoot && !otherRoot) return;
+
+        const related = FS.getRelatedServices(service, allServices);
+        const others = FS.getOtherServices(service, allServices, 3);
+        const categoryLabel = FS.getCategoryLabel(service.category);
+
+        setText('[data-bind="related-label"]', categoryLabel);
+        setText('[data-bind="related-heading"]', "Related Services");
+        setText('[data-bind="other-heading"]', "Other Services");
+
+        if (relatedRoot) {
+            relatedRoot.innerHTML = related.length
+                ? related.map(relatedItemHtml).join("")
+                : `<p class="related-empty">No related services in this category.</p>`;
+        }
+        if (otherRoot) {
+            otherRoot.innerHTML = others.length
+                ? others.map(relatedItemHtml).join("")
+                : `<p class="related-empty">No other services to show.</p>`;
+        }
+    }
+
     function bindHeadline(service) {
         const el = document.querySelector('[data-bind="headline"]');
         if (!el || !service.headline) return;
@@ -162,7 +201,7 @@
         el.innerHTML = `${escapeHtml(before)}${accent ? `<span>${escapeHtml(accent)}</span>` : ""}`;
     }
 
-    function bindService(service) {
+    function bindService(service, allServices) {
         document.body.dataset.serviceId = service.id;
         if (service.slug) document.body.dataset.serviceSlug = service.slug;
 
@@ -192,6 +231,8 @@
         setText('[data-bind="tools-title"]', service.toolsSectionTitle || "Tools We Use");
         bindTools(service);
 
+        bindRelatedSection(service, allServices || []);
+
         setText('[data-bind="slogan"]', service.slogan);
         setText('[data-bind="cta-support"]', service.ctaSupport);
 
@@ -205,7 +246,7 @@
 
     function refreshAnimations() {
         const revealElements = document.querySelectorAll(
-            ".hero-text, .hero-image, .service-card, .step, .tech-item"
+            ".hero-text, .hero-image, .service-card, .step, .tech-item, .related-service-link, .related-column"
         );
         revealElements.forEach((el) => {
             el.classList.add("fade-up");
@@ -225,13 +266,14 @@
         }
 
         try {
-            const service = await FS.getServiceById(id);
+            const allServices = await FS.getServices();
+            const service = allServices.find((s) => s.id === id) || null;
             if (!service) {
                 console.error(`service-page: service id "${id}" not found in JSON`);
                 showError("Unable to load this service. Please try again.");
                 return;
             }
-            bindService(service);
+            bindService(service, allServices);
             clearLoading();
             refreshAnimations();
             document.dispatchEvent(

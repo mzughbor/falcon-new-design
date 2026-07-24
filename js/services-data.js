@@ -81,9 +81,50 @@
         return (body && body.dataset.serviceId) || null;
     }
 
+    const CATEGORY_LABELS = {
+        "software-web-development": "Software & Web",
+        "digital-solutions": "Digital Solutions",
+        "financial-accounting": "Financial & Accounting",
+        "legal-services": "Legal Services",
+    };
+
+    function getCategoryLabel(category) {
+        return CATEGORY_LABELS[category] || "Services";
+    }
+
+    function shuffle(list) {
+        const arr = list.slice();
+        for (let i = arr.length - 1; i > 0; i -= 1) {
+            const j = Math.floor(Math.random() * (i + 1));
+            const tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
+        }
+        return arr;
+    }
+
+    /** Same category, excluding current — typically 3 siblings. */
+    function getRelatedServices(service, allServices) {
+        if (!service || !Array.isArray(allServices)) return [];
+        return allServices.filter(
+            (s) => s.id !== service.id && s.category === service.category
+        );
+    }
+
+    /** Random picks from other categories (default 3). */
+    function getOtherServices(service, allServices, count) {
+        if (!service || !Array.isArray(allServices)) return [];
+        const limit = typeof count === "number" ? count : 3;
+        const pool = allServices.filter(
+            (s) => s.id !== service.id && s.category !== service.category
+        );
+        return shuffle(pool).slice(0, limit);
+    }
+
     global.FalconServices = {
         DATA_URL,
         SERVICE_PAGES,
+        CATEGORY_LABELS,
         loadServicesDetails,
         getServices,
         getServiceById,
@@ -92,5 +133,8 @@
         getServiceLede,
         firstSentence,
         resolveServiceIdFromPage,
+        getCategoryLabel,
+        getRelatedServices,
+        getOtherServices,
     };
 })(window);

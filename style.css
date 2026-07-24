@@ -968,11 +968,29 @@ ul {
     :root {
         --header-stack: calc(10px + 8px + 40px + 8px);
         --header-clearance: calc(var(--header-stack) + 20px);
+        /* Shared mobile spacing key (all pages) */
+        --mobile-rail: 90%;
+        --mobile-gutter: 20px;
+        --mobile-section-y: 56px;
+        --mobile-section-y-sm: 40px;
+        --mobile-footer-pt: 56px;
+        --mobile-footer-pb: 28px;
+        --mobile-tab-clearance: calc(88px + env(safe-area-inset-bottom, 0px));
     }
 
     body {
-        padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: var(--mobile-tab-clearance);
         background: #fff;
+    }
+
+    /* One horizontal rail — beats tablet 92% override */
+    .container,
+    .about-container,
+    .stats-container,
+    .footer-top,
+    .footer-bottom {
+        width: var(--mobile-rail);
+        max-width: none;
     }
 
     .loader {
@@ -1890,7 +1908,8 @@ ul {
         position: relative;
         z-index: 1;
         margin-top: 0;
-        padding: 72px 0 calc(96px + env(safe-area-inset-bottom, 0px));
+        /* Tab bar clearance lives on body — don't double-pad footer */
+        padding: var(--mobile-footer-pt) 0 var(--mobile-footer-pb);
         background: #1B123A;
     }
 
@@ -7090,8 +7109,32 @@ Responsive
 
     .footer-cta-zone footer,
     footer {
-        padding: 72px 0 calc(96px + env(safe-area-inset-bottom, 0px)) !important;
+        padding: var(--mobile-footer-pt) 0 var(--mobile-footer-pb) !important;
         background: #1B123A !important;
+    }
+
+    /* Unify major section vertical rhythm on mobile */
+    .about {
+        padding: var(--mobile-section-y) 0 !important;
+    }
+
+    .stats,
+    .services,
+    .projects,
+    .testimonials {
+        padding-top: var(--mobile-section-y) !important;
+        padding-bottom: var(--mobile-section-y) !important;
+    }
+
+    .technologies {
+        padding: var(--mobile-section-y) 0 !important;
+    }
+
+    .core-values,
+    .our-process,
+    .why-choose {
+        /* Keep side gutter for stacked mobile cards (container is width:100%) */
+        padding: var(--mobile-section-y) var(--mobile-gutter) !important;
     }
 
     .footer-top,
@@ -7108,7 +7151,7 @@ Responsive
 
     .about {
         background: #F9F8FF !important;
-        padding: 64px 0 48px !important;
+        padding: var(--mobile-section-y) 0 !important;
     }
 
     .about-image {
