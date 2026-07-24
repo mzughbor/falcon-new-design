@@ -14,27 +14,17 @@
         ecommerce: "e-commerce.html",
     };
 
-    /** Optional list-card thumbnails (services.html). Prefer local unified assets. */
+    /** Sandy list-card thumbs (services.html). All other services use FALLBACK_LIST_THUMB. */
+    const FALLBACK_LIST_THUMB = "images/strategyyy.png";
     const LIST_THUMBS = {
         "web-dev": "images/web developmenttt.png",
         uiux: "images/ديزاين.png",
         seo: "images/seoservices.png",
+        "paid-ads": "images/paid advertising.png",
+        cashflow: "images/cash flow.png",
+        auditing: "images/حسابات.png",
         ecommerce: "images/e-commerce.png",
-        mobile: "images/services/mobile-phone-background-images.jpg",
-        "social-media": "images/services/pile-popular-social-media-logos.jpg",
-        content:
-            "images/services/close-up-man-hand-holding-tablet-with-group-businesspeople-with-creative-smartphone-hologram-blue-red-hearts-blue-background-social-media-likes-digital-marketing-concept.jpg",
-        "paid-ads":
-            "images/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg",
-        auditing: "images/services/business-man-working-office-2desktop.jpg",
-        "financial-reporting": "images/services/money-around-world.jpg",
-        "cost-accounting": "images/services/cropped-image-businessman-using-laptop-desk.jpg",
-        cashflow: "images/services/business-man-working-office-desktop.jpg",
-        "legal-consulting": "images/services/golden-scales-justice-gavel-books-grey-background.jpg",
-        "contract-drafting":
-            "images/services/photo-realistic-certificate-handshake-symbolizing-formal-thanks-with-space-text-adobe-sto.jpg",
-        compliance: "images/services/people-working-table.jpg",
-        "dispute-resolution": "images/services/business-man-working-office-desktop.jpg",
+        "legal-consulting": "images/strategyyy.png",
     };
 
     let cache = null;
@@ -65,10 +55,9 @@
     }
 
     function getListThumb(service) {
-        if (!service) return "";
+        if (!service) return FALLBACK_LIST_THUMB;
         if (LIST_THUMBS[service.id]) return LIST_THUMBS[service.id];
-        if (service.images && service.images[0]) return service.images[0];
-        return "images/services laptop.png";
+        return FALLBACK_LIST_THUMB;
     }
 
     function getServiceLede(service) {

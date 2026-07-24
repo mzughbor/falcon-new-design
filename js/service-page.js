@@ -8,9 +8,29 @@
  *   tools-title, tools, slogan, cta-support
  */
 (function () {
+    function clearLoading() {
+        document.body.classList.remove("is-loading");
+        const loader = document.querySelector(".service-loading");
+        if (loader) {
+            loader.setAttribute("aria-busy", "false");
+            loader.hidden = true;
+        }
+    }
+
+    function showError(message) {
+        clearLoading();
+        document.body.classList.add("is-error");
+        const err = document.querySelector(".service-load-error");
+        if (err) {
+            if (message) err.textContent = message;
+            err.hidden = false;
+        }
+    }
+
     const FS = window.FalconServices;
     if (!FS) {
         console.error("services-data.js must load before service-page.js");
+        showError("Unable to load this service. Please try again.");
         return;
     }
 
@@ -200,6 +220,7 @@
         const id = FS.resolveServiceIdFromPage();
         if (!id) {
             console.warn("service-page: no data-service-id or ?id= found");
+            showError("Unable to load this service. Please try again.");
             return;
         }
 
@@ -207,15 +228,18 @@
             const service = await FS.getServiceById(id);
             if (!service) {
                 console.error(`service-page: service id "${id}" not found in JSON`);
+                showError("Unable to load this service. Please try again.");
                 return;
             }
             bindService(service);
+            clearLoading();
             refreshAnimations();
             document.dispatchEvent(
                 new CustomEvent("falcon:service-bound", { detail: { service } })
             );
         } catch (err) {
             console.error("service-page: failed to bind", err);
+            showError("Unable to load this service. Please try again.");
         }
     }
 

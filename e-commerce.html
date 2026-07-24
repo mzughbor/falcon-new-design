@@ -17,7 +17,15 @@
     <link rel="stylesheet" href="web.css">
 </head>
 
-<body class="page-web page-service" id="top" data-service-id="ecommerce">
+<body class="page-web page-service is-loading" id="top" data-service-id="ecommerce">
+
+    <div class="service-loading" aria-live="polite" aria-busy="true">
+        <span class="service-loading-dot"></span>
+        <span class="service-loading-dot"></span>
+        <span class="service-loading-dot"></span>
+        <span class="visually-hidden">Loading service…</span>
+    </div>
+    <p class="service-load-error" role="alert" hidden>Unable to load this service. Please try again.</p>
 
     <div id="site-header">
         <header class="site-header">
@@ -50,17 +58,17 @@
                         <span>/</span>
                         <a href="services.html">Services</a>
                         <span>/</span>
-                        <strong><span data-bind="title">Service</span></strong>
+                        <strong><span data-bind="title"></span></strong>
                     </div>
-                    <h1 data-bind="headline">Service <span>Headline</span></h1>
-                    <p data-bind="description">Service description</p>
+                    <h1 data-bind="headline"></h1>
+                    <p data-bind="description"></p>
                     <div class="hero-buttons">
                         <a href="contact.html" class="primary-btn">Get Started</a>
                         <a href="index.html#projects" class="secondary-btn">Explore Work</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img data-bind="hero-image" src="images/ويب.png" alt="">
+                    <img data-bind="hero-image" alt="">
                 </div>
             </div>
         </div>
@@ -69,7 +77,7 @@
     <section class="services">
         <div class="container">
             <div class="section-title">
-                <h2 data-bind="features-title">What We Offer</h2>
+                <h2 data-bind="features-title"></h2>
                 <div class="line"></div>
             </div>
             <div class="services-grid" data-bind="features"></div>
@@ -79,7 +87,7 @@
     <section class="process">
         <div class="container">
             <div class="section-title">
-                <h2 data-bind="process-title">Our Process</h2>
+                <h2 data-bind="process-title"></h2>
                 <div class="line"></div>
             </div>
             <div class="timeline" data-bind="process"></div>
@@ -89,7 +97,7 @@
     <section class="technologies">
         <div class="container">
             <div class="section-title">
-                <h2 data-bind="tools-title">Tools We Use</h2>
+                <h2 data-bind="tools-title"></h2>
                 <div class="line"></div>
             </div>
             <div class="tech-grid" data-bind="tools"></div>
@@ -105,13 +113,13 @@
                             <i class="fa-solid fa-rocket"></i>
                         </div>
                         <div class="cta-text">
-                            <h2 id="service-cta-heading" data-bind="slogan">Ready to start?</h2>
-                            <p data-bind="cta-support">Let's build something amazing together.</p>
+                            <h2 id="service-cta-heading" data-bind="slogan"></h2>
+                            <p data-bind="cta-support"></p>
                         </div>
                     </div>
                 </div>
                 <div class="cta-visual">
-                    <img data-bind="cta-image" src="images/Modern Solutions.png" alt="">
+                    <img data-bind="cta-image" alt="">
                 </div>
             </div>
         </section>

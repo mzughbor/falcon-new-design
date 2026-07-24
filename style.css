@@ -4523,8 +4523,13 @@ Navbar
     background: transparent;
 }
 
-.page-web .footer-cta-zone {
-    background: #f8f6fe !important;
+/* Match .technologies gradient on single-service pages (web.css) — no white band */
+.page-web .footer-cta-zone,
+.page-service .footer-cta-zone {
+    background: linear-gradient(135deg,
+            #f5f2ff 0%,
+            #eee8ff 50%,
+            #e5d9f7 100%) !important;
 }
 
 @media (max-width: 768px) {
@@ -4544,8 +4549,12 @@ Navbar
         margin-bottom: calc(-1 * var(--header-stack));
     }
 
-    .page-web .footer-cta-zone {
-        background: #f8f6fe !important;
+    .page-web .footer-cta-zone,
+    .page-service .footer-cta-zone {
+        background: linear-gradient(135deg,
+                #f5f2ff 0%,
+                #eee8ff 50%,
+                #e5d9f7 100%) !important;
     }
 
     /* Services hero: keep flex-centered layout; don't inherit home .hero resets */
