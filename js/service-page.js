@@ -157,9 +157,17 @@
 
     function relatedItemHtml(service) {
         const href = FS.getServicePageHref(service);
-        const blurb = FS.getServiceLede(service);
+        const blurb = FS.getServiceLede
+            ? FS.getServiceLede(service)
+            : FS.firstSentence(service.description || "", 96);
+        const thumb = FS.getListThumb ? FS.getListThumb(service) : "";
+        const thumbHtml = thumb
+            ? `<span class="related-service-thumb"><img src="${escapeHtml(thumb)}" alt="" loading="lazy"></span>`
+            : `<span class="related-service-thumb related-service-thumb--icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></span>`;
+
         return `
             <a class="related-service-link" href="${escapeHtml(href)}">
+                ${thumbHtml}
                 <span class="related-service-copy">
                     <strong>${escapeHtml(service.title || "")}</strong>
                     <span>${escapeHtml(blurb)}</span>
@@ -169,17 +177,40 @@
     }
 
     function bindRelatedSection(service, allServices) {
+        const section = document.querySelector(".related-services");
         const relatedRoot = document.querySelector('[data-bind="related-services"]');
         const otherRoot = document.querySelector('[data-bind="other-services"]');
-        if (!relatedRoot && !otherRoot) return;
+        if (!section || (!relatedRoot && !otherRoot)) return;
 
-        const related = FS.getRelatedServices(service, allServices);
-        const others = FS.getOtherServices(service, allServices, 3);
-        const categoryLabel = FS.getCategoryLabel(service.category);
+        const list = Array.isArray(allServices) ? allServices : [];
+        const getRelated = FS.getRelatedServices
+            ? FS.getRelatedServices.bind(FS)
+            : (svc, all) =>
+                  all.filter((s) => s.id !== svc.id && s.category === svc.category);
+        const getOther = FS.getOtherServices
+            ? FS.getOtherServices.bind(FS)
+            : (svc, all, count) =>
+                  all
+                      .filter((s) => s.id !== svc.id && s.category !== svc.category)
+                      .slice(0, count || 3);
+        const categoryLabel = FS.getCategoryLabel
+            ? FS.getCategoryLabel(service.category)
+            : service.category || "Services";
+
+        const related = getRelated(service, list);
+        const others = getOther(service, list, 3);
 
         setText('[data-bind="related-label"]', categoryLabel);
         setText('[data-bind="related-heading"]', "Related Services");
         setText('[data-bind="other-heading"]', "Other Services");
+        setText(
+            '[data-bind="related-support"]',
+            `More from ${categoryLabel}`
+        );
+        setText(
+            '[data-bind="other-support"]',
+            "Discover services from our other categories"
+        );
 
         if (relatedRoot) {
             relatedRoot.innerHTML = related.length
@@ -191,6 +222,9 @@
                 ? others.map(relatedItemHtml).join("")
                 : `<p class="related-empty">No other services to show.</p>`;
         }
+
+        section.hidden = false;
+        section.setAttribute("data-bound", "true");
     }
 
     function bindHeadline(service) {
@@ -246,7 +280,7 @@
 
     function refreshAnimations() {
         const revealElements = document.querySelectorAll(
-            ".hero-text, .hero-image, .service-card, .step, .tech-item, .related-service-link, .related-column"
+            ".hero-text, .hero-image, .service-card, .step, .tech-item"
         );
         revealElements.forEach((el) => {
             el.classList.add("fade-up");

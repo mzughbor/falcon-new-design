@@ -439,6 +439,12 @@ ul {
 
 }
 
+/* Match site rail used on about / services / contact (not the tighter 1400px .container) */
+.hero .container.hero-wrapper {
+    width: 90%;
+    max-width: 1500px;
+}
+
 .hero-content {
     grid-column: 1;
     grid-row: 1;
