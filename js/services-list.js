@@ -19,7 +19,9 @@
     function cardHtml(service) {
         const href = FS.getServicePageHref(service);
         const thumb = FS.getListThumb(service);
-        const blurb = FS.firstSentence(service.description, 96);
+        const blurb = FS.getServiceLede
+            ? FS.getServiceLede(service)
+            : FS.firstSentence(service.description, 96);
         return `
             <div class="service-card">
                 <div class="service-image">

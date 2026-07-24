@@ -3,8 +3,9 @@
  * Reads body[data-service-id] or ?id=
  *
  * data-bind hooks:
- *   title, description, slogan, hero-image, cta-image, features
- * Headlines / process / tools stay page-local (not in JSON).
+ *   title, headline, description (lede), hero-image, cta-image,
+ *   features-title, features, process-title, process,
+ *   tools-title, tools, slogan, cta-support
  */
 (function () {
     const FS = window.FalconServices;
@@ -21,6 +22,14 @@
     ];
     const FEATURE_TONES = ["", "purple", "blue", "pink"];
 
+    function escapeHtml(str) {
+        return String(str)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+    }
+
     function setText(selector, value) {
         if (value == null || value === "") return;
         document.querySelectorAll(selector).forEach((el) => {
@@ -28,10 +37,10 @@
         });
     }
 
-    function setHtml(selector, value) {
-        if (value == null || value === "") return;
+    function setHtml(selector, html) {
+        if (html == null || html === "") return;
         document.querySelectorAll(selector).forEach((el) => {
-            el.innerHTML = value;
+            el.innerHTML = html;
         });
     }
 
@@ -43,44 +52,94 @@
         });
     }
 
+    function normalizeFeatures(service) {
+        const list = service.features || [];
+        return list.map((item, index) => {
+            if (typeof item === "string") {
+                return {
+                    title: item,
+                    description: FS.firstSentence(service.lede || service.description, 90),
+                    iconType: "fa",
+                    icon: FEATURE_ICONS[index % FEATURE_ICONS.length],
+                    tone: FEATURE_TONES[index % FEATURE_TONES.length],
+                };
+            }
+            return {
+                title: item.title || "",
+                description: item.description || "",
+                iconType: item.iconType || "fa",
+                icon: item.icon || FEATURE_ICONS[index % FEATURE_ICONS.length],
+                tone: item.tone || FEATURE_TONES[index % FEATURE_TONES.length],
+            };
+        });
+    }
+
+    function featureIconHtml(feature) {
+        if (feature.iconType === "img") {
+            return `<img src="${escapeHtml(feature.icon)}" alt="">`;
+        }
+        return `<i class="${escapeHtml(feature.icon)}"></i>`;
+    }
+
     function bindFeatures(service) {
         const grid = document.querySelector('[data-bind="features"]');
-        if (!grid || !Array.isArray(service.features)) return;
-
-        const cards = grid.querySelectorAll(".service-card");
-        if (cards.length) {
-            service.features.forEach((feature, index) => {
-                const card = cards[index];
-                if (!card) return;
-                const title = card.querySelector("h3");
-                if (title) title.textContent = feature;
-            });
-            return;
-        }
-
-        grid.innerHTML = service.features
-            .map((feature, index) => {
-                const tone = FEATURE_TONES[index % FEATURE_TONES.length];
-                const icon = FEATURE_ICONS[index % FEATURE_ICONS.length];
-                const toneClass = tone ? ` ${tone}` : "";
+        if (!grid) return;
+        const features = normalizeFeatures(service);
+        grid.innerHTML = features
+            .map((feature) => {
+                const toneClass = feature.tone ? ` ${escapeHtml(feature.tone)}` : "";
                 return `
                 <div class="service-card">
                     <div class="icon${toneClass}">
-                        <i class="${icon}"></i>
+                        ${featureIconHtml(feature)}
                     </div>
-                    <h3>${escapeHtml(feature)}</h3>
-                    <p>${escapeHtml(FS.firstSentence(service.description, 90))}</p>
+                    <h3>${escapeHtml(feature.title)}</h3>
+                    <p>${escapeHtml(feature.description)}</p>
                 </div>`;
             })
             .join("");
     }
 
-    function escapeHtml(str) {
-        return String(str)
-            .replace(/&/g, "&amp;")
-            .replace(/</g, "&lt;")
-            .replace(/>/g, "&gt;")
-            .replace(/"/g, "&quot;");
+    function bindProcess(service) {
+        const root = document.querySelector('[data-bind="process"]');
+        if (!root || !Array.isArray(service.process)) return;
+
+        const steps = service.process
+            .map((step, index) => {
+                const active = index === 0 ? " active" : "";
+                return `
+                <div class="step${active}">
+                    <div class="circle">${escapeHtml(step.number || String(index + 1).padStart(2, "0"))}</div>
+                    <h4>${escapeHtml(step.title || "")}</h4>
+                    <p>${escapeHtml(step.description || "")}</p>
+                </div>`;
+            })
+            .join("");
+
+        root.innerHTML = `<div class="timeline-line"></div>${steps}`;
+    }
+
+    function bindTools(service) {
+        const root = document.querySelector('[data-bind="tools"]');
+        if (!root || !Array.isArray(service.tools)) return;
+
+        root.innerHTML = service.tools
+            .map(
+                (tool) => `
+                <div class="tech-item">
+                    <img src="${escapeHtml(tool.image || "")}" alt="">
+                    <span>${escapeHtml(tool.name || "")}</span>
+                </div>`
+            )
+            .join("");
+    }
+
+    function bindHeadline(service) {
+        const el = document.querySelector('[data-bind="headline"]');
+        if (!el || !service.headline) return;
+        const before = service.headline.before || "";
+        const accent = service.headline.accent || "";
+        el.innerHTML = `${escapeHtml(before)}${accent ? `<span>${escapeHtml(accent)}</span>` : ""}`;
     }
 
     function bindService(service) {
@@ -90,8 +149,11 @@
         document.title = `${service.title} | Falcon Codes`;
 
         setText('[data-bind="title"]', service.title);
-        setText('[data-bind="description"]', FS.firstSentence(service.description));
-        setText('[data-bind="slogan"]', service.slogan);
+        bindHeadline(service);
+        setText(
+            '[data-bind="description"]',
+            service.lede || FS.firstSentence(service.description)
+        );
 
         const heroSrc = service.images && service.images[0];
         const ctaSrc =
@@ -101,15 +163,37 @@
         setImg('[data-bind="hero-image"]', heroSrc, service.title);
         setImg('[data-bind="cta-image"]', ctaSrc, service.title);
 
+        setText('[data-bind="features-title"]', service.featuresSectionTitle || "What We Offer");
         bindFeatures(service);
 
-        // Optional extraContent blocks if markup exists
+        setText('[data-bind="process-title"]', service.processSectionTitle || "Our Process");
+        bindProcess(service);
+
+        setText('[data-bind="tools-title"]', service.toolsSectionTitle || "Tools We Use");
+        bindTools(service);
+
+        setText('[data-bind="slogan"]', service.slogan);
+        setText('[data-bind="cta-support"]', service.ctaSupport);
+
         if (Array.isArray(service.extraContent)) {
             service.extraContent.forEach((block, index) => {
                 setText(`[data-bind="extra-title-${index}"]`, block.title);
                 setText(`[data-bind="extra-description-${index}"]`, block.description);
             });
         }
+    }
+
+    function refreshAnimations() {
+        const revealElements = document.querySelectorAll(
+            ".hero-text, .hero-image, .service-card, .step, .tech-item"
+        );
+        revealElements.forEach((el) => {
+            el.classList.add("fade-up");
+            el.classList.add("show");
+        });
+        document.querySelectorAll(".service-card").forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.15}s`;
+        });
     }
 
     async function init() {
@@ -126,6 +210,7 @@
                 return;
             }
             bindService(service);
+            refreshAnimations();
             document.dispatchEvent(
                 new CustomEvent("falcon:service-bound", { detail: { service } })
             );

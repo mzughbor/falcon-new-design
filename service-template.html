@@ -2,52 +2,24 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!--
-      SINGLE SERVICE PAGE TEMPLATE
-      ----------------------------
-      Duplicate this file per service (e.g. seo.html, ui.html).
-      Content source (EN): data/services-details.json
-      Content source (AR): data/services-details-ar.json  — wire after RTL
-
-      Set body[data-service-id] to a services-details.json "id", e.g.:
-        web-dev | ecommerce | mobile | uiux | social-media | content |
-        paid-ads | seo | auditing | financial-reporting | cost-accounting |
-        cashflow | legal-consulting | contract-drafting | compliance |
-        dispute-resolution
-
-      TEMPLATE fields below are marked with data-bind / comments.
-      JSON wiring (fetch local files instead of API) comes later.
+      SINGLE SERVICE PAGE TEMPLATE — fully driven by data/services-details.json
+      Open with ?id=<service-id> or set body[data-service-id]
     -->
-
-    <!-- TEMPLATE: title from service.title -->
-    <title>Web Development | Falcon Codes</title>
-
-    <!-- Google Font -->
-
+    <title>Service | Falcon Codes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.css">
-
 </head>
 
-<!-- TEMPLATE: data-service-id = services-details.json → services[].id -->
-<body class="page-web page-service" id="top" data-service-id="web-dev" data-service-slug="service-web-dev">
+<body class="page-web page-service" id="top" data-service-id="web-dev">
 
-    <!-- ================= NAVBAR (shared — same as home / about / services) ================= -->
     <div id="site-header">
         <header class="site-header">
             <nav class="nav" aria-label="Primary">
@@ -70,376 +42,87 @@
         </header>
     </div>
 
-    <!-- ================= HERO ================= -->
-
     <section class="hero">
-
         <div class="container">
-
             <div class="hero-content">
-
                 <div class="hero-text">
-
                     <div class="breadcrumb">
-
                         <a href="index.html">Home</a>
-
                         <span>/</span>
-
                         <a href="services.html">Services</a>
-
                         <span>/</span>
-
-                        <!-- TEMPLATE: service.title -->
-                        <strong data-bind="title">Web Development</strong>
-
+                        <strong><span data-bind="title">Service</span></strong>
                     </div>
-
-                    <!-- TEMPLATE: headline — use title / slogan as needed -->
-                    <h1 data-bind="headline">
-
-                        Build Fast, Secure &
-
-                        <span>Scalable Websites</span>
-
-                    </h1>
-
-                    <!-- TEMPLATE: service.description (short lede) -->
-                    <p data-bind="description">
-
-                        We specialize in creating custom web solutions that transform your business ideas
-                        into powerful digital experiences.
-
-                    </p>
-
+                    <h1 data-bind="headline">Service <span>Headline</span></h1>
+                    <p data-bind="description">Service description</p>
                     <div class="hero-buttons">
-
-                        <a href="contact.html" class="primary-btn">
-
-                            Get Started
-
-                        </a>
-
-                        <a href="index.html#projects" class="secondary-btn">
-
-                            Explore Work
-
-                        </a>
-
+                        <a href="contact.html" class="primary-btn">Get Started</a>
+                        <a href="index.html#projects" class="secondary-btn">Explore Work</a>
                     </div>
-
                 </div>
-
                 <div class="hero-image">
-
-                    <!-- TEMPLATE: service.images[0] when assets are local -->
-                    <img src="images/ويب.png" alt="Web Development" data-bind="hero-image">
-
+                    <img data-bind="hero-image" src="images/ويب.png" alt="">
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-    <!-- ================= WHAT WE BUILD (service.features) ================= -->
 
     <section class="services">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>
-
-                    What We Build
-
-                </h2>
-
+                <h2 data-bind="features-title">What We Offer</h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="services-grid" data-bind="features">
-
-                <!-- TEMPLATE: map each services-details.features[] item to a card -->
-
-                <div class="service-card">
-
-                    <div class="icon">
-
-                        <i class="fa-brands fa-wordpress"></i>
-
-                    </div>
-
-                    <h3>WordPress Development</h3>
-
-                    <p>
-
-                        Custom WordPress sites with easy content management
-                        and SEO-ready structure.
-
-                    </p>
-
-                </div>
-
-                <div class="service-card">
-
-                    <div class="icon purple">
-
-                        <i class="fa-solid fa-code"></i>
-
-                    </div>
-
-                    <h3>Laravel Applications</h3>
-
-                    <p>
-
-                        Robust, scalable backend applications built
-                        with modern PHP frameworks.
-
-                    </p>
-
-                </div>
-
-                <div class="service-card">
-
-                    <div class="icon blue">
-
-                        <i class="fa-brands fa-react"></i>
-
-                    </div>
-
-                    <h3>React Solutions</h3>
-
-                    <p>
-
-                        Fast, interactive frontends and SPAs
-                        engineered for performance.
-
-                    </p>
-
-                </div>
-
-                <div class="service-card">
-
-                    <div class="icon pink">
-
-                        <i class="fa-solid fa-rocket"></i>
-
-                    </div>
-
-                    <h3>Custom Web Apps</h3>
-
-                    <p>
-
-                        Tailored web applications designed around
-                        your business workflows.
-
-                    </p>
-
-                </div>
-            </div>
-
+            <div class="services-grid" data-bind="features"></div>
         </div>
-
     </section>
-
-    <!--=========================================
-        DEVELOPMENT PROCESS
-        (shared chrome — keep or customize per service)
-==========================================-->
 
     <section class="process">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>Our Development Process</h2>
-
+                <h2 data-bind="process-title">Our Process</h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="timeline">
-
-                <div class="timeline-line"></div>
-
-                <div class="step active">
-
-                    <div class="circle">01</div>
-
-                    <h4>Discovery</h4>
-
-                    <p>Understanding your business goals.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">02</div>
-
-                    <h4>Planning</h4>
-
-                    <p>Strategy, sitemap & wireframes.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">03</div>
-
-                    <h4>Development</h4>
-
-                    <p>Clean code & modern technologies.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">04</div>
-
-                    <h4>Testing</h4>
-
-                    <p>Quality assurance & performance.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">05</div>
-
-                    <h4>Launch</h4>
-
-                    <p>Deployment & ongoing support.</p>
-
-                </div>
-
-            </div>
-
+            <div class="timeline" data-bind="process"></div>
         </div>
-
     </section>
-
-    <!--=========================================
-        TECHNOLOGIES
-        TEMPLATE: swap stack labels/icons per service as needed
-==========================================-->
 
     <section class="technologies">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>Technologies We Use</h2>
-
+                <h2 data-bind="tools-title">Tools We Use</h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="tech-grid">
-
-                <div class="tech-item">
-                    <img src="images/كود.png" alt="">
-                    <span>HTML5</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/css.png" alt="">
-                    <span>CSS3</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/javascript.png" alt="">
-                    <span>JavaScript</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/reactt.png" alt="">
-                    <span>React</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/next.js.png" alt="">
-                    <span>Next.js</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/nodejss.png" alt="">
-                    <span>Node.js</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/php.png" alt="">
-                    <span>PHP</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/wordpress.png" alt="">
-                    <span>WordPress</span>
-                </div>
-
-            </div>
-
+            <div class="tech-grid" data-bind="tools"></div>
         </div>
-
     </section>
 
-    <!--======================
-            CTA + FOOTER
-    =======================-->
     <div class="footer-cta-zone">
-
         <section class="cta" id="start" aria-labelledby="service-cta-heading">
-
             <div class="container">
-
                 <div class="cta-box">
-
                     <div class="cta-left">
-
                         <div class="cta-icon" aria-hidden="true">
                             <i class="fa-solid fa-rocket"></i>
                         </div>
-
                         <div class="cta-text">
-
-                            <!-- TEMPLATE: service.slogan -->
-                            <h2 id="service-cta-heading" data-bind="slogan">
-                                Transforming ideas into powerful digital experiences
-                            </h2>
-
-                            <p>
-                                Let's build something amazing together. From idea to online success, we're your partner in growth.
-                            </p>
-
+                            <h2 id="service-cta-heading" data-bind="slogan">Ready to start?</h2>
+                            <p data-bind="cta-support">Let's build something amazing together.</p>
                         </div>
-
                     </div>
-
-
                 </div>
                 <div class="cta-visual">
-                    <img data-bind="cta-image" src="images/Modern Solutions.png" alt="Modern Solutions">
+                    <img data-bind="cta-image" src="images/Modern Solutions.png" alt="">
                 </div>
-
             </div>
-
         </section>
 
         <footer>
-
             <div class="container">
-
                 <div class="footer-top">
-
                     <a href="index.html" class="footer-logo" aria-label="Falcon of Codes — Home">
                         <img src="images/falcon logo.svg" alt="Falcon of Codes">
                     </a>
-
                     <nav class="social-links" aria-label="Social links">
                         <a href="#">Dribbble</a>
                         <a href="#">Behance</a>
@@ -447,33 +130,22 @@
                         <a href="#">Instagram</a>
                         <a href="#">Twitter (X)</a>
                     </nav>
-
                 </div>
-
                 <hr>
-
                 <div class="footer-bottom">
-
                     <p>© 2024 Falcon of Codes. All rights reserved.</p>
-
                     <nav class="footer-legal" aria-label="Legal">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                     </nav>
-
                 </div>
-
             </div>
-
         </footer>
-
     </div>
 
-    <!-- ================= MOBILE NAV ================= -->
     <div id="site-mobile-nav">
         <nav class="mobile-tabbar" aria-label="Mobile navigation">
             <div class="mobile-tabbar-indicator" aria-hidden="true"></div>
-
             <a href="index.html" class="mobile-tab" data-page="home" aria-label="Home">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -482,7 +154,6 @@
                 </span>
                 <span class="mobile-tab-label">Home</span>
             </a>
-
             <a href="about.html" class="mobile-tab" data-page="about" aria-label="About">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -493,7 +164,6 @@
                 </span>
                 <span class="mobile-tab-label">About</span>
             </a>
-
             <a href="services.html" class="mobile-tab is-active" data-page="services" aria-label="Services">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -503,7 +173,6 @@
                 </span>
                 <span class="mobile-tab-label">Services</span>
             </a>
-
             <a href="index.html#projects" class="mobile-tab" data-page="portfolio" aria-label="Portfolio">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -513,7 +182,6 @@
                 </span>
                 <span class="mobile-tab-label">Portfolio</span>
             </a>
-
             <a href="contact.html" class="mobile-tab" data-page="contact" aria-label="Contact">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -525,33 +193,10 @@
         </nav>
     </div>
 
-    
     <script src="js/header.js"></script>
     <script src="js/services-data.js"></script>
     <script src="js/service-page.js"></script>
     <script>
-
-        /* Page animations only — header / footer handled by header.js */
-        /* Page animations — data bind handled by service-page.js */
-        const revealElements = document.querySelectorAll(
-            ".hero-text, .hero-image, .service-card, .step, .tech-item"
-        );
-
-        if ("IntersectionObserver" in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) entry.target.classList.add("show");
-                });
-            }, { threshold: 0.15 });
-
-            revealElements.forEach((el) => {
-                el.classList.add("fade-up");
-                observer.observe(el);
-            });
-        } else {
-            revealElements.forEach((el) => el.classList.add("show"));
-        }
-
         const heroImage = document.querySelector(".hero-image");
         if (heroImage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             window.addEventListener("mousemove", (e) => {
@@ -560,12 +205,7 @@
                 heroImage.style.transform = `translate(${x}px, ${y}px)`;
             });
         }
-
-        document.querySelectorAll(".service-card").forEach((card, index) => {
-            card.style.animationDelay = `${index * 0.15}s`;
-        });
     </script>
-
 </body>
 
 </html>

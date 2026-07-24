@@ -3,38 +3,37 @@
     {
       "id": 1,
       "name": "Web Development Services",
-      "image": "assets/services/programming-background-with-person-working-with-codes-computer.jpg"
+      "image": "images/ويب.png"
     },
     {
       "id": 2,
       "name": "Mobile Apps Development",
-      "image": "assets/services/78898.png"
+      "image": "images/services/mobile-phone-background-images.jpg"
     },
     {
       "id": 3,
       "name": "Social Media Management",
-      "image": "assets/services/46984.jpg"
+      "image": "images/services/pile-popular-social-media-logos.jpg"
     },
     {
       "id": 4,
       "name": "UI/UX Design",
-      "image": "assets/services/78897.png"
+      "image": "images/UI:UX Design.png"
     },
     {
       "id": 5,
       "name": "Digital Marketing Services",
-      "image": "assets/services/3d-renderin-young-man-with-megaphone-social-media-marketing.jpg"
+      "image": "images/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg"
     },
     {
       "id": 6,
       "name": "Financial Reporting Services",
-      "image": "assets/services/people-working-table.jpg"
+      "image": "images/services/money-around-world.jpg"
     },
     {
       "id": 7,
       "name": "E-commerce Solutions",
-      "image": "assets/services/tormarch9.jpg"
+      "image": "images/تجاره.png"
     }
   ]
 }
-

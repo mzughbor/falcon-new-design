@@ -5409,15 +5409,17 @@ Responsive
 }
 
 .core-values {
-    padding: 100px 4%;
+    padding: 100px 0;
     background: #fff;
     text-align: center;
 
 }
 
-.container {
+.core-values .container {
+    width: 90%;
     max-width: 1500px;
-    
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .section-subtitle {
@@ -5689,13 +5691,15 @@ Responsive
 
 
 .process-section {
-    max-width: 1400px;
-    width: 100%;
+    max-width: 1500px;
+    width: 90%;
+    margin: 0 auto;
     background: linear-gradient(135deg, #A855F7 0%, #818CF8 100%);
     border-radius: 24px;
     padding: 60px 50px;
     text-align: center;
     color: #fff;
+    box-sizing: border-box;
 }
 
 .our-process .eyebrow {
@@ -5791,7 +5795,7 @@ Responsive
 
 .our-process {
     background: #ffffff;
-    padding: 80px 75px;
+    padding: 80px 0;
 }
 
 /* Our Process — mobile timeline + gradient cards */
@@ -5961,10 +5965,12 @@ Responsive
 .page {
     position: relative;
     max-width: 1500px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     overflow: hidden;
     border-radius: 20px;
     padding: 10px 0 0;
+    box-sizing: border-box;
 }
 
 /* decorative shape */
@@ -6141,7 +6147,7 @@ Responsive
 }
 
 .why-choose {
-    padding: 100px 50px;
+    padding: 100px 0;
 }
 
 /* Why Choose — mobile stacked cards (matches design) */

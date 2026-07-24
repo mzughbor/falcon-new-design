@@ -10,6 +10,8 @@
 
 html {
     scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -17,6 +19,7 @@ body {
     color: #ffffff;
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 a {
@@ -42,6 +45,8 @@ a {
         radial-gradient(circle at 75% 45%,
             rgba(74, 25, 190, 0.12),
             transparent 35%);
+    max-width: 100%;
+    overflow-x: clip;
 }
 
 .services-header,
@@ -321,6 +326,10 @@ a {
     align-items: center;
 
     gap: 34px;
+
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .stat-item {
@@ -333,6 +342,8 @@ a {
     padding-right: 30px;
 
     border-right: 1px solid rgba(124, 80, 180, 0.2);
+
+    min-width: 0;
 }
 
 .stat-item:last-child {
@@ -395,6 +406,9 @@ a {
     justify-content: center;
 
     position: relative;
+
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .services-visual::before {
@@ -402,8 +416,8 @@ a {
 
     position: absolute;
 
-    width: 480px;
-    height: 480px;
+    width: min(480px, 90vw);
+    height: min(480px, 90vw);
 
     border-radius: 50%;
 
@@ -863,10 +877,12 @@ a {
 
     .services-stats {
         justify-content: center;
+        width: 100%;
     }
 
     .services-visual {
         height: 450px;
+        width: 100%;
     }
 
     .featured-service {
@@ -886,6 +902,16 @@ a {
 
 @media (max-width: 768px) {
 
+    .services-page,
+    .services-hero,
+    .featured-service,
+    .process-cta,
+    .all-services-section,
+    .why-process-section {
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
     .services-logo img {
         width: 90px;
     }
@@ -895,72 +921,165 @@ a {
     }
 
     .services-talk-btn {
-        min-width: 115px;
+        min-width: 0;
         padding: 11px 17px;
         font-size: 13px;
     }
 
     .services-hero {
         margin-top: 0;
+        gap: 28px;
+    }
+
+    .services-content {
+        width: 100%;
+        max-width: 100%;
     }
 
     .services-content h1 {
-        font-size: 45px;
+        font-size: clamp(32px, 9vw, 45px);
         line-height: 1.1;
     }
 
     .services-content p {
         font-size: 15px;
+        max-width: 100%;
     }
 
     .services-buttons {
         flex-direction: column;
-        gap: 15px;
+        gap: 12px;
+        width: 100%;
+        margin-bottom: 28px;
     }
 
     .explore-btn,
     .started-btn {
-        width: 220px;
+        width: 100%;
+        min-width: 0;
     }
 
+    /* Compact 3-up stat cards — no horizontal spill */
     .services-stats {
-        gap: 15px;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .stat-item {
-        padding-right: 15px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+        padding: 14px 8px;
+        border-right: none;
+        border-radius: 14px;
+        background: rgba(93, 39, 166, 0.18);
+        border: 1px solid rgba(141, 74, 230, 0.24);
+        box-sizing: border-box;
+        min-width: 0;
+    }
+
+    .stat-item:hover {
+        transform: translateY(-3px);
+    }
+
+    .stat-icon {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        border-radius: 10px;
+        flex-shrink: 0;
+    }
+
+    .stat-info {
+        align-items: center;
+        gap: 2px;
+        min-width: 0;
+        width: 100%;
     }
 
     .stat-info strong {
-        font-size: 19px;
+        font-size: 18px;
+        line-height: 1.1;
+    }
+
+    .stat-info span {
+        font-size: 10px;
+        line-height: 1.25;
+        color: #b0aec0;
+        display: block;
+        max-width: 100%;
+        overflow-wrap: anywhere;
     }
 
     .services-visual {
-        height: 350px;
+        height: 300px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .services-visual img {
+        max-width: 100%;
+        height: auto;
     }
 
     .featured-service {
         grid-template-columns: 1fr;
-        padding: 25px 20px;
-        gap: 20px;
+        padding: 22px 18px;
+        gap: 18px;
+        width: var(--svc-rail);
+        max-width: 100%;
+    }
+
+    .featured-service::after {
+        display: none;
     }
 
     .featured-image {
-        height: 220px;
+        height: 200px;
         grid-row: auto;
+        max-width: 100%;
     }
 
     .featured-content h2 {
-        font-size: 28px;
+        font-size: clamp(22px, 7vw, 28px);
     }
 
     .featured-content h3 {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .featured-content p {
+        max-width: 100%;
     }
 
     .learn-more-btn {
         justify-self: stretch;
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .technology-list {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .cta-button {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .process-cta::after {
+        width: 55%;
+        opacity: 0.35;
     }
 
 }
@@ -969,7 +1088,7 @@ a {
 @media (max-width: 480px) {
 
     .services-content h1 {
-        font-size: 37px;
+        font-size: 34px;
     }
 
     .services-label {
@@ -977,21 +1096,34 @@ a {
     }
 
     .services-stats {
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
+        gap: 8px;
     }
 
     .stat-item {
-        border-right: none;
+        padding: 12px 6px;
+        border-radius: 12px;
+    }
+
+    .stat-icon {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+
+    .stat-info strong {
+        font-size: 16px;
+    }
+
+    .stat-info span {
+        font-size: 9px;
     }
 
     .services-visual {
-        height: 270px;
+        height: 240px;
     }
 
     .featured-image {
-        height: 180px;
+        height: 170px;
     }
 
     .technology-list {
@@ -1982,7 +2114,7 @@ a {
 
     bottom: -100px;
 
-    width: 500px;
+    width: min(500px, 70%);
 
     height: 230px;
 
@@ -1997,6 +2129,8 @@ a {
     transform: rotate(-12deg);
 
     opacity: .55;
+
+    pointer-events: none;
 
 }
 
@@ -2223,17 +2357,47 @@ a {
 
         padding: 0 0 var(--svc-section-y);
 
+        overflow-x: clip;
+
     }
 
     .why-cards {
 
         grid-template-columns: 1fr;
 
+        gap: 14px;
+
+    }
+
+    .why-card {
+
+        min-height: 0;
+
+        width: 100%;
+
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+    }
+
+    .why-card p {
+
+        max-width: 100%;
+
     }
 
     .process-steps {
 
         grid-template-columns: 1fr;
+
+        gap: 28px;
+
+    }
+
+    .process-step p {
+
+        max-width: 100%;
 
     }
 
@@ -2243,9 +2407,27 @@ a {
 
         align-items: flex-start;
 
-        gap: 25px;
+        gap: 20px;
 
-        padding: 25px;
+        padding: 22px 18px;
+
+        width: var(--svc-rail);
+
+        max-width: 100%;
+
+        box-sizing: border-box;
+
+    }
+
+    .cta-content h2 {
+
+        font-size: clamp(20px, 5.5vw, 26px);
+
+    }
+
+    .cta-content p {
+
+        font-size: 15px;
 
     }
 
@@ -2253,10 +2435,13 @@ a {
 
         width: 100%;
 
+        min-width: 0;
+
     }
 
     .services-footer {
         padding: 32px 0 calc(40px + env(safe-area-inset-bottom, 0px));
+        overflow-x: clip;
     }
 
     .services-footer .footer-top,
