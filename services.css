@@ -2140,6 +2140,88 @@ a {
 }
 
 
+/* =========================
+   FOOTER
+========================= */
+
+.services-footer {
+    position: relative;
+    z-index: 1;
+    background: #1B123A;
+    color: #fff;
+    padding: 48px 0 36px;
+    margin-top: 0;
+}
+
+.services-footer .container {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.services-footer .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 28px;
+}
+
+.services-footer .footer-logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.services-footer .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+.services-footer .social-links a {
+    color: #BFB8DD;
+    font-size: 14px;
+    transition: .3s;
+}
+
+.services-footer .social-links a:hover {
+    color: #fff;
+}
+
+.services-footer hr {
+    border: none;
+    height: 1px;
+    background: rgba(255, 255, 255, .1);
+    margin: 0 0 22px;
+}
+
+.services-footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.services-footer .footer-bottom p,
+.services-footer .footer-bottom a {
+    color: #A7A0C8;
+    font-size: 14px;
+    margin: 0;
+}
+
+.services-footer .footer-legal {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.services-footer .footer-bottom a:hover {
+    color: #fff;
+}
+
+
 /* =========================================
    RESPONSIVE
 ========================================= */
@@ -2207,6 +2289,28 @@ a {
 
         width: 100%;
 
+    }
+
+    .services-footer {
+        padding: 32px 0 calc(40px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .services-footer .footer-top,
+    .services-footer .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 14px;
+    }
+
+    .services-footer .social-links {
+        justify-content: flex-start;
+        gap: 12px 16px;
+    }
+
+    .services-footer .footer-bottom p,
+    .services-footer .footer-bottom a {
+        font-size: 12px;
     }
 
 }
