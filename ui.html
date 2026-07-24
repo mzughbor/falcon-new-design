@@ -26,7 +26,7 @@
 
 </head>
 
-<body class="page-web" id="top">
+<body class="page-web page-service" id="top" data-service-id="uiux">
 
     <!-- ================= NAVBAR (shared — same as home / about / services) ================= -->
     <div id="site-header">
@@ -71,7 +71,7 @@
 
                         <span>/</span>
 
-                        <strong>UI/UX Design</strong>
+                        <strong><span data-bind="title">UI/UX Design</span></strong>
 
                     </div>
 
@@ -83,7 +83,7 @@
 
                     </h1>
 
-                    <p>
+                    <p data-bind="description">
                         We create intuitive, engaging and beautiful designs that deliver real results
                     </p>
 
@@ -107,7 +107,7 @@
 
                 <div class="hero-image">
 
-                    <img src="images/UI:UX Design.png" alt="Dashboard">
+                    <img data-bind="hero-image" src="images/UI:UX Design.png" alt="Dashboard">
 
                 </div>
 
@@ -135,7 +135,7 @@
 
             </div>
 
-            <div class="services-grid">
+            <div class="services-grid" data-bind="features">
 
                 <!-- CARD 1 -->
 
@@ -382,7 +382,7 @@
 
                         <div class="cta-text">
 
-                            <h2 id="web-cta-heading">
+                            <h2 id="service-cta-heading" data-bind="slogan">
                                 Let's Design Your Next Big Idea
                             </h2>
 
@@ -397,7 +397,7 @@
 
                 </div>
                 <div class="cta-visual">
-                    <img src="images/UI:UX Design فوتر.png" alt="Improve Your Rankings">
+                    <img data-bind="cta-image" src="images/UI:UX Design فوتر.png" alt="Improve Your Rankings">
                 </div>
 
             </div>
@@ -499,8 +499,12 @@
         </nav>
     </div>
 
+    
     <script src="js/header.js"></script>
+    <script src="js/services-data.js"></script>
+    <script src="js/service-page.js"></script>
     <script>
+
         /* Page animations only — header / footer handled by header.js */
         const revealElements = document.querySelectorAll(
             ".hero-text, .hero-image, .service-card, .step, .tech-item"

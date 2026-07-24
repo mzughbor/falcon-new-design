@@ -6,6 +6,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--
+      SINGLE SERVICE PAGE TEMPLATE
+      ----------------------------
+      Duplicate this file per service (e.g. seo.html, ui.html).
+      Content source (EN): data/services-details.json
+      Content source (AR): data/services-details-ar.json  — wire after RTL
+
+      Set body[data-service-id] to a services-details.json "id", e.g.:
+        web-dev | ecommerce | mobile | uiux | social-media | content |
+        paid-ads | seo | auditing | financial-reporting | cost-accounting |
+        cashflow | legal-consulting | contract-drafting | compliance |
+        dispute-resolution
+
+      TEMPLATE fields below are marked with data-bind / comments.
+      JSON wiring (fetch local files instead of API) comes later.
+    -->
+
+    <!-- TEMPLATE: title from service.title -->
     <title>Web Development | Falcon Codes</title>
 
     <!-- Google Font -->
@@ -26,7 +44,8 @@
 
 </head>
 
-<body class="page-web page-service" id="top" data-service-id="seo">
+<!-- TEMPLATE: data-service-id = services-details.json → services[].id -->
+<body class="page-web page-service" id="top" data-service-id="web-dev" data-service-slug="service-web-dev">
 
     <!-- ================= NAVBAR (shared — same as home / about / services) ================= -->
     <div id="site-header">
@@ -71,23 +90,26 @@
 
                         <span>/</span>
 
-                        <strong><span data-bind="title">SEO Services</span></strong>
+                        <!-- TEMPLATE: service.title -->
+                        <strong data-bind="title">Web Development</strong>
 
                     </div>
 
-                    <h1>
+                    <!-- TEMPLATE: headline — use title / slogan as needed -->
+                    <h1 data-bind="headline">
 
-                        Rank Higher. Get
-                        Found.
+                        Build Fast, Secure &
 
-                        <span>Grow Faster.</span>
+                        <span>Scalable Websites</span>
 
                     </h1>
 
+                    <!-- TEMPLATE: service.description (short lede) -->
                     <p data-bind="description">
-                        We optimize your website to rank higher on Google and drive
-                        organic traffic, ensuring your business stays ahead of the
-                        competition.
+
+                        We specialize in creating custom web solutions that transform your business ideas
+                        into powerful digital experiences.
+
                     </p>
 
                     <div class="hero-buttons">
@@ -110,7 +132,8 @@
 
                 <div class="hero-image">
 
-                    <img data-bind="hero-image" src="images/SEO Services.png" alt="Dashboard">
+                    <!-- TEMPLATE: service.images[0] when assets are local -->
+                    <img src="images/ويب.png" alt="Web Development" data-bind="hero-image">
 
                 </div>
 
@@ -120,7 +143,7 @@
 
     </section>
 
-    <!-- ================= WHAT WE BUILD ================= -->
+    <!-- ================= WHAT WE BUILD (service.features) ================= -->
 
     <section class="services">
 
@@ -130,7 +153,7 @@
 
                 <h2>
 
-                    Our SEO Services
+                    What We Build
 
                 </h2>
 
@@ -140,99 +163,82 @@
 
             <div class="services-grid" data-bind="features">
 
-                <!-- CARD 1 -->
+                <!-- TEMPLATE: map each services-details.features[] item to a card -->
 
                 <div class="service-card">
 
                     <div class="icon">
 
-                        <img src="images/Technical SEO.png" alt=""></i>
+                        <i class="fa-brands fa-wordpress"></i>
 
                     </div>
 
-                    <h3>
-
-                        Technical SEO
-                    </h3>
+                    <h3>WordPress Development</h3>
 
                     <p>
 
-                        Improve website performance
-                        and core web vitals.
+                        Custom WordPress sites with easy content management
+                        and SEO-ready structure.
+
                     </p>
 
                 </div>
-
-                <!-- CARD 2 -->
 
                 <div class="service-card">
 
                     <div class="icon purple">
 
-                        <img src="images/On-Page SEO.png" alt="">
+                        <i class="fa-solid fa-code"></i>
 
                     </div>
 
-                    <h3>
-
-                        On-Page SEO
-
-                    </h3>
+                    <h3>Laravel Applications</h3>
 
                     <p>
-                        Optimize content structure
-                        and keyword density.
+
+                        Robust, scalable backend applications built
+                        with modern PHP frameworks.
 
                     </p>
 
                 </div>
-
-                <!-- CARD 3 -->
 
                 <div class="service-card">
 
                     <div class="icon blue">
-                        <img src="images/Off-Page SEO.png" alt="">
+
+                        <i class="fa-brands fa-react"></i>
 
                     </div>
 
-                    <h3>
-
-                        Off-Page SEO
-
-                    </h3>
+                    <h3>React Solutions</h3>
 
                     <p>
 
-                        Build authority with high-
-                        quality backlinks.
+                        Fast, interactive frontends and SPAs
+                        engineered for performance.
+
                     </p>
 
                 </div>
-
-                <!-- CARD 4 -->
 
                 <div class="service-card">
 
                     <div class="icon pink">
 
-                        <img src="images/Content SEO.png" alt="">
+                        <i class="fa-solid fa-rocket"></i>
 
                     </div>
 
-                    <h3>
-
-                        Content SEO
-
-                    </h3>
+                    <h3>Custom Web Apps</h3>
 
                     <p>
-                        High-quality & SEO friendly
-                        content creation.
+
+                        Tailored web applications designed around
+                        your business workflows.
+
                     </p>
 
-                </div>
-                
                 </div>
             </div>
 
@@ -242,6 +248,7 @@
 
     <!--=========================================
         DEVELOPMENT PROCESS
+        (shared chrome — keep or customize per service)
 ==========================================-->
 
     <section class="process">
@@ -250,7 +257,7 @@
 
             <div class="section-title">
 
-                <h2>Our SEO Process</h2>
+                <h2>Our Development Process</h2>
 
                 <div class="line"></div>
 
@@ -264,10 +271,9 @@
 
                     <div class="circle">01</div>
 
-                    <h4>Audit</h4>
+                    <h4>Discovery</h4>
 
-                    <p>Comprehensive website SEO
-                    audit.</p>
+                    <p>Understanding your business goals.</p>
 
                 </div>
 
@@ -275,9 +281,9 @@
 
                     <div class="circle">02</div>
 
-                    <h4>Strategy</h4>
+                    <h4>Planning</h4>
 
-                    <p>Custom SEO growth roadmap.</p>
+                    <p>Strategy, sitemap & wireframes.</p>
 
                 </div>
 
@@ -285,10 +291,9 @@
 
                     <div class="circle">03</div>
 
-                    <h4>Optimization</h4>
+                    <h4>Development</h4>
 
-                    <p>On-page & technical
-                    improvements.</p>
+                    <p>Clean code & modern technologies.</p>
 
                 </div>
 
@@ -296,9 +301,9 @@
 
                     <div class="circle">04</div>
 
-                    <h4>Link Building</h4>
+                    <h4>Testing</h4>
 
-                        <p>High-authority backlink outreach..</p>
+                    <p>Quality assurance & performance.</p>
 
                 </div>
 
@@ -306,9 +311,9 @@
 
                     <div class="circle">05</div>
 
-                    <h4>Reporting</h4>
+                    <h4>Launch</h4>
 
-                    <p>Detailed monthly performance stats.</p>
+                    <p>Deployment & ongoing support.</p>
 
                 </div>
 
@@ -319,62 +324,76 @@
     </section>
 
     <!--=========================================
-            TECHNOLOGIES
-    ==========================================-->
-    
+        TECHNOLOGIES
+        TEMPLATE: swap stack labels/icons per service as needed
+==========================================-->
+
     <section class="technologies">
-    
+
         <div class="container">
-    
+
             <div class="section-title">
-                <h2>Tools We Use</h2>
+
+                <h2>Technologies We Use</h2>
+
                 <div class="line"></div>
+
             </div>
-    
+
             <div class="tech-grid">
-    
+
                 <div class="tech-item">
-                    <img src="images/Search Console.png" alt="Search Console">
-                    <span>Search Console</span>
+                    <img src="images/كود.png" alt="">
+                    <span>HTML5</span>
                 </div>
-    
+
                 <div class="tech-item">
-                    <img src="images/Ahrefs.png" alt="Ahrefs">
-                    <span>Ahrefs</span>
+                    <img src="images/css.png" alt="">
+                    <span>CSS3</span>
                 </div>
-    
+
                 <div class="tech-item">
-                    <img src="images/SEMrush.png" alt="SEMrush">
-                    <span>SEMrush</span>
+                    <img src="images/javascript.png" alt="">
+                    <span>JavaScript</span>
                 </div>
-    
+
                 <div class="tech-item">
-                    <img src="images/Screaming Frog.png" alt="Screaming Frog">
-                    <span>Screaming Frog</span>
+                    <img src="images/reactt.png" alt="">
+                    <span>React</span>
                 </div>
-    
+
                 <div class="tech-item">
-                    <img src="images/Analytics.png" alt="Analytics">
-                    <span>Analytics</span>
+                    <img src="images/next.js.png" alt="">
+                    <span>Next.js</span>
                 </div>
-    
+
                 <div class="tech-item">
-                    <img src="images/Moz.png" alt="Moz">
-                    <span>Moz</span>
+                    <img src="images/nodejss.png" alt="">
+                    <span>Node.js</span>
                 </div>
-    
+
+                <div class="tech-item">
+                    <img src="images/php.png" alt="">
+                    <span>PHP</span>
+                </div>
+
+                <div class="tech-item">
+                    <img src="images/wordpress.png" alt="">
+                    <span>WordPress</span>
+                </div>
+
             </div>
-    
+
         </div>
-    
+
     </section>
 
     <!--======================
-                CTA + FOOTER (overlapping zone — same as home / about / services)
-        =======================-->
+            CTA + FOOTER
+    =======================-->
     <div class="footer-cta-zone">
 
-        <section class="cta" id="start" aria-labelledby="web-cta-heading">
+        <section class="cta" id="start" aria-labelledby="service-cta-heading">
 
             <div class="container">
 
@@ -388,12 +407,13 @@
 
                         <div class="cta-text">
 
+                            <!-- TEMPLATE: service.slogan -->
                             <h2 id="service-cta-heading" data-bind="slogan">
-                                Let's Design Your Next Big Idea
+                                Transforming ideas into powerful digital experiences
                             </h2>
 
                             <p>
-                                Great designs are just the start. Let's create something amazing together.
+                                Let's build something amazing together. From idea to online success, we're your partner in growth.
                             </p>
 
                         </div>
@@ -403,7 +423,7 @@
 
                 </div>
                 <div class="cta-visual">
-                    <img data-bind="cta-image" src="images/SEO Services فوتر.png" alt="Improve Your Rankings">
+                    <img data-bind="cta-image" src="images/Modern Solutions.png" alt="Modern Solutions">
                 </div>
 
             </div>
@@ -512,6 +532,7 @@
     <script>
 
         /* Page animations only — header / footer handled by header.js */
+        /* Page animations — data bind handled by service-page.js */
         const revealElements = document.querySelectorAll(
             ".hero-text, .hero-image, .service-card, .step, .tech-item"
         );

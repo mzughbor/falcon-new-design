@@ -26,7 +26,7 @@
 
 </head>
 
-<body class="page-web" id="top">
+<body class="page-web page-service" id="top" data-service-id="ecommerce">
 
     <!-- ================= NAVBAR (shared — same as home / about / services) ================= -->
     <div id="site-header">
@@ -71,7 +71,7 @@
 
                         <span>/</span>
 
-                        <strong>E-Commerce Solutions</strong>
+                        <strong><span data-bind="title">E-Commerce Solutions</span></strong>
 
                     </div>
 
@@ -83,7 +83,7 @@
 
                     </h1>
 
-                    <p>
+                    <p data-bind="description">
                         We build secure, scalable and high-converting online stores
                         for your business, optimized for the best shopping
                         experience.
@@ -109,7 +109,7 @@
 
                 <div class="hero-image">
 
-                    <img src="images/تجاره.png" alt="Dashboard">
+                    <img data-bind="hero-image" src="images/تجاره.png" alt="Dashboard">
 
                 </div>
 
@@ -137,7 +137,7 @@
 
             </div>
 
-            <div class="services-grid">
+            <div class="services-grid" data-bind="features">
 
                 <!-- CARD 1 -->
 
@@ -389,7 +389,7 @@
 
                         <div class="cta-text">
 
-                            <h2 id="web-cta-heading">
+                            <h2 id="service-cta-heading" data-bind="slogan">
                                 Let's Design Your Next Big Idea
                             </h2>
 
@@ -404,7 +404,7 @@
 
                 </div>
                 <div class="cta-visual">
-                    <img src="images/تجاره فوتر.png" alt="Improve Your Rankings">
+                    <img data-bind="cta-image" src="images/تجاره فوتر.png" alt="Improve Your Rankings">
                 </div>
 
             </div>
@@ -506,8 +506,12 @@
         </nav>
     </div>
 
+    
     <script src="js/header.js"></script>
+    <script src="js/services-data.js"></script>
+    <script src="js/service-page.js"></script>
     <script>
+
         /* Page animations only — header / footer handled by header.js */
         const revealElements = document.querySelectorAll(
             ".hero-text, .hero-image, .service-card, .step, .tech-item"

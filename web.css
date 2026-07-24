@@ -55,7 +55,7 @@ ul {
 
     width: 90%;
 
-    max-width: 1300px;
+    max-width: 1500px;
 
     margin: auto;
 
@@ -96,7 +96,7 @@ ul {
 
     width: 90%;
 
-    max-width: 1300px;
+    max-width: 1500px;
 
     margin: auto;
 
@@ -1333,8 +1333,8 @@ ul {
 ========================= */
 
 .ranking-cta {
-    width: calc(100% - 120px);
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1500px;
     min-height: 122px;
     margin: 0 auto 24px;
 

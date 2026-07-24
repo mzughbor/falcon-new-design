@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Web Development Services",
+      "image": "assets/services/programming-background-with-person-working-with-codes-computer.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mobile Apps Development",
+      "image": "assets/services/78898.png"
+    },
+    {
+      "id": 3,
+      "name": "Social Media Management",
+      "image": "assets/services/46984.jpg"
+    },
+    {
+      "id": 4,
+      "name": "UI/UX Design",
+      "image": "assets/services/78897.png"
+    },
+    {
+      "id": 5,
+      "name": "Digital Marketing Services",
+      "image": "assets/services/3d-renderin-young-man-with-megaphone-social-media-marketing.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Financial Reporting Services",
+      "image": "assets/services/people-working-table.jpg"
+    },
+    {
+      "id": 7,
+      "name": "E-commerce Solutions",
+      "image": "assets/services/tormarch9.jpg"
+    }
+  ]
+}
+

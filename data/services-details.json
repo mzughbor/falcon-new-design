@@ -1,0 +1,426 @@
+{
+  "services": [
+    {
+      "id": "web-dev",
+      "slug": "service-web-dev",
+      "category": "software-web-development",
+      "title": "Web Development",
+      "description": "We specialize in creating custom web solutions that transform your business ideas into powerful digital experiences. Our website design and development services include responsive design that works on all devices (mobile, tablet, computer), SEO optimization to improve site ranking, an easy-to-use control panel that allows the owner to manage content, and user interface design and experience (UI/UX) to make the site attractive and easy to use. Our team leverages cutting-edge technologies including WordPress, Laravel, and React to build scalable, high-performance websites and web applications. Whether you need a simple corporate website, a complex e-commerce platform, or a custom web application, we deliver solutions that are not only visually stunning but also optimized for speed, security, and user experience.",
+      "images": [
+        "images/ويب.png",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Design is an experience",
+          "description": "We specialize in creating custom web solutions that transform your business ideas into powerful digital experiences. Our team leverages cutting-edge technologies including WordPress, Laravel, and React to build scalable, high-performance websites and web applications. Whether you need a simple corporate website, a complex e-commerce platform, or a custom web application, we deliver solutions that are not only visually stunning but also optimized for speed, security, and user experience."
+        },
+        {
+          "title": "Technology & Innovation",
+          "description": "Our development process is collaborative and transparent, ensuring that your vision is realized at every step. We focus on clean code, responsive design, and seamless integration with third-party services to provide you with a complete digital solution that drives growth and engagement."
+        }
+      ],
+      "extraImages": [
+        "assets/services/ideas-innovation-graphic-inspiration-artistic-concept.jpg"
+      ],
+      "features": [
+        "WordPress Development",
+        "Laravel Applications",
+        "React Solutions",
+        "Custom Web Apps"
+      ],
+      "slogan": "Transforming ideas into powerful digital experiences"
+    },
+    {
+      "id": "ecommerce",
+      "slug": "service-ecommerce",
+      "category": "software-web-development",
+      "title": "E-commerce Solutions",
+      "description": "Transform your online business with our comprehensive e-commerce development services. We design and implement e-commerce stores with an easy-to-use shopping interface featuring product and category management, integration of electronic payment systems, inventory management and shopping cart functionality, an advanced store control panel, SEO optimization specifically designed for online stores, and integration with shipping and delivery services. We build robust online stores using platforms like WooCommerce, Shopify, and custom solutions tailored to your specific needs. We ensure your online store is optimized for conversions, mobile-responsive, and provides an exceptional shopping experience.",
+      "images": [
+        "assets/services/ecommerce.jpg",
+        "assets/services/upi-credit-cards-ecomm.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Complete E-commerce Solutions",
+          "description": "We build robust online stores using platforms like WooCommerce, Shopify, and custom solutions tailored to your specific needs. Our e-commerce solutions include secure payment gateways, inventory management systems, order tracking, and customer relationship management tools."
+        },
+        {
+          "title": "Optimized for Success",
+          "description": "We ensure your online store is optimized for conversions, mobile-responsive, and provides an exceptional shopping experience. From product catalog management to checkout optimization, we handle every aspect of your e-commerce platform."
+        }
+      ],
+      "extraImages": [
+        "assets/services/business-women-with-laptop-smartphone-mobile-coin-money-business-office-blurred-background.jpg"
+      ],
+      "features": [
+        "WooCommerce",
+        "Shopify",
+        "Payment Gateways",
+        "Inventory Management"
+      ],
+      "slogan": "Building online stores that drive sales and customer satisfaction"
+    },
+    {
+      "id": "mobile",
+      "slug": "service-mobile",
+      "category": "software-web-development",
+      "title": "Mobile Apps Development",
+      "description": "Bring your business to the palm of your customers' hands with our expert mobile app development services. We design applications (mirror/Native) programming for Android and iOS, featuring a professional UI/UX that is consistent with the brand identity, integration of phone features (camera, location, notifications), electronic payment capabilities, a control panel (administration portal) for controlling application content, and testing on different devices before launch. We create native and cross-platform mobile applications using Kotlin, Swift, Flutter, and React Native. Our mobile apps are designed with user experience at the forefront, ensuring intuitive navigation, fast performance, and beautiful interfaces.",
+      "images": [
+        "assets/services/mobile-phone-background-images.jpg",
+        "assets/services/78898.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Native & Cross-Platform",
+          "description": "We create native and cross-platform mobile applications using Kotlin, Swift, Flutter, and React Native. Our mobile apps are designed with user experience at the forefront, ensuring intuitive navigation, fast performance, and beautiful interfaces."
+        },
+        {
+          "title": "From Concept to Deployment",
+          "description": "We guide you through every stage of the development process, including testing, optimization, and ongoing support. Our mobile solutions help you connect with your audience, increase engagement, and drive business growth through innovative mobile experiences."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "iOS Development",
+        "Android Development",
+        "Flutter Apps",
+        "React Native"
+      ],
+      "slogan": "Bringing your business to the palm of your customers' hands"
+    },
+    {
+      "id": "uiux",
+      "slug": "service-uiux",
+      "category": "software-web-development",
+      "title": "UI/UX Design",
+      "description": "Create exceptional user experiences with our comprehensive UI/UX design services. We combine creativity with user-centered design principles to craft interfaces that are not only visually appealing but also intuitive and functional. Our design process begins with thorough research and user analysis to understand your target audience and their needs. We then create wireframes, prototypes, and high-fidelity designs that guide users seamlessly through your digital products. Our team specializes in creating consistent design systems, responsive layouts, and accessible interfaces that work across all devices and platforms. We focus on usability, accessibility, and conversion optimization to ensure your designs not only look great but also drive results. From initial concept to final implementation, we work closely with you to ensure every pixel serves a purpose and every interaction enhances the user experience.",
+      "images": [
+        "images/UI:UX Design.png",
+        "images/UI:UX Design فوتر.png"
+      ],
+      "extraContent": [
+        {
+          "title": "User-Centered Design",
+          "description": "We combine creativity with user-centered design principles to craft interfaces that are not only visually appealing but also intuitive and functional. Our design process begins with thorough research and user analysis to understand your target audience and their needs."
+        },
+        {
+          "title": "Design Systems & Prototypes",
+          "description": "We create wireframes, prototypes, and high-fidelity designs that guide users seamlessly through your digital products. Our team specializes in creating consistent design systems, responsive layouts, and accessible interfaces that work across all devices and platforms."
+        }
+      ],
+      "extraImages": [
+        "assets/new/a35907111367551.60006ba887164.png"
+      ],
+      "features": [
+        "Wireframing",
+        "Prototyping",
+        "Design Systems",
+        "Responsive Design"
+      ],
+      "slogan": "Every pixel serves a purpose, every interaction enhances the experience"
+    },
+    {
+      "id": "social-media",
+      "slug": "service-social-media",
+      "category": "digital-solutions",
+      "title": "Social Media Management",
+      "description": "Elevate your brand's online presence with our comprehensive social media management services. We provide daily management through posting content and responding to comments and messages, publishing strategy through planning weekly/monthly content according to the characteristics of each platform and its audience, and performance analysis through monitoring interaction and growth rates to improve the strategy. We develop and execute strategic social media campaigns that engage your audience, build brand awareness, and drive conversions. We are creating an interactive digital community for you. We turn your followers into loyal customers.",
+      "images": [
+        "assets/services/pile-popular-social-media-logos.jpg",
+        "assets/new/Untitled-Instagram-Post.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Strategic Campaigns",
+          "description": "We develop and execute strategic social media campaigns that engage your audience, build brand awareness, and drive conversions. Our team creates compelling content, manages your social media accounts, and monitors engagement to ensure your brand stays relevant and connected with your target audience."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Content Strategy",
+        "Community Management",
+        "Social Advertising",
+        "Analytics & Reporting"
+      ],
+      "slogan": "Elevating your brand's online presence with strategic social media"
+    },
+    {
+      "id": "content",
+      "slug": "service-content",
+      "category": "digital-solutions",
+      "title": "Content Creation",
+      "description": "Tell your brand's story with our professional content creation services. We produce high-quality content including copywriting, graphic design, and video production that resonates with your audience and drives engagement. Our content creators are skilled in crafting compelling narratives, designing eye-catching visuals, and producing professional videos that capture attention and communicate your message effectively. Whether you need blog posts, social media content, marketing materials, or video content, we deliver creative solutions that align with your brand voice and marketing objectives. We understand that great content is more than just words and images—it's about creating meaningful connections with your audience. Our team works closely with you to understand your brand, your goals, and your audience, ensuring that every piece of content we create serves a purpose and delivers value.",
+      "images": [
+        "assets/services/close-up-man-hand-holding-tablet-with-group-businesspeople-with-creative-smartphone-hologram-blue-red-hearts-blue-background-social-media-likes-digital-marketing-concept.jpg",
+        "assets/profile/seo-content.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Professional Content Production",
+          "description": "We produce high-quality content including copywriting, graphic design, and video production that resonates with your audience and drives engagement. Our content creators are skilled in crafting compelling narratives, designing eye-catching visuals, and producing professional videos that capture attention and communicate your message effectively."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Copywriting",
+        "Graphic Design",
+        "Video Production",
+        "Brand Storytelling"
+      ],
+      "slogan": "Creating meaningful connections through compelling content"
+    },
+    {
+      "id": "paid-ads",
+      "slug": "service-paid-ads",
+      "category": "digital-solutions",
+      "title": "Paid Advertising",
+      "description": "Maximize your return on investment with our strategic paid advertising services. We create and manage targeted advertising campaigns on Facebook, Instagram, Google, and TikTok to reach your ideal customers and drive conversions. Our team specializes in campaign strategy, ad creation, audience targeting, bid management, and performance optimization. We use data-driven approaches to identify the best opportunities, optimize ad spend, and continuously improve campaign performance. From keyword research to ad copywriting, from audience segmentation to conversion tracking, we handle every aspect of your paid advertising campaigns. Our goal is to help you achieve the best possible results while staying within your budget. We provide detailed reporting and insights to help you understand what's working and what can be improved, ensuring that your advertising investment delivers measurable results.",
+      "images": [
+        "assets/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg",
+        "assets/new/facebook.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Data-Driven Campaigns",
+          "description": "We create and manage targeted advertising campaigns on Facebook, Instagram, Google, and TikTok to reach your ideal customers and drive conversions. Our team specializes in campaign strategy, ad creation, audience targeting, bid management, and performance optimization."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Facebook Ads",
+        "Instagram Ads",
+        "Google Ads",
+        "TikTok Advertising"
+      ],
+      "slogan": "Maximizing ROI through strategic paid advertising"
+    },
+    {
+      "id": "seo",
+      "slug": "service-seo",
+      "category": "digital-solutions",
+      "title": "SEO Services",
+      "description": "Improve your online visibility and drive organic traffic with our comprehensive SEO services. We implement proven strategies for search engine optimization that help your website rank higher in search results and attract qualified visitors. Our SEO approach includes technical optimization, on-page SEO, content optimization, link building, and local SEO strategies. We conduct thorough keyword research, analyze your competition, and develop customized SEO strategies that align with your business goals. Our team stays updated with the latest search engine algorithms and best practices to ensure your website remains optimized and competitive. We provide regular reporting and insights to track your progress and identify opportunities for improvement. Our goal is to help you achieve long-term, sustainable growth in organic search traffic, which translates to increased brand awareness, more qualified leads, and higher conversion rates.",
+      "images": [
+        "images/SEO Services.png",
+        "images/SEO Services فوتر.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Comprehensive SEO Strategy",
+          "description": "We implement proven strategies for search engine optimization that help your website rank higher in search results and attract qualified visitors. Our SEO approach includes technical optimization, on-page SEO, content optimization, link building, and local SEO strategies."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Technical SEO",
+        "On-Page Optimization",
+        "Link Building",
+        "Local SEO"
+      ],
+      "slogan": "Driving organic traffic and sustainable growth"
+    },
+    {
+      "id": "auditing",
+      "slug": "service-auditing",
+      "category": "financial-accounting",
+      "title": "Auditing",
+      "description": "Ensure financial accuracy and regulatory compliance with our comprehensive auditing services. We provide both external and internal financial auditing that helps organizations maintain transparency, identify risks, and improve financial processes. Our auditing team follows international standards and best practices to deliver thorough, objective assessments of your financial records, internal controls, and compliance with applicable regulations. We work closely with your team to understand your business operations, identify areas for improvement, and provide actionable recommendations. Our audit reports are detailed, clear, and designed to help you make informed decisions about your financial management. Whether you need annual audits, internal audits, or specialized compliance audits, we deliver services that meet the highest professional standards and help you build trust with stakeholders.",
+      "images": [
+        "assets/services/business-man-working-office-2desktop.jpg",
+        "assets/profile/scale_1200.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Comprehensive Auditing Services",
+          "description": "We provide both external and internal financial auditing that helps organizations maintain transparency, identify risks, and improve financial processes. Our auditing team follows international standards and best practices to deliver thorough, objective assessments of your financial records, internal controls, and compliance with applicable regulations."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "External Auditing",
+        "Internal Auditing",
+        "Compliance Audits",
+        "Risk Assessment"
+      ],
+      "slogan": "Ensuring financial accuracy and regulatory compliance"
+    },
+    {
+      "id": "financial-reporting",
+      "slug": "service-financial-reporting",
+      "category": "financial-accounting",
+      "title": "Financial Reporting",
+      "description": "Transform complex financial data into clear, actionable insights with our professional financial reporting services. We prepare comprehensive financial statements including income statements, balance sheets, and cash flow reports that comply with accounting standards and provide a clear picture of your financial health. Our team ensures accuracy, timeliness, and compliance with all relevant regulations. We help you understand your financial performance, identify trends, and make data-driven decisions. Our financial reports are designed to be accessible to both financial professionals and stakeholders, providing the information you need to manage your business effectively. From monthly financial statements to annual reports, we deliver high-quality financial reporting that supports your business objectives and regulatory requirements.",
+      "images": [
+        "assets/services/money-around-world.jpg",
+        "assets/profile/programmaturas_licencesanas-pakalpojumi_2x.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Comprehensive Financial Statements",
+          "description": "We prepare comprehensive financial statements including income statements, balance sheets, and cash flow reports that comply with accounting standards and provide a clear picture of your financial health. Our team ensures accuracy, timeliness, and compliance with all relevant regulations."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Income Statements",
+        "Balance Sheets",
+        "Cash Flow Reports",
+        "Monthly & Annual Reports"
+      ],
+      "slogan": "Transforming financial data into actionable insights"
+    },
+    {
+      "id": "cost-accounting",
+      "slug": "service-cost-accounting",
+      "category": "financial-accounting",
+      "title": "Cost Accounting",
+      "description": "Optimize your business profitability with our expert cost accounting services. We provide comprehensive cost tracking, pricing analysis, and profitability management that helps you understand the true cost of your products and services. Our cost accounting services include activity-based costing, job costing, process costing, and standard costing to give you accurate insights into your cost structure. We help you identify cost drivers, analyze profitability by product or service line, and develop pricing strategies that maximize your margins. Our team works with you to implement cost control measures, improve operational efficiency, and make informed decisions about resource allocation. Whether you're looking to reduce costs, improve pricing, or understand profitability, our cost accounting services provide the financial intelligence you need to drive business growth.",
+      "images": [
+        "assets/services/cropped-image-businessman-using-laptop-desk.jpg",
+        "assets/profile/screen-shot-2017-11-27-at-10-30-17-pm.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Profitability Optimization",
+          "description": "We provide comprehensive cost tracking, pricing analysis, and profitability management that helps you understand the true cost of your products and services. Our cost accounting services include activity-based costing, job costing, process costing, and standard costing to give you accurate insights into your cost structure."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Cost Tracking",
+        "Pricing Analysis",
+        "Profitability Management",
+        "Resource Allocation"
+      ],
+      "slogan": "Optimizing profitability through expert cost accounting"
+    },
+    {
+      "id": "cashflow",
+      "slug": "service-cashflow",
+      "category": "financial-accounting",
+      "title": "Cash Flow & Budgeting",
+      "description": "Maintain healthy cash flow and achieve your financial goals with our strategic cash flow and budgeting services. We provide comprehensive financial forecasting and strategic budget planning that helps you manage your finances effectively and plan for the future. Our services include cash flow analysis, budget preparation, variance analysis, and financial forecasting to help you anticipate financial needs and make proactive decisions. We work with you to develop realistic budgets, monitor performance against targets, and adjust plans as needed. Our cash flow management services help you optimize working capital, manage receivables and payables, and ensure you have the liquidity you need to operate and grow. Whether you're planning for short-term cash needs or long-term financial goals, our services provide the financial planning and analysis you need to succeed.",
+      "images": [
+        "assets/services/business-man-working-office-desktop.jpg",
+        "assets/profile/497d232590e203ba033c3943332ec650.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Strategic Financial Planning",
+          "description": "We provide comprehensive financial forecasting and strategic budget planning that helps you manage your finances effectively and plan for the future. Our services include cash flow analysis, budget preparation, variance analysis, and financial forecasting to help you anticipate financial needs and make proactive decisions."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Cash Flow Analysis",
+        "Budget Planning",
+        "Variance Analysis",
+        "Financial Forecasting"
+      ],
+      "slogan": "Maintaining healthy cash flow for sustainable growth"
+    },
+    {
+      "id": "legal-consulting",
+      "slug": "service-legal-consulting",
+      "category": "legal-services",
+      "title": "Legal Consulting",
+      "description": "Navigate complex legal challenges with confidence through our expert legal consulting services. We provide comprehensive legal analysis, risk assessment, and advisory services that help you make informed decisions and protect your business interests. Our legal consultants bring deep expertise across various areas of law, including corporate law, contract law, employment law, intellectual property, and regulatory compliance. We work closely with you to understand your business needs, identify legal risks, and develop strategies to mitigate those risks. Our consulting services include legal research, opinion writing, risk assessment, and strategic legal planning. Whether you're facing a specific legal issue, need ongoing legal support, or want to ensure compliance with regulations, our legal consulting services provide the expertise and guidance you need to protect your business and achieve your objectives.",
+      "images": [
+        "assets/services/golden-scales-justice-gavel-books-grey-background.jpg",
+        "assets/services/golden-scales-justice-gavel-books-isolated-white.jpg"
+      ],
+      "extraContent": [
+        {
+          "title": "Expert Legal Analysis",
+          "description": "We provide comprehensive legal analysis, risk assessment, and advisory services that help you make informed decisions and protect your business interests. Our legal consultants bring deep expertise across various areas of law, including corporate law, contract law, employment law, intellectual property, and regulatory compliance."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Legal Research",
+        "Risk Assessment",
+        "Strategic Planning",
+        "Compliance Advisory"
+      ],
+      "slogan": "Navigating legal challenges with expert guidance"
+    },
+    {
+      "id": "contract-drafting",
+      "slug": "service-contract-drafting",
+      "category": "legal-services",
+      "title": "Contract Drafting",
+      "description": "Protect your business interests with precise, comprehensive contract drafting and review services. We draft and review all types of legal agreements including employment contracts, service agreements, partnership agreements, vendor contracts, and commercial leases. Our contract drafting services ensure that your agreements are clear, legally sound, and protect your interests while minimizing risk. We work with you to understand your business needs, identify key terms and conditions, and draft contracts that reflect your objectives. Our contract review services help you understand existing contracts, identify potential issues, and negotiate favorable terms. Whether you're entering into a new business relationship, renewing an existing agreement, or need to modify a contract, our services ensure that your legal documents are well-drafted and serve your business interests effectively.",
+      "images": [
+        "assets/services/photo-realistic-certificate-handshake-symbolizing-formal-thanks-with-space-text-adobe-sto.jpg",
+        "assets/profile/173784-OX86Z9.jpg"
+      ],
+      "extraContent": [
+        {
+          "title": "Precise Contract Services",
+          "description": "We draft and review all types of legal agreements including employment contracts, service agreements, partnership agreements, vendor contracts, and commercial leases. Our contract drafting services ensure that your agreements are clear, legally sound, and protect your interests while minimizing risk."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Contract Drafting",
+        "Contract Review",
+        "Legal Agreements",
+        "Risk Mitigation"
+      ],
+      "slogan": "Protecting your business interests with precise legal documents"
+    },
+    {
+      "id": "compliance",
+      "slug": "service-compliance",
+      "category": "legal-services",
+      "title": "Compliance",
+      "description": "Ensure your business meets all regulatory requirements with our comprehensive compliance services. We help organizations navigate complex regulatory landscapes and ensure adherence to local and international regulations across various industries. Our compliance services include regulatory analysis, compliance assessments, policy development, training, and ongoing monitoring to help you maintain compliance and avoid costly penalties. We work with you to understand applicable regulations, identify compliance gaps, and develop strategies to address those gaps. Our team stays updated with regulatory changes and helps you adapt your practices accordingly. Whether you need help with industry-specific regulations, data protection compliance, employment law compliance, or general business regulations, our services provide the expertise and support you need to maintain compliance and protect your business.",
+      "images": [
+        "assets/services/people-working-table.jpg",
+        "assets/profile/9b3a8945a2ca4541d322044fa7ff2bbd.png"
+      ],
+      "extraContent": [
+        {
+          "title": "Regulatory Compliance",
+          "description": "We help organizations navigate complex regulatory landscapes and ensure adherence to local and international regulations across various industries. Our compliance services include regulatory analysis, compliance assessments, policy development, training, and ongoing monitoring to help you maintain compliance and avoid costly penalties."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Regulatory Analysis",
+        "Compliance Assessments",
+        "Policy Development",
+        "Ongoing Monitoring"
+      ],
+      "slogan": "Ensuring regulatory compliance across all industries"
+    },
+    {
+      "id": "dispute-resolution",
+      "slug": "service-dispute-resolution",
+      "category": "legal-services",
+      "title": "Dispute Resolution",
+      "description": "Resolve business disputes efficiently and effectively with our professional dispute resolution services. We provide representation in litigations and settlement negotiations, helping you achieve favorable outcomes while minimizing costs and business disruption. Our dispute resolution services include negotiation, mediation, arbitration, and litigation support across various types of business disputes including contract disputes, employment disputes, commercial disputes, and regulatory matters. We work with you to understand your objectives, assess your position, and develop strategies to resolve disputes in your favor. Our team has extensive experience in dispute resolution and understands the importance of protecting your business interests while seeking practical solutions. Whether you're facing a potential dispute, need to resolve an existing conflict, or want to prevent future disputes, our services provide the legal expertise and strategic guidance you need to protect your business and achieve resolution.",
+      "images": [
+        "assets/services/business-man-working-office-desktop.jpg",
+        "assets/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg"
+      ],
+      "extraContent": [
+        {
+          "title": "Professional Dispute Resolution",
+          "description": "We provide representation in litigations and settlement negotiations, helping you achieve favorable outcomes while minimizing costs and business disruption. Our dispute resolution services include negotiation, mediation, arbitration, and litigation support across various types of business disputes including contract disputes, employment disputes, commercial disputes, and regulatory matters."
+        }
+      ],
+      "extraImages": [],
+      "features": [
+        "Negotiation",
+        "Mediation",
+        "Arbitration",
+        "Litigation Support"
+      ],
+      "slogan": "Resolving disputes efficiently while protecting your business"
+    }
+  ]
+}

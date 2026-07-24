@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "خدمات تطوير المواقع",
+      "image": "assets/services/programming-background-with-person-working-with-codes-computer.jpg"
+    },
+    {
+      "id": 2,
+      "name": "تطوير تطبيقات الموبايل",
+      "image": "assets/services/78898.png"
+    },
+    {
+      "id": 3,
+      "name": "إدارة منصات التواصل الاجتماعي",
+      "image": "assets/services/46984.jpg"
+    },
+    {
+      "id": 4,
+      "name": "تصميم واجهة المستخدم وتجربته",
+      "image": "assets/services/78897.png"
+    },
+    {
+      "id": 5,
+      "name": "خدمات التسويق الإلكتروني",
+      "image": "assets/services/3d-renderin-young-man-with-megaphone-social-media-marketing.jpg"
+    },
+    {
+      "id": 6,
+      "name": "خدمات التقارير المالية",
+      "image": "assets/services/people-working-table.jpg"
+    },
+    {
+      "id": 7,
+      "name": "حلول التجارة الإلكترونية",
+      "image": "assets/services/tormarch9.jpg"
+    }
+  ]
+}
+

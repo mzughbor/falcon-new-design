@@ -1,0 +1,45 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "profile": "Profile",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "intro": {
+    "text": "An <span>Independent</span> Digital Transformation studio. <br>\nBased in Kuwait. We combine Identity, Digital Design, and Software\nDevelopment—specializing\nin high-end printing. Like a falcon, we merge strategic foresight with swift execution\nto\ntransform abstract ideas into functional, beautiful platforms that speak the language of\nprogress.\nAt Falcon of Code, we don't just build products; we engineer the bridge to your future,\nturning every digital challenge into an exceptional opportunity."
+  },
+  "sections": {
+    "aboutUs": "About us page",
+    "services": "Services",
+    "aiSolutions": "AI solutions",
+    "profile": "Profile Page",
+    "partners": "Our Partners",
+    "contactUs": "Contact Us"
+  },
+  "mission": {
+    "vision": {
+      "title": "Our Vision",
+      "text": "We create your digital future with superior elegance. We don't build ordinary websites; we create luxurious digital experiences. Your technology partner for building scalable digital solutions. Integrated digital solutions from imagination to reality."
+    },
+    "values": {
+      "title": "Our Values",
+      "text": "Our strength lies in the perfect marriage of strategic foresight and surgical execution, believing that functional beauty and data-driven security are the ultimate measures of success."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text": "We engineer scalable digital platforms that translate abstract ideas into tangible success stories, ensuring every solution speaks the language of progress and professional excellence."
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Trusted by leading organizations"
+  },
+  "contact": {
+    "subject": "Subject",
+    "message": "Your Message",
+    "send": "Send Message"
+  }
+}
+
