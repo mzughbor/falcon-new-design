@@ -6,7 +6,7 @@
 (function (global) {
     const DATA_URL = "data/services-details.json";
 
-    /** Dedicated HTML pages for known services; others use the template. */
+    /** @deprecated Dedicated clones still exist; list + shared href always use the template. */
     const SERVICE_PAGES = {
         "web-dev": "web.html",
         seo: "seo.html",
@@ -49,8 +49,7 @@
     }
 
     function getServicePageHref(service) {
-        if (!service) return "services.html";
-        if (SERVICE_PAGES[service.id]) return SERVICE_PAGES[service.id];
+        if (!service || !service.id) return "services.html";
         return `service-template.html?id=${encodeURIComponent(service.id)}`;
     }
 
