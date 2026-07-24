@@ -1,480 +1,967 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Us — Falcon of Codes</title>
-    <meta name="description"
-        content="Falcon of Codes is a digital solutions company helping businesses turn ideas into powerful digital products through design, development, and strategy." />
-    <meta name="theme-color" content="#9354B7" />
-    <link rel="canonical" href="https://falcon.codes/about" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet" />
-    <link rel="icon" type="image/svg+xml" href="./images/falcon logo.svg" />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Falcon Of Codes</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
-<body class="page-about">
-    <main id="top">
-        <div class="about-hero-backdrop" aria-hidden="true"></div>
+<body class="page-about" id="top">
 
-        <div id="site-header">
-            <header class="header">
-                <nav class="nav">
-                    <a class="nav-logo" href="index.html" aria-label="Falcon of Codes — Home">
-                        <img src="./images/falcon logo.svg" alt="Falcon of Codes — website builder and managed hosting"
-                            width="160" height="54" />
-                    </a>
-                    <div class="nav-links">
-                        <a href="index.html" data-nav="home">Home</a>
-                        <a href="services.html" data-nav="services">Services</a>
-                        <a href="about.html" class="is-active" data-nav="about">About</a>
-                        <a href="index.html#themes" data-nav="portfolio">Portfolio</a>
-                        <a href="contact.html" data-nav="contact">Contact</a>
-                    </div>
-                    <a class="btn btn-nav" href="contact.html">Let's Talk</a>
-                    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-                        <span></span><span></span><span></span>
-                    </button>
-                </nav>
-            </header>
-        </div>
-
-        <!-- About Hero -->
-        <section class="about-hero" aria-labelledby="about-hero-heading">
-            <div class="about-hero-inner">
-                <div class="about-hero-frame">
-                    <div class="about-hero-content">
-                <p class="about-hero-eyebrow">— ABOUT FALCON CODES</p>
-                <h1 id="about-hero-heading">
-                    Building Digital Solutions With <span class="text-accent">Purpose.</span>
-                </h1>
-                <p class="about-hero-lede">
-                    We're a team of thinkers, designers, and developers helping businesses turn ideas into
-                    powerful digital products.
-                </p>
-                <div class="about-hero-actions">
-                    <a class="btn btn-primary btn-lg" href="#journey">
-                        Our Journey
-                        <span class="btn-icon" aria-hidden="true">→</span>
-                    </a>
-                    <a class="btn btn-outline btn-lg about-btn-light" href="index.html#themes">
-                        <span class="play-icon play-icon-light" aria-hidden="true">▶</span>
-                        See Our Work
-                    </a>
+    <!-- ================= NAVBAR (same shared header as home / contact) ================= -->
+    <div id="site-header">
+        <header class="site-header">
+            <nav class="nav" aria-label="Primary">
+                <a class="nav-logo" href="index.html" aria-label="Falcon of Codes — Home">
+                    <img src="images/falcon logo.svg" alt="Falcon of Codes — website builder and managed hosting"
+                        width="160" height="54" />
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" data-nav="home">Home</a>
+                    <a href="web.html" data-nav="services">Services</a>
+                    <a href="about.html" data-nav="about" class="is-active">About</a>
+                    <a href="index.html#projects" data-nav="portfolio">Portfolio</a>
+                    <a href="contact.html" data-nav="contact">Contact</a>
                 </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                <a class="btn btn-nav" href="contact.html">Let's Talk</a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </header>
+    </div>
 
-        <!-- Who We Are -->
-        <section id="journey" class="section about-who" aria-labelledby="who-heading">
-            <div class="container about-grid">
-                <div class="about-content">
-                    <span class="kicker">WHO WE ARE</span>
-                    <h2 id="who-heading">
-                        More Than Developers.<br />
-                        We Build <span class="text-purple">Digital Success.</span>
-                    </h2>
+    <section class="about-hero">
+
+
+        <div class="overlay"></div>
+
+        <img src="images/Hero section.png" class="bg-img" alt="About Falcon Codes">
+
+        <div class="container">
+
+            <div class="hero-content1">
+
+                <span class="section-title">
+                    <span></span>
+                    ABOUT FALCON CODES
+                </span>
+
+                <div>
+                    <h1>
+                        Building Digital <br>
+                        Solutions With <br>
+                        <span>Purpose.</span>
+                    </h1>
+
                     <p>
-                        Falcon of Codes is a digital solutions company dedicated to helping businesses grow through
-                        innovative technology, user-centered design, and scalable development. By combining creativity,
-                        strategic thinking, and technical expertise, we build digital experiences that solve real
-                        business challenges, deliver measurable results, and create lasting value for our clients.
+                        We're a team of thinkers, designers, and developers helping
+                        businesses turn ideas into powerful digital products.
                     </p>
                 </div>
-                <div class="about-visual">
-                    <div class="about-deco about-deco-square"></div>
-                    <div class="about-deco about-deco-dots"></div>
-                    <div class="about-image about-image-glow">
-                        <img src="./images/team.png"
-                            alt="Falcon of Codes team collaborating in the office" loading="lazy" width="560"
-                            height="420" />
-                    </div>
-                    <div class="about-float-card" aria-hidden="true">
-                        <span class="about-float-label">Client Growth</span>
-                        <strong class="about-float-value">+68%</strong>
-                        <span class="about-float-meta">Year over year</span>
-                    </div>
+
+                <div class="hero-buttons">
+
+                    <a href="#journey" class="btn-primary1">
+                        Our Journey
+                        <i class="fa-solid fa-circle-arrow-right"></i>
+                    </a>
+
+                    <a href="index.html#projects" class="btn-secondary1">
+                        See Our Work
+                        <i class="fa-solid fa-play"></i>
+                    </a>
+
                 </div>
+
             </div>
-        </section>
 
-        <!-- Core Values -->
-        <section class="section about-values" aria-labelledby="values-heading">
-            <div class="container">
-                <div class="about-values-head">
-                    <span class="kicker">OUR CORE VALUES</span>
-                    <h2 id="values-heading">
-                        Building Digital Success <span class="text-purple">Beyond Code.</span>
-                    </h2>
-                </div>
+        </div>
 
-                <div class="values-grid">
-                    <article class="value-card">
-                        <div class="value-icon">
-                            <img src="./images/Innovation.png" alt="" width="28" height="28" />
-                        </div>
-                        <span class="value-num">01</span>
-                        <h3>Innovation</h3>
-                        <p>We embrace new ideas and technologies to create better solutions.</p>
-                    </article>
+    </section>
+    <section class="about" id="journey">
 
-                    <article class="value-card">
-                        <div class="value-icon">
-                            <img src="./images/precision.png" alt="" width="28" height="28" />
-                        </div>
-                        <span class="value-num">02</span>
-                        <h3>Precision</h3>
-                        <p>We pay attention to every detail to deliver high-quality results.</p>
-                    </article>
+        <div class="container about-container1">
 
-                    <article class="value-card">
-                        <div class="value-icon">
-                            <img src="./images/partenership.png" alt="" width="28" height="28" />
-                        </div>
-                        <span class="value-num">03</span>
-                        <h3>Partnership</h3>
-                        <p>We work as an extension of your team, not just a service provider.</p>
-                    </article>
+            <!-- Left -->
 
-                    <article class="value-card">
-                        <div class="value-icon">
-                            <img src="./images/Growth.png" alt="" width="28" height="28" />
-                        </div>
-                        <span class="value-num">04</span>
-                        <h3>Growth</h3>
-                        <p>We focus on long-term growth, not just short-term wins.</p>
-                    </article>
+            <div class="about-content1">
 
-                    <article class="value-card">
-                        <div class="value-icon">
-                            <img src="./images/Creativity.png" alt="" width="28" height="28" />
-                        </div>
-                        <span class="value-num">05</span>
-                        <h3>Creativity</h3>
-                        <p>We design experiences that are beautiful, engaging, and effective.</p>
-                    </article>
+                <span class="about-tag1">
+                    WHO WE ARE
+                </span>
 
-                    <article class="value-card">
-                        <div class="value-icon">
-                            <img src="./images/trust.png" alt="" width="28" height="28" />
-                        </div>
-                        <span class="value-num">06</span>
-                        <h3>Trust</h3>
-                        <p>We build trust through transparency, honesty, and results.</p>
-                    </article>
-                </div>
+                <h2>
+                    More Than Developers.
+
+
+                    <br>
+
+                    WeBuild
+
+                    <span>Digital Success.</span>
+
+                </h2>
+
+                <p>
+
+                    Falcon Codes is a digital solutions company dedicated to helping businesses grow through innovative
+                    technology,
+                    user-centered design, and scalable development. By combining creativity, strategic thinking, and
+                    technical expertise, we
+                    build digital experiences that solve real business challenges, deliver measurable results, and
+                    create lasting value for
+                    our clients.
+
+                </p>
+
+
+
             </div>
-        </section>
 
-        <!-- Our Process -->
-        <section class="section about-process" aria-labelledby="process-heading">
-            <div class="container">
-                <div class="process-panel">
-                    <div class="process-head">
-                        <span class="kicker kicker-light">OUR PROCESS</span>
-                        <h2 id="process-heading">From Idea To Online Success.</h2>
+            <!-- Right -->
+
+            <div class="about-image1">
+
+                <div class="shape"></div>
+
+                <img src="images/about.png" alt="about">
+
+                <div class="dots"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="core-values">
+        <div class="container">
+
+            <span class="section-subtitle">OUR CORE VALUES</span>
+
+            <h2 class="section-title2">
+                Building Digital Success
+                <span>Beyond Code.</span>
+            </h2>
+
+            <div class="values-grid">
+
+                <div class="value-card">
+                    <div class="icon-box1">
+                        <img src="images/innovation.png" alt="Innovation">
                     </div>
 
-                    <div class="process-timeline">
-                        <article class="process-step">
-                            <div class="process-icon"><img src="./images/Discover.png" alt="" width="32"
-                                    height="32" /></div>
-                            <span class="process-num">01</span>
-                            <h3>Discovery</h3>
-                            <p>We learn your goals, audience, and brand to shape the right direction.</p>
-                        </article>
-                        <article class="process-step">
-                            <div class="process-icon"><img src="./images/Strategy.png" alt="" width="32"
-                                    height="32" /></div>
-                            <span class="process-num">02</span>
-                            <h3>Strategy</h3>
-                            <p>We define structure, messaging, and a launch plan that fits your business.</p>
-                        </article>
-                        <article class="process-step">
-                            <div class="process-icon"><img src="./images/Design.png" alt="" width="32"
-                                    height="32" /></div>
-                            <span class="process-num">03</span>
-                            <h3>Design</h3>
-                            <p>We craft a polished visual experience aligned with your identity.</p>
-                        </article>
-                        <article class="process-step">
-                            <div class="process-icon"><img src="./images/Develop.png" alt="" width="32"
-                                    height="32" /></div>
-                            <span class="process-num">04</span>
-                            <h3>Planning</h3>
-                            <p>We map pages, content, and integrations before build begins.</p>
-                        </article>
-                        <article class="process-step">
-                            <div class="process-icon"><img src="./images/Grow.png" alt="" width="32" height="32" />
-                            </div>
-                            <span class="process-num">05</span>
-                            <h3>Execute</h3>
-                            <p>We build, connect your domain, and prepare everything for go-live.</p>
-                        </article>
-                        <article class="process-step">
-                            <div class="process-icon"><img src="./images/Lanch.png" alt="" width="32" height="32" />
-                            </div>
-                            <span class="process-num">06</span>
-                            <h3>Launch</h3>
-                            <p>We publish with HTTPS, hosting, and support so you stay online and growing.</p>
-                        </article>
+                    <span class="number">01</span>
+
+                    <h3>Innovation</h3>
+
+                    <p>
+                        We embrace new ideas and technologies to create better
+                        solutions.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-box1">
+                        <img src="images/precision.png" alt="Precision">
+                    </div>
+
+                    <span class="number">02</span>
+
+                    <h3>Precision</h3>
+
+                    <p>
+                        We pay attention to every detail to deliver high-quality
+                        results.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-box1">
+                        <img src="images/partenership.png" alt="Partnership">
+                    </div>
+
+                    <span class="number">03</span>
+
+                    <h3>Partnership</h3>
+
+                    <p>
+                        We work as an extension of your team, not just a service
+                        provider.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-box1">
+                        <img src="images/growth.png" alt="Growth">
+                    </div>
+
+                    <span class="number">04</span>
+
+                    <h3>Growth</h3>
+
+                    <p>
+                        We focus on long-term growth, not just short-term wins.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-box1">
+                        <img src="images/creativity.png" alt="Creativity">
+                    </div>
+
+                    <span class="number">05</span>
+
+                    <h3>Creativity</h3>
+
+                    <p>
+                        We design experiences that are beautiful, engaging, and
+                        effective.
+                    </p>
+                </div>
+
+                <div class="value-card">
+                    <div class="icon-box1">
+                        <img src="images/trust.png" alt="Trust">
+                    </div>
+
+                    <span class="number">06</span>
+
+                    <h3>Trust</h3>
+
+                    <p>
+                        We build trust through transparency, honesty, and results.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="our-process">
+        <div class="process-section">
+            <div class="eyebrow">OUR PROCESS</div>
+            <h2 class="heading">From Idea To Online <span>Success</span></h2>
+
+            <div class="steps">
+
+                <div class="step">
+                    <div class="icon-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="step-body">
+                        <div class="step-number">01</div>
+                        <div class="step-title">Discover</div>
+                        <div class="step-desc">We understand your business, goals, and target audience.</div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Why Choose Falcon -->
-        <section class="section about-why" aria-labelledby="why-heading">
-            <div class="container">
-                <div class="about-why-head">
-                    <span class="kicker">WHY CHOOSE FALCON CODES</span>
-                    <h2 id="why-heading">Intelligent, Sustainable, Fast, And User-Centered.</h2>
+                <div class="connector" aria-hidden="true"></div>
+
+                <div class="step">
+                    <div class="icon-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="step-body">
+                        <div class="step-number">02</div>
+                        <div class="step-title">Strategy</div>
+                        <div class="step-desc">We research and plan the best strategy to achieve results.</div>
+                    </div>
                 </div>
 
-                <div class="why-grid">
-                    <details class="why-card" open>
-                        <summary>
-                            <span class="why-bg-num" aria-hidden="true">01</span>
-                            <div class="why-icon"><img src="./images/Strategic Approach.png" alt="" width="32" height="32" /></div>
+                <div class="connector" aria-hidden="true"></div>
+
+                <div class="step">
+                    <div class="icon-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5z"></path>
+                        </svg>
+                    </div>
+                    <div class="step-body">
+                        <div class="step-number">03</div>
+                        <div class="step-title">Design</div>
+                        <div class="step-desc">We craft stunning, UX/UI designs that align with your brand.</div>
+                    </div>
+                </div>
+
+                <div class="connector" aria-hidden="true"></div>
+
+                <div class="step">
+                    <div class="icon-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-body">
+                        <div class="step-number">04</div>
+                        <div class="step-title">Develop</div>
+                        <div class="step-desc">We build fast, secure, and scalable websites using modern tech.</div>
+                    </div>
+                </div>
+
+                <div class="connector" aria-hidden="true"></div>
+
+                <div class="step">
+                    <div class="icon-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z">
+                            </path>
+                            <path
+                                d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z">
+                            </path>
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+                            <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+                        </svg>
+                    </div>
+                    <div class="step-body">
+                        <div class="step-number">05</div>
+                        <div class="step-title">Launch</div>
+                        <div class="step-desc">We test, optimize and launch with confidence.</div>
+                    </div>
+                </div>
+
+                <div class="connector" aria-hidden="true"></div>
+
+                <div class="step">
+                    <div class="icon-circle" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <div class="step-body">
+                        <div class="step-number">06</div>
+                        <div class="step-title">Grow</div>
+                        <div class="step-desc">We monitor, analyze and improve continuously to grow your business.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="why-choose">
+        <div class="page">
+            <div class="blob"></div>
+            <div class="content">
+        
+                <div class="header">
+                    <div class="eyebrow">WHY CHOOSE FALCON CODES</div>
+                    <div class="subtitle">We're more than just developers, We're your growth partners.</div>
+                </div>
+        
+                <div class="cards-grid">
+        
+                    <div class="card">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M9 18h6"></path>
+                                <path d="M10 22h4"></path>
+                                <path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1v.2h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-text">
                             <h3>Strategic Approach</h3>
-                            <span class="why-chevron" aria-hidden="true">›</span>
-                        </summary>
-                        <p>Every project starts with clear goals and a roadmap built around your business outcomes.</p>
-                    </details>
-                    <details class="why-card" open>
-                        <summary>
-                            <span class="why-bg-num" aria-hidden="true">02</span>
-                            <div class="why-icon"><img src="./images/Quality First.png" alt="" width="32" height="32" /></div>
+                            <p>We plan with strategy to build solutions that solve real problems.</p>
+                        </div>
+                        <div class="card-number">01</div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <div class="card-text">
                             <h3>Quality First</h3>
-                            <span class="why-chevron" aria-hidden="true">›</span>
-                        </summary>
-                        <p>Clean design, fast performance, and reliable code — no shortcuts on what users experience.</p>
-                    </details>
-                    <details class="why-card" open>
-                        <summary>
-                            <span class="why-bg-num" aria-hidden="true">03</span>
-                            <div class="why-icon"><img src="./images/Modern Solutions.png" alt="" width="32" height="32" /></div>
+                            <p>We follow best practices and maintain high standards.</p>
+                        </div>
+                        <div class="card-number">02</div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="card-text">
                             <h3>Modern Solutions</h3>
-                            <span class="why-chevron" aria-hidden="true">›</span>
-                        </summary>
-                        <p>Current tools, responsive layouts, and managed hosting that scales with your brand.</p>
-                    </details>
-                    <details class="why-card" open>
-                        <summary>
-                            <span class="why-bg-num" aria-hidden="true">04</span>
-                            <div class="why-icon"><img src="./images/Performance Driven.png" alt="" width="32" height="32" /></div>
+                            <p>We use the latest technologies to build future-ready products.</p>
+                        </div>
+                        <div class="card-number">03</div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="card-text">
                             <h3>Performance Driven</h3>
-                            <span class="why-chevron" aria-hidden="true">›</span>
-                        </summary>
-                        <p>Speed, SEO basics, and conversion-focused pages that help you win more customers.</p>
-                    </details>
-                    <details class="why-card" open>
-                        <summary>
-                            <span class="why-bg-num" aria-hidden="true">05</span>
-                            <div class="why-icon"><img src="./images/Results Focused.png" alt="" width="32" height="32" /></div>
-                            <h3>Remote-Focused</h3>
-                            <span class="why-chevron" aria-hidden="true">›</span>
-                        </summary>
-                        <p>We collaborate with teams anywhere and deliver on time with clear async communication.</p>
-                    </details>
-                    <details class="why-card" open>
-                        <summary>
-                            <span class="why-bg-num" aria-hidden="true">06</span>
-                            <div class="why-icon"><img src="./images/Reliable Support.png" alt="" width="32" height="32" /></div>
-                            <h3>Lifetime Support</h3>
-                            <span class="why-chevron" aria-hidden="true">›</span>
-                        </summary>
-                        <p>From first publish to ongoing updates — we're here when you need changes or help.</p>
-                    </details>
+                            <p>We focus on speed, scalability and performance.</p>
+                        </div>
+                        <div class="card-number">04</div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <circle cx="12" cy="12" r="1"></circle>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3>Results Focused</h3>
+                            <p>We measure success by the growth and results we deliver.</p>
+                        </div>
+                        <div class="card-number">05</div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icon-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                                <path
+                                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="card-text">
+                            <h3>Reliable Support</h3>
+                            <p>We're with you even after delivery to ensure your success.</p>
+                        </div>
+                        <div class="card-number">06</div>
+                    </div>
+        
                 </div>
+        
+                <div class="comparison">
 
-                <div class="vs-panel">
-                    <div class="vs-col vs-col-traditional">
-                        <h3>Traditional Agencies</h3>
+                    <div class="compare-col compare-col--traditional">
+                        <h4>Traditional Websites</h4>
                         <ul>
-                            <li><span class="vs-icon vs-icon-bad" aria-hidden="true">✕</span> Slow timelines and long
-                                discovery cycles</li>
-                            <li><span class="vs-icon vs-icon-bad" aria-hidden="true">✕</span> High upfront costs and
-                                hidden fees</li>
-                            <li><span class="vs-icon vs-icon-bad" aria-hidden="true">✕</span> Generic templates with
-                                limited flexibility</li>
-                            <li><span class="vs-icon vs-icon-bad" aria-hidden="true">✕</span> Support ends after
-                                handoff</li>
+                            <li><span class="mark bad"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg></span>Slow Loading Speed</li>
+                            <li><span class="mark bad"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg></span>Poor SEO Optimization</li>
+                            <li><span class="mark bad"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg></span>Hard To Manage</li>
+                            <li><span class="mark bad"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg></span>Outdated Design</li>
+                            <li><span class="mark bad"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round">
+                                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                                    </svg></span>Low Conversion Rate</li>
                         </ul>
                     </div>
-                    <div class="vs-badge" aria-hidden="true">VS</div>
-                    <div class="vs-col vs-col-falcon">
-                        <h3>Falcon of Codes</h3>
+
+                    <div class="vs-badge">VS</div>
+
+                    <div class="compare-col compare-col--falcon">
+                        <h4>Falcon Websites</h4>
                         <ul>
-                            <li><span class="vs-icon vs-icon-good" aria-hidden="true">✓</span> Live on your domain in
-                                under an hour</li>
-                            <li><span class="vs-icon vs-icon-good" aria-hidden="true">✓</span> Transparent plans from
-                                $1/month</li>
-                            <li><span class="vs-icon vs-icon-good" aria-hidden="true">✓</span> Custom themes and easy
-                                editing</li>
-                            <li><span class="vs-icon vs-icon-good" aria-hidden="true">✓</span> Managed hosting and
-                                ongoing support</li>
+                            <li><span class="mark good"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Lightning Fast</li>
+                            <li><span class="mark good"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>SEO Optimized</li>
+                            <li><span class="mark good"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Easy To Manage (CMS)</li>
+                            <li><span class="mark good"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Modern &amp; Responsive</li>
+                            <li><span class="mark good"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg></span>Conversions Focused</li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Technologies -->
-        <section class="section about-tech" aria-labelledby="tech-heading">
-            <div class="container">
-                <div class="about-tech-head">
-                    <span class="kicker">TECHNOLOGIES WE USE</span>
-                    <h2 id="tech-heading">Powered by <span class="text-purple">Modern Technologies</span></h2>
-                    <p>We use proven tools across design, frontend, backend, and cloud so your site stays fast,
-                        secure, and easy to maintain.</p>
                 </div>
-
-                <div class="tech-grid">
-                    <article class="tech-card"><span class="tech-logo tech-flutter">Fl</span>
-                        <div><strong>Flutter</strong><span>Mobile Dev</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-angular">Ng</span>
-                        <div><strong>Angular</strong><span>Frontend</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-react">Re</span>
-                        <div><strong>React</strong><span>Frontend</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-dotnet">.N</span>
-                        <div><strong>.NET</strong><span>Backend</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-laravel">La</span>
-                        <div><strong>Laravel</strong><span>Backend</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-node">No</span>
-                        <div><strong>Node.js</strong><span>Backend</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-firebase">Fb</span>
-                        <div><strong>Firebase</strong><span>Cloud</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-aws">AW</span>
-                        <div><strong>AWS</strong><span>Cloud</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-azure">Az</span>
-                        <div><strong>Azure</strong><span>Cloud</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-docker">Dk</span>
-                        <div><strong>Docker</strong><span>DevOps</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-figma">Fi</span>
-                        <div><strong>Figma</strong><span>Design</span></div>
-                    </article>
-                    <article class="tech-card"><span class="tech-logo tech-github">Gh</span>
-                        <div><strong>GitHub</strong><span>DevOps</span></div>
-                    </article>
-                </div>
+        
             </div>
-        </section>
-    </main>
+        </div>
+
+    </section>
+
+    <!-- ===============================
+     Technologies We Use
+    ================================ -->
+    
+    <section class="technologies">
+    
+        <div class="container">
+    
+            <!-- Section Header -->
+    
+            <div class="section-header">
+    
+                <span class="section-tag">
+                    TECHNOLOGIES WE US
+                </span>
+    
+                <h2>
+                    Powered by
+                    <span>Modern Technologies</span>
+                </h2>
+    
+                <p>
+                    We build secure, scalable, and future-ready digital products
+                    using industry-leading technologies.
+                </p>
+    
+            </div>
+    
+            <!-- Background Shapes -->
+    
+            <div class="left-circle"></div>
+            <div class="right-circle"></div>
+    
+            <div class="dots dots-left"></div>
+            <div class="dots dots-right"></div>
+    
+            <!-- Technologies Grid -->
+    
+            <div class="tech-grid">
+    
+                <!-- Card -->
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/flutter.png" alt="Flutter">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Flutter</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/Angular.png" alt="Angular">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Angular</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/React.png" alt="React">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>React</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/Net.png" alt=".NET">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>.NET</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/laravel.png" alt="Laravel">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Laravel</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/NodeJs.png" alt="Node.js">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Node.js</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/Firebase.png" alt="Firebase">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Firebase</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/aws.png" alt="AWS">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>AWS</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/Azura.png" alt="Azure">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Azure</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/docker.png" alt="Docker">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Docker</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/Figma.png" alt="Figma">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>Figma</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+                <div class="tech-card">
+    
+                    <div class="icon-box">
+                        <img src="images/Github.png" alt="GitHub">
+                    </div>
+    
+                    <div class="tech-info">
+                        <h3>GitHub</h3>
+                        <p>Trusted Technology</p>
+                        <span></span>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </section>
+    <!--======================
+            CTA + FOOTER (overlapping zone — same as home)
+    =======================-->
 
     <div class="footer-cta-zone">
-        <section id="start" class="cta-banner-wrap" aria-labelledby="cta-heading">
+
+        <section class="cta cta1" id="start" aria-labelledby="about-cta-heading">
+
             <div class="container">
-                <div class="cta-banner">
-                    <div class="cta-icon" aria-hidden="true">🚀</div>
-                    <div class="cta-text">
-                        <h2 id="cta-heading">Ready To Build A Website That Works As Hard As You Do?</h2>
-                        <p>Let's build something amazing together. From idea to online success, we're your partner in
-                            growth.</p>
+
+                <div class="cta-box">
+
+                    <div class="cta-left">
+
+                        <div class="cta-icon" aria-hidden="true">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <div class="cta-text">
+
+                            <h2 id="about-cta-heading">
+                                Ready To Build A Website That Works As Hard As You Do?
+                            </h2>
+
+                            <p>
+                                Let's build something amazing together. From idea to online success, we're your partner in growth.
+                            </p>
+
+                        </div>
+
                     </div>
-                    <a class="btn btn-white cta-banner-btn" href="contact.html">
-                        Start Your Project <span aria-hidden="true">→</span>
+
+                    <a href="contact.html" class="cta-btn">
+                        Start Your Project
+                        <i class="fa-solid fa-arrow-right"></i>
                     </a>
+
                 </div>
+
             </div>
+
         </section>
 
-        <footer class="footer">
-            <div class="container footer-top">
-                <a class="footer-logo" href="index.html" aria-label="Falcon of Codes — Home">
-                    <img src="./images/falcon logo.svg" alt="Falcon of Codes — website builder and managed hosting"
-                        width="160" height="46" />
-                </a>
-                <nav class="footer-social" aria-label="Social links">
-                    <a href="https://dribbble.com" rel="noopener noreferrer" target="_blank">Dribbble</a>
-                    <a href="https://behance.net" rel="noopener noreferrer" target="_blank">Behance</a>
-                    <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-                    <a href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
-                    <a href="https://x.com" rel="noopener noreferrer" target="_blank">Twitter (x)</a>
-                </nav>
+        <footer>
+
+            <div class="container">
+
+                <div class="footer-top">
+
+                    <a href="index.html" class="footer-logo" aria-label="Falcon of Codes — Home">
+                        <img src="images/falcon logo.svg" alt="Falcon of Codes">
+                    </a>
+
+                    <nav class="social-links" aria-label="Social links">
+                        <a href="#">Dribbble</a>
+                        <a href="#">Behance</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter (X)</a>
+                    </nav>
+
+                </div>
+
+                <hr>
+
+                <div class="footer-bottom">
+
+                    <p>© 2024 Falcon of Codes. All rights reserved.</p>
+
+                    <nav class="footer-legal" aria-label="Legal">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </nav>
+
+                </div>
+
             </div>
-            <div class="container footer-bottom">
-                <p class="footer-copyright">© 2024 Falcon of Codes. All rights reserved.</p>
-                <nav class="footer-legal" aria-label="Legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </nav>
-            </div>
+
         </footer>
+
     </div>
 
+    <!-- ================= MOBILE NAV ================= -->
     <div id="site-mobile-nav">
-<nav class="mobile-tabbar" aria-label="Mobile navigation">
-    <div class="mobile-tabbar-indicator" aria-hidden="true"></div>
+        <nav class="mobile-tabbar" aria-label="Mobile navigation">
+            <div class="mobile-tabbar-indicator" aria-hidden="true"></div>
 
-    <a href="index.html" class="mobile-tab" data-page="home" aria-label="Home">
-        <span class="mobile-tab-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V9.5z" />
-            </svg>
-        </span>
-        <span class="mobile-tab-label">Home</span>
-    </a>
+            <a href="index.html" class="mobile-tab" data-page="home" aria-label="Home">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V9.5z" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Home</span>
+            </a>
 
-    <a href="about.html" class="mobile-tab" data-page="about" aria-label="About">
-        <span class="mobile-tab-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
-            </svg>
-        </span>
-        <span class="mobile-tab-label">About</span>
-    </a>
+            <a href="about.html" class="mobile-tab is-active" data-page="about" aria-label="About">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">About</span>
+            </a>
 
-    <a href="service.html" class="mobile-tab" data-page="service" aria-label="Service detail">
-        <span class="mobile-tab-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="16 18 22 12 16 6" />
-                <polyline points="8 6 2 12 8 18" />
-            </svg>
-        </span>
-        <span class="mobile-tab-label">Service</span>
-    </a>
+            <a href="services.html" class="mobile-tab" data-page="services" aria-label="Services">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Services</span>
+            </a>
 
-    <a href="services.html" class="mobile-tab" data-page="services" aria-label="All services">
-        <span class="mobile-tab-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="2" y="7" width="20" height="14" rx="2" />
-                <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
-            </svg>
-        </span>
-        <span class="mobile-tab-label">Services</span>
-    </a>
+            <a href="index.html#projects" class="mobile-tab" data-page="portfolio" aria-label="Portfolio">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Portfolio</span>
+            </a>
 
-    <a href="contact.html" class="mobile-tab" data-page="contact" aria-label="Contact">
-        <span class="mobile-tab-icon" aria-hidden="true">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-            </svg>
-        </span>
-        <span class="mobile-tab-label">Contact</span>
-    </a>
-</nav>
+            <a href="contact.html" class="mobile-tab" data-page="contact" aria-label="Contact">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Contact</span>
+            </a>
+        </nav>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="js/header.js"></script>
+    <script>
+    // =========================
+    // Hero Animation
+    // =========================
+
+    window.addEventListener("load", () => {
+        document.querySelector(".hero-content1")?.classList.add("show");
+    });
+
+    // =========================
+    // Mouse Parallax Effect
+    // =========================
+
+    const hero = document.querySelector(".about-hero");
+    const bg = document.querySelector(".bg-img");
+
+    if (hero && bg) {
+        hero.addEventListener("mousemove", (e) => {
+            const x = (e.clientX / window.innerWidth - 0.5) * 20;
+            const y = (e.clientY / window.innerHeight - 0.5) * 20;
+            bg.style.transform = `scale(1.08) translate(${x}px, ${y}px)`;
+        });
+
+        hero.addEventListener("mouseleave", () => {
+            bg.style.transform = "scale(1.08) translate(0px,0px)";
+        });
+
+        window.addEventListener("scroll", () => {
+            bg.style.top = window.pageYOffset * 0.3 + "px";
+        });
+    }
+
+    // =========================
+    // Button Hover Effect
+    // =========================
+
+    document.querySelectorAll(".hero-buttons a").forEach((btn) => {
+        btn.addEventListener("mouseenter", () => {
+            btn.style.transition = ".4s";
+            btn.style.transform = "translateY(-6px) scale(1.04)";
+        });
+
+        btn.addEventListener("mouseleave", () => {
+            btn.style.transform = "translateY(0) scale(1)";
+        });
+    });
+
+    if (typeof AOS !== "undefined") {
+        AOS.init({
+            duration: 900,
+            once: true,
+            offset: 120
+        });
+    }
+
+    const cards = document.querySelectorAll(".tech-card");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add("show");
+        });
+    }, { threshold: .2 });
+
+    cards.forEach((card) => observer.observe(card));
+    </script>
 </body>
 
 </html>

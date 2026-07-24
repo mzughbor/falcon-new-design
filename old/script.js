@@ -125,6 +125,7 @@
 
         initHeaderNav();
         initHeaderScroll(header, nav);
+        initNavTransparency();
         initSmoothScroll(nav, header);
         initNavActive();
 
@@ -133,6 +134,25 @@
             navToggle.setAttribute("aria-expanded", open);
             if (open) header.classList.remove("is-hidden");
         });
+    }
+
+    function initNavTransparency() {
+        if (!document.body.classList.contains('page-about')) return;
+        const hero = document.querySelector('.about-hero');
+        const nav = document.querySelector('.nav');
+        if (!hero || !nav) return;
+
+        try {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    nav.classList.toggle('nav--transparent', entry.isIntersecting);
+                });
+            }, { root: null, threshold: 0.05 });
+            io.observe(hero);
+        } catch (e) {
+            // IntersectionObserver not supported — fall back to static transparent class
+            nav.classList.add('nav--transparent');
+        }
     }
 
     // Load HTML partials (header, footer, mobile nav, etc.)
