@@ -22,6 +22,13 @@ body {
     max-width: 100%;
 }
 
+/* Keep dark page shell when shared style.css is also loaded */
+body.page-services-list,
+body.page-services.page-services-list {
+    background: linear-gradient(#180b33, #24103b, #443358);
+    color: #ffffff;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -59,7 +66,6 @@ a {
     overflow-x: clip;
 }
 
-.services-header,
 .services-hero,
 .featured-service,
 .all-services-container,
@@ -76,96 +82,24 @@ a {
 
 
 /* =========================
-   NAVBAR
+   SHARED HEADER CLEARANCE
+   (same sticky pill as home / about / contact)
 ========================= */
 
+.page-services-list #site-header {
+    margin-bottom: calc(-1 * var(--header-stack, 98px));
+}
+
+.page-services-list .services-hero {
+    /* Clear floating shared header — same idea as about-hero */
+    padding-top: var(--header-clearance, 120px);
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+/* Legacy custom header kept inert if any leftover markup remains */
 .services-header {
-    height: 96px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    position: relative;
-    z-index: 10;
-}
-
-.services-logo img {
-    width: 105px;
-    display: block;
-}
-
-.services-navbar {
-    display: flex;
-    align-items: center;
-    gap: 55px;
-}
-
-.services-navbar a {
-    position: relative;
-
-    color: #eeeeee;
-
-    font-size: 16px;
-    font-weight: 400;
-
-    transition: 0.35s ease;
-}
-
-.services-navbar a:hover {
-    color: #a35cff;
-}
-
-.services-navbar a.active {
-    font-weight: 600;
-}
-
-.services-navbar a.active::after {
-    content: "";
-
-    position: absolute;
-
-    left: 0;
-    bottom: -20px;
-
-    width: 100%;
-    height: 3px;
-
-    background: #a03cff;
-
-    box-shadow:
-        0 0 10px rgba(160, 60, 255, 0.8);
-}
-
-.services-talk-btn {
-    min-width: 148px;
-
-    padding: 14px 28px;
-
-    text-align: center;
-
-    border-radius: 13px;
-
-    background: linear-gradient(135deg,
-            #9747ff,
-            #5b16e8);
-
-    color: #ffffff;
-
-    font-size: 15px;
-    font-weight: 500;
-
-    transition: 0.35s ease;
-
-    box-shadow:
-        0 0 25px rgba(112, 37, 255, 0.18);
-}
-
-.services-talk-btn:hover {
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 30px rgba(112, 37, 255, 0.35);
+    display: none !important;
 }
 
 
@@ -664,10 +598,6 @@ a {
    ANIMATION
 ========================= */
 
-.services-header {
-    animation: navReveal 0.8s ease both;
-}
-
 .services-content {
     animation: contentReveal 1s ease 0.2s both;
 }
@@ -830,10 +760,6 @@ a {
 
 @media (max-width: 1200px) {
 
-    .services-navbar {
-        gap: 35px;
-    }
-
     .services-content h1 {
         font-size: 55px;
     }
@@ -848,23 +774,6 @@ a {
 
 
 @media (max-width: 992px) {
-
-    .services-header {
-        height: 95px;
-    }
-
-    .services-navbar {
-        gap: 22px;
-    }
-
-    .services-navbar a {
-        font-size: 14px;
-    }
-
-    .services-talk-btn {
-        min-width: 125px;
-        padding: 12px 20px;
-    }
 
     .services-hero {
         grid-template-columns: 1fr;
@@ -922,23 +831,10 @@ a {
         overflow-x: clip;
     }
 
-    .services-logo img {
-        width: 90px;
-    }
-
-    .services-navbar {
-        display: none;
-    }
-
-    .services-talk-btn {
-        min-width: 0;
-        padding: 11px 17px;
-        font-size: 13px;
-    }
-
     .services-hero {
         margin-top: 0;
         gap: 28px;
+        padding-top: calc(var(--header-clearance, 100px) * 0.85);
     }
 
     .services-content {

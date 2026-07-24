@@ -139,13 +139,15 @@ ul {
   JS only adds .nav--solid after the hero leaves the viewport.
 */
 .page-about .site-header .nav,
-.page-services .site-header .nav {
+.page-services .site-header .nav,
+.page-services-list .site-header .nav {
     background: transparent;
     box-shadow: none;
 }
 
 .page-about .site-header .nav .btn-nav,
-.page-services .site-header .nav .btn-nav {
+.page-services .site-header .nav .btn-nav,
+.page-services-list .site-header .nav .btn-nav {
     background: rgba(255, 255, 255, 0.12);
     color: #fff;
     border: 1px solid rgba(255, 255, 255, 0.22);
@@ -153,18 +155,21 @@ ul {
 }
 
 .page-about .site-header .nav .btn-nav:hover,
-.page-services .site-header .nav .btn-nav:hover {
+.page-services .site-header .nav .btn-nav:hover,
+.page-services-list .site-header .nav .btn-nav:hover {
     background: rgba(255, 255, 255, 0.2);
 }
 
 .page-about .site-header .nav.nav--solid,
-.page-services .site-header .nav.nav--solid {
+.page-services .site-header .nav.nav--solid,
+.page-services-list .site-header .nav.nav--solid {
     background: linear-gradient(135deg, #533A9C 0%, #9455B7 100%);
     box-shadow: 0 20px 45px rgba(79, 35, 170, 0.20);
 }
 
 .page-about .site-header .nav.nav--solid .btn-nav,
-.page-services .site-header .nav.nav--solid .btn-nav {
+.page-services .site-header .nav.nav--solid .btn-nav,
+.page-services-list .site-header .nav.nav--solid .btn-nav {
     background: var(--nav-white);
     color: var(--nav-rebecca);
     border: 1px solid transparent;
@@ -4512,6 +4517,7 @@ Navbar
 .page-about,
 .page-contact,
 .page-services,
+.page-services-list,
 .page-web {
     position: relative;
 }
@@ -4519,6 +4525,7 @@ Navbar
 .page-about #site-header,
 .page-contact #site-header,
 .page-services #site-header,
+.page-services-list #site-header,
 .page-web #site-header {
     /* top/padding come from shared #site-header (+ mobile overrides) — do not re-set top here */
     position: sticky;
@@ -4528,7 +4535,8 @@ Navbar
 
 /* About + Services: float header over hero; .nav--solid applies purple pill after hero exits */
 .page-about #site-header,
-.page-services #site-header {
+.page-services #site-header,
+.page-services-list #site-header {
     margin-bottom: calc(-1 * var(--header-stack));
 }
 
@@ -4563,6 +4571,7 @@ Navbar
     .page-about #site-header,
     .page-contact #site-header,
     .page-services #site-header,
+    .page-services-list #site-header,
     .page-web #site-header {
         top: 8px;
         padding: 10px 16px 0;
@@ -4570,6 +4579,7 @@ Navbar
 
     .page-about #site-header,
     .page-services #site-header,
+    .page-services-list #site-header,
     .page-web #site-header {
         margin-bottom: calc(-1 * var(--header-stack));
     }

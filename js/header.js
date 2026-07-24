@@ -104,8 +104,13 @@
         let hero = null;
         if (document.body.classList.contains("page-about")) {
             hero = document.querySelector(".about-hero");
-        } else if (document.body.classList.contains("page-services")) {
-            hero = document.querySelector(".hero");
+        } else if (
+            document.body.classList.contains("page-services-list") ||
+            document.body.classList.contains("page-services")
+        ) {
+            hero =
+                document.querySelector(".services-hero") ||
+                document.querySelector(".hero");
         }
         if (!hero) return;
 
