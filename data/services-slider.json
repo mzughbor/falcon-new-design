@@ -1,0 +1,39 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "Web Development Services",
+      "image": "images/ويب.png"
+    },
+    {
+      "id": 2,
+      "name": "Mobile Apps Development",
+      "image": "images/services/mobile-phone-background-images.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Social Media Management",
+      "image": "images/services/pile-popular-social-media-logos.jpg"
+    },
+    {
+      "id": 4,
+      "name": "UI/UX Design",
+      "image": "images/UI:UX Design.png"
+    },
+    {
+      "id": 5,
+      "name": "Digital Marketing Services",
+      "image": "images/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Financial Reporting Services",
+      "image": "images/services/money-around-world.jpg"
+    },
+    {
+      "id": 7,
+      "name": "E-commerce Solutions",
+      "image": "images/تجاره.png"
+    }
+  ]
+}

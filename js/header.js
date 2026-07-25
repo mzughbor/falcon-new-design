@@ -3,7 +3,16 @@
     function getCurrentNavPage() {
         const file = (window.location.pathname.split("/").pop() || "index.html").toLowerCase();
         if (file.includes("contact")) return "contact";
-        if (file.includes("service") || file === "web.html") return "services";
+        if (
+            file.includes("service") ||
+            file === "web.html" ||
+            file === "seo.html" ||
+            file === "ui.html" ||
+            file === "e-commerce.html" ||
+            file === "steps.html"
+        ) {
+            return "services";
+        }
         if (file.includes("about")) return "about";
         if (file === "index.html" || file === "falcon.html" || file === "" || file === "header.html") return "home";
         return "home";
@@ -95,8 +104,13 @@
         let hero = null;
         if (document.body.classList.contains("page-about")) {
             hero = document.querySelector(".about-hero");
-        } else if (document.body.classList.contains("page-services")) {
-            hero = document.querySelector(".hero");
+        } else if (
+            document.body.classList.contains("page-services-list") ||
+            document.body.classList.contains("page-services")
+        ) {
+            hero =
+                document.querySelector(".services-hero") ||
+                document.querySelector(".hero");
         }
         if (!hero) return;
 
@@ -159,7 +173,16 @@
         const file = (path.split("/").pop() || "index.html").toLowerCase();
         let activePage = "home";
         if (file.includes("contact")) activePage = "contact";
-        else if (file.includes("service") || file === "web.html") activePage = "services";
+        else if (
+            file.includes("service") ||
+            file === "web.html" ||
+            file === "seo.html" ||
+            file === "ui.html" ||
+            file === "e-commerce.html" ||
+            file === "steps.html"
+        ) {
+            activePage = "services";
+        }
         else if (file.includes("about")) activePage = "about";
         else if (window.location.hash === "#projects") activePage = "portfolio";
 

@@ -1,0 +1,1826 @@
+{
+  "services": [
+    {
+      "id": "web-dev",
+      "slug": "service-web-dev",
+      "category": "software-web-development",
+      "title": "تطوير المواقع الإلكترونية",
+      "description": "نحن متخصصون في إنشاء حلول ويب مخصصة تحول أفكار عملك إلى تجارب رقمية قوية. تشمل خدمات تصميم وتطوير المواقع الإلكترونية لدينا تصميم متوافق يعمل على جميع الأجهزة (الجوال، التابلت، الكمبيوتر)، تحسين محركات البحث (SEO) لرفع ترتيب الموقع، لوحة تحكم سهلة تتيح للمالك إدارة المحتوى، وتصميم واجهة المستخدم وتجربته (UI/UX) لجعل الموقع جذابًا وسهل الاستخدام. يستفيد فريقنا من أحدث التقنيات بما في ذلك WordPress و Laravel و React لبناء مواقع وتطبيقات ويب عالية الأداء وقابلة للتوسع. سواء كنت بحاجة إلى موقع شركة بسيط أو منصة تجارة إلكترونية معقدة أو تطبيق ويب مخصص، نقدم حلولاً ليست فقط مذهلة بصريًا ولكن أيضًا محسّنة للسرعة والأمان وتجربة المستخدم.",
+      "lede": "We build modern, high-performance websites that help your business grow online with cutting-edge technologies.",
+      "headline": {
+        "before": "Build Fast, Secure &",
+        "accent": "Scalable Websites"
+      },
+      "images": [
+        "images/ويب.png",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "التصميم تجربة",
+          "description": "نحن متخصصون في إنشاء حلول ويب مخصصة تحول أفكار عملك إلى تجارب رقمية قوية. يستفيد فريقنا من أحدث التقنيات بما في ذلك WordPress و Laravel و React لبناء مواقع وتطبيقات ويب عالية الأداء وقابلة للتوسع. سواء كنت بحاجة إلى موقع شركة بسيط أو منصة تجارة إلكترونية معقدة أو تطبيق ويب مخصص، نقدم حلولاً ليست فقط مذهلة بصريًا ولكن أيضًا محسّنة للسرعة والأمان وتجربة المستخدم."
+        },
+        {
+          "title": "التكنولوجيا والابتكار",
+          "description": "عملية التطوير لدينا تعاونية وشفافة، مما يضمن تحقيق رؤيتك في كل خطوة. نركز على كود نظيف، تصميم متجاوب، وتكامل سلس مع خدمات الطرف الثالث لتوفير حل رقمي كامل يدفع النمو والمشاركة."
+        }
+      ],
+      "extraImages": [
+        "images/services/ideas-innovation-graphic-inspiration-artistic-concept.jpg"
+      ],
+      "featuresSectionTitle": "What We Build",
+      "features": [
+        {
+          "title": "Business Websites",
+          "description": "Professional & SEO friendly websites tailored for corporate growth.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-briefcase",
+          "tone": ""
+        },
+        {
+          "title": "Web Applications",
+          "description": "Powerful & scalable solutions built with modern frameworks.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-layer-group",
+          "tone": "purple"
+        },
+        {
+          "title": "CMS Websites",
+          "description": "WordPress, Custom CMS & more for easy content management.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-gears",
+          "tone": "blue"
+        },
+        {
+          "title": "Landing Pages",
+          "description": "High converting & fast loading pages designed for lead generation.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-rocket",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Development Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Discovery",
+          "description": "Understanding your business goals."
+        },
+        {
+          "number": "02",
+          "title": "Planning",
+          "description": "Strategy, sitemap & wireframes."
+        },
+        {
+          "number": "03",
+          "title": "Development",
+          "description": "Clean code & modern technologies."
+        },
+        {
+          "number": "04",
+          "title": "Testing",
+          "description": "Quality assurance & performance."
+        },
+        {
+          "number": "05",
+          "title": "Launch",
+          "description": "Deployment & ongoing support."
+        }
+      ],
+      "toolsSectionTitle": "Technologies We Use",
+      "tools": [
+        {
+          "name": "HTML5",
+          "image": "images/كود.png"
+        },
+        {
+          "name": "CSS3",
+          "image": "images/css.png"
+        },
+        {
+          "name": "JavaScript",
+          "image": "images/javascript.png"
+        },
+        {
+          "name": "React",
+          "image": "images/reactt.png"
+        },
+        {
+          "name": "Next.js",
+          "image": "images/next.js.png"
+        },
+        {
+          "name": "Node.js",
+          "image": "images/nodejss.png"
+        },
+        {
+          "name": "PHP",
+          "image": "images/php.png"
+        },
+        {
+          "name": "WordPress",
+          "image": "images/wordpress.png"
+        }
+      ],
+      "tagline": "Transforming ideas into powerful digital experiences",
+      "slogan": "Ready To Build A Website That Works As Hard As You Do?",
+      "ctaSupport": "Let's build something amazing together. From idea to online success, we're your partner in growth."
+    },
+    {
+      "id": "ecommerce",
+      "slug": "service-ecommerce",
+      "category": "software-web-development",
+      "title": "حلول التجارة الإلكترونية",
+      "description": "حوّل عملك الإلكتروني بخدمات تطوير التجارة الإلكترونية الشاملة لدينا. نصمم وننفذ متاجر إلكترونية بواجهة تسوق سهلة مع إدارة للمنتجات والفئات، تكامل أنظمة الدفع الإلكتروني، إدارة المخزون وعربة التسوق، لوحة تحكم متقدمة للمتجر، تحسين SEO خاص للمتاجر، وربط بخدمات الشحن والتوصيل. نبني متاجر إلكترونية قوية باستخدام منصات مثل WooCommerce و Shopify وحلول مخصصة مصممة خصيصًا لاحتياجاتك. نضمن أن متجرك الإلكتروني محسّن للتحويلات، متجاوب مع الجوال، ويوفر تجربة تسوق استثنائية.",
+      "lede": "We build secure, scalable and high-converting online stores for your business, optimized for the best shopping experience.",
+      "headline": {
+        "before": "E-Commerce Solutions",
+        "accent": "That Drive Sales"
+      },
+      "images": [
+        "images/تجاره.png",
+        "images/تجاره فوتر.png"
+      ],
+      "extraContent": [
+        {
+          "title": "حلول التجارة الإلكترونية الكاملة",
+          "description": "نبني متاجر إلكترونية قوية باستخدام منصات مثل WooCommerce و Shopify وحلول مخصصة مصممة خصيصًا لاحتياجاتك. تشمل حلول التجارة الإلكترونية لدينا بوابات دفع آمنة، أنظمة إدارة المخزون، تتبع الطلبات، وأدوات إدارة علاقات العملاء."
+        },
+        {
+          "title": "محسّن للنجاح",
+          "description": "نضمن أن متجرك الإلكتروني محسّن للتحويلات، متجاوب مع الجوال، ويوفر تجربة تسوق استثنائية. من إدارة كتالوج المنتجات إلى تحسين عملية الدفع، نتعامل مع كل جانب من جوانب منصة التجارة الإلكترونية الخاصة بك."
+        }
+      ],
+      "extraImages": [
+        "images/services/business-women-with-laptop-smartphone-mobile-coin-money-business-office-blurred-background.jpg"
+      ],
+      "featuresSectionTitle": "What We Offer",
+      "features": [
+        {
+          "title": "Online Store",
+          "description": "Custom & feature-rich online storefronts.",
+          "iconType": "img",
+          "icon": "images/Online store.png",
+          "tone": ""
+        },
+        {
+          "title": "Payment Gateway",
+          "description": "Secure & multiple payment options.",
+          "iconType": "img",
+          "icon": "images/Payment Gateway.png",
+          "tone": "purple"
+        },
+        {
+          "title": "Product Mgmt",
+          "description": "Easy product & inventory management.",
+          "iconType": "img",
+          "icon": "images/Product Mgmt.png",
+          "tone": "blue"
+        },
+        {
+          "title": "Shipping",
+          "description": "Real-time shipping & tracking integrations.",
+          "iconType": "img",
+          "icon": "images/Shipping.png",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our E-Commerce Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Requirement",
+          "description": "Understanding your business needs."
+        },
+        {
+          "number": "02",
+          "title": "Store Design",
+          "description": "UI/UX design for better conversions."
+        },
+        {
+          "number": "03",
+          "title": "Development",
+          "description": "Build powerful & secure store."
+        },
+        {
+          "number": "04",
+          "title": "Testing",
+          "description": "Test everything before launch."
+        },
+        {
+          "number": "05",
+          "title": "Launch",
+          "description": "Go live & grow your business."
+        }
+      ],
+      "toolsSectionTitle": "Platforms We Work With",
+      "tools": [
+        {
+          "name": "Shopify",
+          "image": "images/Shopify.png"
+        },
+        {
+          "name": "WooCommerce",
+          "image": "images/WooCommerce.png"
+        },
+        {
+          "name": "Magento",
+          "image": "images/Magento.png"
+        },
+        {
+          "name": "OpenCart",
+          "image": "images/OpenCart.png"
+        },
+        {
+          "name": "PrestaShop",
+          "image": "images/PrestaShop.png"
+        },
+        {
+          "name": "Custom Solution",
+          "image": "images/Custom Solution.png"
+        }
+      ],
+      "tagline": "Building online stores that drive sales and customer satisfaction",
+      "slogan": "Ready To Launch A Store That Sells?",
+      "ctaSupport": "Let's build something amazing together. From idea to online success, we're your partner in growth."
+    },
+    {
+      "id": "mobile",
+      "slug": "service-mobile",
+      "category": "software-web-development",
+      "title": "تطوير تطبيقات الموبايل",
+      "description": "اجلب عملك إلى راحة يد عملائك بخدمات تطوير تطبيقات الموبايل الخبيرة لدينا. نصمم تطبيقات (mirror/Native) ببرمجة لأندرويد و iOS، تتميز بـ UI/UX احترافي ومتجانس مع هوية العلامة التجارية، دمج مميزات الهاتف (الكاميرا، الموقع، الإشعارات، الدفع الإلكتروني)، لوحة تحكم (بوابة إدارة) للتحكم في محتوى التطبيق، واختبار على أجهزة مختلفة قبل الإطلاق. ننشئ تطبيقات موبايل أصلية ومتعددة المنصات باستخدام Kotlin و Swift و Flutter و React Native. تطبيقاتنا مصممة مع تجربة المستخدم في المقدمة، مما يضمن التنقل البديهي والأداء السريع والواجهات الجميلة.",
+      "lede": "We design and build fast, secure mobile apps for iOS and Android that put your business in your customers’ hands.",
+      "headline": {
+        "before": "Apps That Feel",
+        "accent": "Native Everywhere"
+      },
+      "images": [
+        "images/services/mobile-phone-background-images.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "الأصلية ومتعددة المنصات",
+          "description": "ننشئ تطبيقات موبايل أصلية ومتعددة المنصات باستخدام Kotlin و Swift و Flutter و React Native. تطبيقاتنا مصممة مع تجربة المستخدم في المقدمة، مما يضمن التنقل البديهي والأداء السريع والواجهات الجميلة."
+        },
+        {
+          "title": "من المفهوم إلى النشر",
+          "description": "نرشدك خلال كل مرحلة من مراحل عملية التطوير، بما في ذلك الاختبار والتحسين والدعم المستمر. تساعد حلول الموبايل لدينا على التواصل مع جمهورك وزيادة المشاركة ودفع نمو الأعمال من خلال تجارب موبايل مبتكرة."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Build",
+      "features": [
+        {
+          "title": "iOS Development",
+          "description": "Native iPhone & iPad apps built for performance and App Store success.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-apple",
+          "tone": ""
+        },
+        {
+          "title": "Android Development",
+          "description": "Scalable Android apps optimized for speed, UX and Google Play.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-android",
+          "tone": "purple"
+        },
+        {
+          "title": "Flutter Apps",
+          "description": "One codebase, beautiful UIs, and fast delivery across platforms.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-mobile-screen",
+          "tone": "blue"
+        },
+        {
+          "title": "React Native",
+          "description": "Cross-platform apps with native feel and shared business logic.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-react",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our App Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Discovery",
+          "description": "Map goals, users and product requirements."
+        },
+        {
+          "number": "02",
+          "title": "UX & Architecture",
+          "description": "Flows, wireframes and technical planning."
+        },
+        {
+          "number": "03",
+          "title": "Development",
+          "description": "Clean, testable code for iOS & Android."
+        },
+        {
+          "number": "04",
+          "title": "QA & Polish",
+          "description": "Device testing, performance and UX fixes."
+        },
+        {
+          "number": "05",
+          "title": "Launch",
+          "description": "Store submission and post-launch support."
+        }
+      ],
+      "toolsSectionTitle": "Technologies We Use",
+      "tools": [
+        {
+          "name": "React",
+          "image": "images/reactt.png"
+        },
+        {
+          "name": "Flutter",
+          "image": "images/flutter.png"
+        },
+        {
+          "name": "Firebase",
+          "image": "images/Firebase.png"
+        },
+        {
+          "name": "Node.js",
+          "image": "images/nodejss.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "AWS",
+          "image": "images/aws.png"
+        }
+      ],
+      "tagline": "Bringing your business to the palm of your customers' hands",
+      "slogan": "Ready To Launch An App Your Users Love?",
+      "ctaSupport": "From idea to App Store — we build mobile products that perform and convert."
+    },
+    {
+      "id": "uiux",
+      "slug": "service-uiux",
+      "category": "software-web-development",
+      "title": "تصميم واجهة المستخدم وتجربته",
+      "description": "أنشئ تجارب مستخدم استثنائية مع خدمات تصميم UI/UX الشاملة لدينا. نجمع بين الإبداع ومبادئ التصميم المتمحور حول المستخدم لصياغة واجهات ليست فقط جذابة بصريًا ولكن أيضًا بديهية ووظيفية. تبدأ عملية التصميم لدينا ببحث شامل وتحليل المستخدم لفهم جمهورك المستهدف واحتياجاتهم. ثم ننشئ إطارات سلكية ونماذج أولية وتصاميم عالية الدقة توجه المستخدمين بسلاسة عبر منتجاتك الرقمية. يتخصص فريقنا في إنشاء أنظمة تصميم متسقة وتخطيطات متجاوبة وواجهات يمكن الوصول إليها تعمل عبر جميع الأجهزة والمنصات. نركز على سهولة الاستخدام وإمكانية الوصول وتحسين التحويلات لضمان أن تصاميمك لا تبدو رائعة فحسب، بل تدفع النتائج أيضًا.",
+      "lede": "We create intuitive, engaging and beautiful designs that deliver real results",
+      "headline": {
+        "before": "Designing Experiences",
+        "accent": "Users Love"
+      },
+      "images": [
+        "images/UI:UX Design.png",
+        "images/UI:UX Design فوتر.png"
+      ],
+      "extraContent": [
+        {
+          "title": "التصميم المتمحور حول المستخدم",
+          "description": "نجمع بين الإبداع ومبادئ التصميم المتمحور حول المستخدم لصياغة واجهات ليست فقط جذابة بصريًا ولكن أيضًا بديهية ووظيفية. تبدأ عملية التصميم لدينا ببحث شامل وتحليل المستخدم لفهم جمهورك المستهدف واحتياجاتهم."
+        },
+        {
+          "title": "أنظمة التصميم والنماذج الأولية",
+          "description": "ننشئ إطارات سلكية ونماذج أولية وتصاميم عالية الدقة توجه المستخدمين بسلاسة عبر منتجاتك الرقمية. يتخصص فريقنا في إنشاء أنظمة تصميم متسقة وتخطيطات متجاوبة وواجهات يمكن الوصول إليها تعمل عبر جميع الأجهزة والمنصات."
+        }
+      ],
+      "extraImages": [
+        "images/services/78897.png"
+      ],
+      "featuresSectionTitle": "What We Design",
+      "features": [
+        {
+          "title": "Web Design",
+          "description": "Modern & responsive website design.",
+          "iconType": "img",
+          "icon": "images/webdesign.png",
+          "tone": ""
+        },
+        {
+          "title": "Mobile App Design",
+          "description": "iOS & Android app interfaces.",
+          "iconType": "img",
+          "icon": "images/mobile app.png",
+          "tone": "purple"
+        },
+        {
+          "title": "Dashboard Design",
+          "description": "Analytics & admin dashboards.",
+          "iconType": "img",
+          "icon": "images/dashboard.png",
+          "tone": "blue"
+        },
+        {
+          "title": "Brand Identity",
+          "description": "Logo, colors & visual identity.",
+          "iconType": "img",
+          "icon": "images/brand.png",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Design Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Research",
+          "description": "User research & competitor analysis."
+        },
+        {
+          "number": "02",
+          "title": "Wireframing",
+          "description": "Structure, flow & user journey."
+        },
+        {
+          "number": "03",
+          "title": "UI Design",
+          "description": "Beautiful & modern visual designs."
+        },
+        {
+          "number": "04",
+          "title": "Prototyping",
+          "description": "Interactive prototype."
+        },
+        {
+          "number": "05",
+          "title": "Testing",
+          "description": "User testing & feedback."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "Adobe XD",
+          "image": "images/adobe xd.png"
+        },
+        {
+          "name": "Sketch",
+          "image": "images/sketch.png"
+        },
+        {
+          "name": "Photoshop",
+          "image": "images/photoshop.png"
+        },
+        {
+          "name": "Illustrator",
+          "image": "images/illasstrator.png"
+        },
+        {
+          "name": "InVision",
+          "image": "images/invision.png"
+        }
+      ],
+      "tagline": "Every pixel serves a purpose, every interaction enhances the experience",
+      "slogan": "Let's Design Your Next Big Idea",
+      "ctaSupport": "Great designs are just the start. Let's create something amazing together."
+    },
+    {
+      "id": "social-media",
+      "slug": "service-social-media",
+      "category": "digital-solutions",
+      "title": "إدارة منصات التواصل الاجتماعي",
+      "description": "ارفع حضور علامتك التجارية على الإنترنت بخدمات إدارة منصات التواصل الاجتماعي الشاملة لدينا. نوفر الإدارة اليومية من خلال نشر المحتوى والرد على التعليقات والرسائل، إدارة استراتيجية النشر من خلال تخطيط محتوى أسبوعي/شهري وفقاً لخصائص كل منصة وجمهورها، وتحليل الأداء من خلال مراقبة معدلات التفاعل والنمو لتحسين الاستراتيجية. نطور وننفذ حملات التواصل الاجتماعي الاستراتيجية التي تشرك جمهورك وتبني الوعي بالعلامة التجارية وتدفع التحويلات. نحن نصنع لك مجتمعاً رقمياً متفاعلاً. نحول متابعيك إلى عملاء دائمين.",
+      "lede": "We grow your brand across social platforms with strategy, content and campaigns that turn attention into engagement.",
+      "headline": {
+        "before": "Grow Your Brand",
+        "accent": "On Every Feed"
+      },
+      "images": [
+        "images/services/pile-popular-social-media-logos.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "حملات استراتيجية",
+          "description": "نطور وننفذ حملات التواصل الاجتماعي الاستراتيجية التي تشرك جمهورك وتبني الوعي بالعلامة التجارية وتدفع التحويلات. ينشئ فريقنا محتوى مقنعًا ويدير حسابات التواصل الاجتماعي الخاصة بك ويراقب التفاعل لضمان بقاء علامتك التجارية ذات صلة ومتصلة بجمهورك المستهدف."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Manage",
+      "features": [
+        {
+          "title": "Content Strategy",
+          "description": "Clear messaging, calendars and formats built for each platform.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-lightbulb",
+          "tone": ""
+        },
+        {
+          "title": "Community Management",
+          "description": "Daily engagement that builds trust and keeps conversations alive.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-comments",
+          "tone": "purple"
+        },
+        {
+          "title": "Social Advertising",
+          "description": "Targeted paid reach that grows awareness and qualified leads.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-bullhorn",
+          "tone": "blue"
+        },
+        {
+          "title": "Analytics & Reporting",
+          "description": "Clear performance reports so you know what works and why.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-chart-line",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Social Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Audit",
+          "description": "Review channels, audience and current performance."
+        },
+        {
+          "number": "02",
+          "title": "Strategy",
+          "description": "Positioning, pillars and growth roadmap."
+        },
+        {
+          "number": "03",
+          "title": "Create",
+          "description": "Produce scroll-stopping posts and creatives."
+        },
+        {
+          "number": "04",
+          "title": "Engage",
+          "description": "Publish, reply and nurture your community."
+        },
+        {
+          "number": "05",
+          "title": "Optimize",
+          "description": "Measure results and refine the next cycle."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        }
+      ],
+      "tagline": "Elevating your brand's online presence with strategic social media",
+      "slogan": "Ready To Make Your Brand Impossible To Ignore?",
+      "ctaSupport": "Let’s build a social presence that engages your audience and grows with your business."
+    },
+    {
+      "id": "content",
+      "slug": "service-content",
+      "category": "digital-solutions",
+      "title": "إنشاء المحتوى",
+      "description": "احكِ قصة علامتك التجارية مع خدمات إنشاء المحتوى الاحترافية لدينا. ننتج محتوى عالي الجودة يشمل كتابة المحتوى والتصميم الجرافيكي وإنتاج الفيديو الذي يتردد صداه مع جمهورك ويدفع المشاركة. منشئو المحتوى لدينا ماهرون في صياغة السرد المقنع وتصميم المرئيات الجذابة وإنتاج مقاطع فيديو احترافية تجذب الانتباه وتوصل رسالتك بفعالية. سواء كنت بحاجة إلى منشورات مدونة أو محتوى التواصل الاجتماعي أو مواد تسويقية أو محتوى فيديو، نقدم حلولاً إبداعية تتماشى مع صوت علامتك التجارية وأهدافك التسويقية. نفهم أن المحتوى الرائع هو أكثر من مجرد كلمات وصور - إنه يتعلق بإنشاء روابط ذات معنى مع جمهورك.",
+      "lede": "We create copy, visuals and stories that make your brand clear, memorable and ready to convert.",
+      "headline": {
+        "before": "Content That",
+        "accent": "Connects & Converts"
+      },
+      "images": [
+        "images/services/close-up-man-hand-holding-tablet-with-group-businesspeople-with-creative-smartphone-hologram-blue-red-hearts-blue-background-social-media-likes-digital-marketing-concept.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "إنتاج المحتوى الاحترافي",
+          "description": "ننتج محتوى عالي الجودة يشمل كتابة المحتوى والتصميم الجرافيكي وإنتاج الفيديو الذي يتردد صداه مع جمهورك ويدفع المشاركة. منشئو المحتوى لدينا ماهرون في صياغة السرد المقنع وتصميم المرئيات الجذابة وإنتاج مقاطع فيديو احترافية تجذب الانتباه وتوصل رسالتك بفعالية."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Create",
+      "features": [
+        {
+          "title": "Copywriting",
+          "description": "Sharp headlines and pages that speak your customer’s language.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-pen-nib",
+          "tone": ""
+        },
+        {
+          "title": "Graphic Design",
+          "description": "On-brand visuals for web, social and campaigns.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-palette",
+          "tone": "purple"
+        },
+        {
+          "title": "Video Production",
+          "description": "Short-form and branded video built for attention and retention.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-video",
+          "tone": "blue"
+        },
+        {
+          "title": "Brand Storytelling",
+          "description": "Narratives that connect your offer to real customer needs.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-book-open",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Content Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Brief",
+          "description": "Align on goals, audience and tone of voice."
+        },
+        {
+          "number": "02",
+          "title": "Research",
+          "description": "Study competitors, keywords and message gaps."
+        },
+        {
+          "number": "03",
+          "title": "Create",
+          "description": "Write, design and produce the assets."
+        },
+        {
+          "number": "04",
+          "title": "Review",
+          "description": "Iterate with feedback until it’s on-brand."
+        },
+        {
+          "number": "05",
+          "title": "Publish",
+          "description": "Deliver ready-to-use content for every channel."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "Adobe XD",
+          "image": "images/adobe xd.png"
+        },
+        {
+          "name": "Sketch",
+          "image": "images/sketch.png"
+        },
+        {
+          "name": "Photoshop",
+          "image": "images/photoshop.png"
+        },
+        {
+          "name": "Illustrator",
+          "image": "images/illasstrator.png"
+        },
+        {
+          "name": "InVision",
+          "image": "images/invision.png"
+        }
+      ],
+      "tagline": "Creating meaningful connections through compelling content",
+      "slogan": "Ready To Tell A Story Worth Sharing?",
+      "ctaSupport": "From words to visuals — we craft content that builds trust and drives action."
+    },
+    {
+      "id": "paid-ads",
+      "slug": "service-paid-ads",
+      "category": "digital-solutions",
+      "title": "الإعلانات المدفوعة",
+      "description": "قم بزيادة عائد استثمارك مع خدمات الإعلانات المدفوعة الاستراتيجية لدينا. ننشئ وندير حملات إعلانية مستهدفة على Facebook و Instagram و Google و TikTok للوصول إلى عملائك المثاليين ودفع التحويلات. إعلانات الشبكات الاجتماعية المدفوعة من خلال استهداف دقيق للجمهور بناءً على الاهتمامات والتركيبة السكانية والسلوك لزيادة الوعي من خلال شبكة بيانات محدثة. إعلانات البحث وتعني الظهور عندما يبحث المستخدم عن منتجاتك أو خدماتك بنية شراء واضحة. قياس وتحسين مراقبة العائد على الاستثمار (ROI) وتحسين الحملات باستمرار بناءً على البيانات.",
+      "lede": "We run focused paid campaigns across Meta, Google and TikTok that maximize ROI and bring qualified traffic.",
+      "headline": {
+        "before": "Ads That Deliver",
+        "accent": "Measurable ROI"
+      },
+      "images": [
+        "images/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "حملات مدفوعة بالبيانات",
+          "description": "ننشئ وندير حملات إعلانية مستهدفة على Facebook و Instagram و Google و TikTok للوصول إلى عملائك المثاليين ودفع التحويلات. يتخصص فريقنا في استراتيجية الحملات وإنشاء الإعلانات واستهداف الجمهور وإدارة المزايدة وتحسين الأداء."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Run",
+      "features": [
+        {
+          "title": "Facebook Ads",
+          "description": "High-intent Meta campaigns built around your best offers.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-facebook",
+          "tone": ""
+        },
+        {
+          "title": "Instagram Ads",
+          "description": "Visual creatives that stop the scroll and spark conversions.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-instagram",
+          "tone": "purple"
+        },
+        {
+          "title": "Google Ads",
+          "description": "Search and display ads that capture demand when it matters.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-google",
+          "tone": "blue"
+        },
+        {
+          "title": "TikTok Advertising",
+          "description": "Native-style ads that reach new audiences at scale.",
+          "iconType": "fa",
+          "icon": "fa-brands fa-tiktok",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Ads Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Audit",
+          "description": "Review accounts, audiences and past performance."
+        },
+        {
+          "number": "02",
+          "title": "Strategy",
+          "description": "Define offers, funnels and budget allocation."
+        },
+        {
+          "number": "03",
+          "title": "Launch",
+          "description": "Build campaigns, creatives and tracking."
+        },
+        {
+          "number": "04",
+          "title": "Optimize",
+          "description": "Test creatives, bids and audiences weekly."
+        },
+        {
+          "number": "05",
+          "title": "Scale",
+          "description": "Double down on winners and report clearly."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        }
+      ],
+      "tagline": "Maximizing ROI through strategic paid advertising",
+      "slogan": "Ready To Turn Ad Spend Into Real Growth?",
+      "ctaSupport": "We plan, launch and optimize campaigns that bring measurable results."
+    },
+    {
+      "id": "seo",
+      "slug": "service-seo",
+      "category": "digital-solutions",
+      "title": "خدمات تحسين محركات البحث",
+      "description": "حسّن ظهورك على الإنترنت وادفع حركة المرور العضوية مع خدمات SEO الشاملة لدينا. ننفذ استراتيجيات مثبتة لتحسين محركات البحث تساعد موقعك على الترتيب أعلى في نتائج البحث وجذب زوار مؤهلين. نهج SEO لدينا يشمل التحسين التقني و SEO على الصفحة وتحسين المحتوى وبناء الروابط واستراتيجيات SEO المحلية. نجري بحثًا شاملاً عن الكلمات المفتاحية ونحلل منافسيك ونطور استراتيجيات SEO مخصصة تتماشى مع أهداف عملك. يبقى فريقنا محدثًا بأحدث خوارزميات محركات البحث وأفضل الممارسات لضمان بقاء موقعك محسّنًا وقادرًا على المنافسة.",
+      "lede": "We optimize your website to rank higher on Google and drive organic traffic, ensuring your business stays ahead of the competition.",
+      "headline": {
+        "before": "Rank Higher. Get Found.",
+        "accent": "Grow Faster."
+      },
+      "images": [
+        "images/SEO Services.png",
+        "images/SEO Services فوتر.png"
+      ],
+      "extraContent": [
+        {
+          "title": "استراتيجية SEO شاملة",
+          "description": "ننفذ استراتيجيات مثبتة لتحسين محركات البحث تساعد موقعك على الترتيب أعلى في نتائج البحث وجذب زوار مؤهلين. نهج SEO لدينا يشمل التحسين التقني و SEO على الصفحة وتحسين المحتوى وبناء الروابط واستراتيجيات SEO المحلية."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "Our SEO Services",
+      "features": [
+        {
+          "title": "Technical SEO",
+          "description": "Improve website performance and core web vitals.",
+          "iconType": "img",
+          "icon": "images/Technical SEO.png",
+          "tone": ""
+        },
+        {
+          "title": "On-Page SEO",
+          "description": "Optimize content structure and keyword density.",
+          "iconType": "img",
+          "icon": "images/On-Page SEO.png",
+          "tone": "purple"
+        },
+        {
+          "title": "Off-Page SEO",
+          "description": "Build authority with high-quality backlinks.",
+          "iconType": "img",
+          "icon": "images/Off-Page SEO.png",
+          "tone": "blue"
+        },
+        {
+          "title": "Content SEO",
+          "description": "High-quality & SEO friendly content creation.",
+          "iconType": "img",
+          "icon": "images/Content SEO.png",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our SEO Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Audit",
+          "description": "Comprehensive website SEO audit."
+        },
+        {
+          "number": "02",
+          "title": "Strategy",
+          "description": "Custom SEO growth roadmap."
+        },
+        {
+          "number": "03",
+          "title": "Optimization",
+          "description": "On-page & technical improvements."
+        },
+        {
+          "number": "04",
+          "title": "Link Building",
+          "description": "High-authority backlink outreach."
+        },
+        {
+          "number": "05",
+          "title": "Reporting",
+          "description": "Detailed monthly performance stats."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Screaming Frog",
+          "image": "images/Screaming Frog.png"
+        },
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        }
+      ],
+      "tagline": "Driving organic traffic and sustainable growth",
+      "slogan": "Ready To Rank Higher And Grow Faster?",
+      "ctaSupport": "Let's build something amazing together. From idea to online success, we're your partner in growth."
+    },
+    {
+      "id": "auditing",
+      "slug": "service-auditing",
+      "category": "financial-accounting",
+      "title": "التدقيق والمراجعة المالية",
+      "description": "تأكد من الدقة المالية والامتثال التنظيمي مع خدمات التدقيق الشاملة لدينا. نوفر المراجعة الخارجية والداخلية من خلال فحص مستقل للقوائم المالية للتحقق من دقتها وعدالتها وإصدار رأي مهني (رأي مُعدل/غير مُعدل). المراجعة الداخلية من خلال تقييم مستمر للضوابط والسياسات الداخلية لتحسين العمليات وإدارة المخاطر داخل الشركة. دقة في الأرقام، شفافية في الأداء. مراجعتنا ضمان لمصداقيتك.",
+      "lede": "We deliver clear, reliable audits that strengthen financial accuracy, controls and regulatory confidence.",
+      "headline": {
+        "before": "Clear Audits.",
+        "accent": "Confident Decisions."
+      },
+      "images": [
+        "images/services/business-man-working-office-2desktop.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "خدمات التدقيق الشاملة",
+          "description": "نوفر المراجعة الخارجية والداخلية المالية التي تساعد المنظمات على الحفاظ على الشفافية وتحديد المخاطر وتحسين العمليات المالية. يتبع فريق التدقيق لدينا المعايير الدولية وأفضل الممارسات لتقديم تقييمات شاملة وموضوعية لسجلاتك المالية والضوابط الداخلية والامتثال للوائح المعمول بها."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Audit",
+      "features": [
+        {
+          "title": "External Auditing",
+          "description": "Independent reviews that validate your financial statements.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-file-invoice",
+          "tone": ""
+        },
+        {
+          "title": "Internal Auditing",
+          "description": "Process checks that uncover risks before they become issues.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-magnifying-glass-chart",
+          "tone": "purple"
+        },
+        {
+          "title": "Compliance Audits",
+          "description": "Structured reviews against the standards your business must meet.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-clipboard-check",
+          "tone": "blue"
+        },
+        {
+          "title": "Risk Assessment",
+          "description": "Prioritized risk maps so leadership knows where to act first.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-shield-halved",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Audit Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Scope",
+          "description": "Define objectives, entities and audit criteria."
+        },
+        {
+          "number": "02",
+          "title": "Assess",
+          "description": "Gather evidence and evaluate current controls."
+        },
+        {
+          "number": "03",
+          "title": "Test",
+          "description": "Validate transactions, processes and compliance."
+        },
+        {
+          "number": "04",
+          "title": "Report",
+          "description": "Deliver clear findings and practical recommendations."
+        },
+        {
+          "number": "05",
+          "title": "Follow-up",
+          "description": "Support remediation and track improvements."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        }
+      ],
+      "tagline": "Ensuring financial accuracy and regulatory compliance",
+      "slogan": "Ready For An Audit You Can Trust?",
+      "ctaSupport": "Get transparent findings and actionable next steps that protect your business."
+    },
+    {
+      "id": "financial-reporting",
+      "slug": "service-financial-reporting",
+      "category": "financial-accounting",
+      "title": "التقارير المالية",
+      "description": "حوّل البيانات المالية المعقدة إلى رؤى واضحة وقابلة للتنفيذ مع خدمات التقارير المالية الاحترافية لدينا. نعد قوائم مالية شاملة تشمل قائمة الدخل (بيان الربح والخسارة) لقياس الأداء المالي خلال فترة، إعداد الميزانية العمومية لبيان المركز المالي (الأصول، الخصوم، حقوق الملكية) في تاريخ محدد، وإعداد قائمة التدفقات النقدية لتتبع مصادر واستخدامات النقد. تجميع هذه القوائم في تقرير مالي سنوي شامل. أرقامك تتحدث، ونحن نترجمها بلغة واضحة. تقارير مالية دقيقة، قرارات استثمارية واثقة.",
+      "lede": "We turn complex financial data into clear reports leadership can use to plan, decide and grow with confidence.",
+      "headline": {
+        "before": "Reports That",
+        "accent": "Drive Clarity"
+      },
+      "images": [
+        "images/services/money-around-world.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "القوائم المالية الشاملة",
+          "description": "نعد قوائم مالية شاملة تشمل قائمة الدخل والميزانية العمومية وتقارير التدفقات النقدية التي تمتثل لمعايير المحاسبة وتوفر صورة واضحة عن صحتك المالية. يضمن فريقنا الدقة والوقتية والامتثال لجميع اللوائح ذات الصلة."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Deliver",
+      "features": [
+        {
+          "title": "Income Statements",
+          "description": "Clean P&L views that show performance at a glance.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-chart-pie",
+          "tone": ""
+        },
+        {
+          "title": "Balance Sheets",
+          "description": "Accurate snapshots of assets, liabilities and equity.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-scale-balanced",
+          "tone": "purple"
+        },
+        {
+          "title": "Cash Flow Reports",
+          "description": "Visibility into money in, money out and runway.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-money-bill-wave",
+          "tone": "blue"
+        },
+        {
+          "title": "Monthly & Annual Reports",
+          "description": "Consistent reporting packs ready for management and stakeholders.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-calendar-check",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Reporting Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Collect",
+          "description": "Gather ledgers, statements and source data."
+        },
+        {
+          "number": "02",
+          "title": "Reconcile",
+          "description": "Clean and validate numbers for accuracy."
+        },
+        {
+          "number": "03",
+          "title": "Analyze",
+          "description": "Highlight trends, gaps and opportunities."
+        },
+        {
+          "number": "04",
+          "title": "Report",
+          "description": "Deliver clear dashboards and statements."
+        },
+        {
+          "number": "05",
+          "title": "Advise",
+          "description": "Translate results into practical decisions."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        }
+      ],
+      "tagline": "Transforming financial data into actionable insights",
+      "slogan": "Ready For Financial Clarity Every Month?",
+      "ctaSupport": "We package the numbers so your team can move faster with fewer surprises."
+    },
+    {
+      "id": "cost-accounting",
+      "slug": "service-cost-accounting",
+      "category": "financial-accounting",
+      "title": "محاسبة التكاليف",
+      "description": "حسّن ربحية عملك مع خدمات محاسبة التكاليف الخبيرة لدينا. نوفر تتبع شامل للتكاليف وتحليل التسعير وإدارة الربحية التي تساعدك على فهم التكلفة الحقيقية لمنتجاتك وخدماتك. تحديد تكلفة المنتج/الخدمة وتتبع التكاليف المباشرة وغير المباشرة. الرقابة على التكاليف وتحليل الانحرافات ومساعدة الإدارة في اتخاذ قرارات التسعير والتصنيع. تحديد نقاط التعادل والربحية لمعرفة حجم المبيعات اللازم لتحقيق الربح. نحلل التكاليف، لتحدد الأسعار وتحقق الأرباح. من التكلفة إلى التسعير. إدارة ذكية للربحية.",
+      "lede": "We help you track costs, price smarter and protect margins with practical cost accounting systems.",
+      "headline": {
+        "before": "Know Your Costs.",
+        "accent": "Grow Your Margin."
+      },
+      "images": [
+        "images/services/cropped-image-businessman-using-laptop-desk.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "تحسين الربحية",
+          "description": "نوفر تتبع شامل للتكاليف وتحليل التسعير وإدارة الربحية التي تساعدك على فهم التكلفة الحقيقية لمنتجاتك وخدماتك. تشمل خدمات محاسبة التكاليف لدينا محاسبة التكاليف على أساس النشاط ومحاسبة الوظائف ومحاسبة العمليات ومحاسبة التكاليف المعيارية لإعطائك رؤى دقيقة في هيكل التكلفة الخاص بك."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Cover",
+      "features": [
+        {
+          "title": "Cost Tracking",
+          "description": "Reliable tracking across products, projects and departments.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-tags",
+          "tone": ""
+        },
+        {
+          "title": "Pricing Analysis",
+          "description": "Data-backed pricing that protects profit without guessing.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-tag",
+          "tone": "purple"
+        },
+        {
+          "title": "Profitability Management",
+          "description": "See which lines make money — and which drain it.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-chart-column",
+          "tone": "blue"
+        },
+        {
+          "title": "Resource Allocation",
+          "description": "Allocate people and spend where they create the most value.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-diagram-project",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Accounting Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Map",
+          "description": "Identify cost centers and current gaps."
+        },
+        {
+          "number": "02",
+          "title": "Structure",
+          "description": "Set categories, drivers and reporting rules."
+        },
+        {
+          "number": "03",
+          "title": "Track",
+          "description": "Implement tracking across operations."
+        },
+        {
+          "number": "04",
+          "title": "Analyze",
+          "description": "Review margins and cost variances."
+        },
+        {
+          "number": "05",
+          "title": "Optimize",
+          "description": "Recommend pricing and allocation changes."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        }
+      ],
+      "tagline": "Optimizing profitability through expert cost accounting",
+      "slogan": "Ready To Take Control Of Your Costs?",
+      "ctaSupport": "Build a cost system that makes profitability visible and manageable."
+    },
+    {
+      "id": "cashflow",
+      "slug": "service-cashflow",
+      "category": "financial-accounting",
+      "title": "إدارة التدفقات النقدية والميزانيات",
+      "description": "حافظ على تدفق نقدي صحي وحقق أهدافك المالية مع خدمات التدفقات النقدية والميزانيات الاستراتيجية لدينا. نوفر التخطيط النقدي: التنبؤ بالتدفقات النقدية الداخلة والخارجة لتجنب العجز. إعداد الموازنات التقديرية ووضع خطة مالية للمستقبل (مبيعات، مشتريات، مصروفات) ومقارنتها بالنتائج الفعلية. إدارة رأس المال العامل لضمان السيولة المالية للوفاء بالالتزامات قصيرة الأجل. نخطط للتدفق النقدي، لتحافظ على سيولتك وتنمو بأمان. موازنة دقيقة اليوم، أرباح مضمونة غداً.",
+      "lede": "We strengthen cash flow and budgeting so your business stays liquid, planned and ready for growth.",
+      "headline": {
+        "before": "Cash Flow That",
+        "accent": "Keeps You Moving"
+      },
+      "images": [
+        "images/services/business-man-working-office-desktop.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "التخطيط المالي الاستراتيجي",
+          "description": "نوفر التنبؤ المالي الشامل والتخطيط الاستراتيجي للميزانية الذي يساعدك على إدارة أموالك بفعالية والتخطيط للمستقبل. تشمل خدماتنا تحليل التدفقات النقدية وإعداد الميزانية وتحليل التباين والتنبؤ المالي لمساعدتك على توقع الاحتياجات المالية واتخاذ قرارات استباقية."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Optimize",
+      "features": [
+        {
+          "title": "Cash Flow Analysis",
+          "description": "Clear views of inflows, outflows and timing risks.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-arrow-right-arrow-left",
+          "tone": ""
+        },
+        {
+          "title": "Budget Planning",
+          "description": "Realistic budgets aligned with your operating plan.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-wallet",
+          "tone": "purple"
+        },
+        {
+          "title": "Variance Analysis",
+          "description": "Spot plan-vs-actual gaps early and correct course.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-chart-area",
+          "tone": "blue"
+        },
+        {
+          "title": "Financial Forecasting",
+          "description": "Forward-looking models for hiring, spend and runway.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-chart-line",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Budgeting Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Review",
+          "description": "Assess current cash position and burn."
+        },
+        {
+          "number": "02",
+          "title": "Plan",
+          "description": "Build budgets and cash calendars."
+        },
+        {
+          "number": "03",
+          "title": "Forecast",
+          "description": "Model scenarios for growth and risk."
+        },
+        {
+          "number": "04",
+          "title": "Monitor",
+          "description": "Track variance against the plan."
+        },
+        {
+          "number": "05",
+          "title": "Adjust",
+          "description": "Update forecasts as reality changes."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        }
+      ],
+      "tagline": "Maintaining healthy cash flow for sustainable growth",
+      "slogan": "Ready For Cash Flow You Can Rely On?",
+      "ctaSupport": "Stay ahead of shortfalls with planning and forecasts that guide every decision."
+    },
+    {
+      "id": "legal-consulting",
+      "slug": "service-legal-consulting",
+      "category": "legal-services",
+      "title": "الاستشارات القانونية المتخصصة",
+      "description": "تنقل في التحديات القانونية المعقدة بثقة من خلال خدمات الاستشارات القانونية الخبيرة لدينا. نوفر الرأي والتحليل القانوني وتقديم تفسيرات وتوقعات قانونية دقيقة بخصوص أي موقف أو نزاع من خلال مكتب محاماة. التقييم الوقائي من خلال مراجعة الممارسات التجارية للكشف عن المخاطر القانونية المحتملة وتقديم حلول استباقية. استشارة قانونية اليوم، تحميك من الوقوع بالخطأ. ندير المخاطر القانونية قبل أن تتحول إلى أزمات.",
+      "lede": "We give growing teams practical legal guidance so you can move fast without unnecessary risk.",
+      "headline": {
+        "before": "Legal Clarity",
+        "accent": "For Growing Teams"
+      },
+      "images": [
+        "images/services/golden-scales-justice-gavel-books-grey-background.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "التحليل القانوني الخبير",
+          "description": "نوفر تحليل قانوني شامل وتقييم المخاطر وخدمات استشارية تساعدك على اتخاذ قرارات مستنيرة وحماية مصالح عملك. يجلب مستشارونا القانونيون خبرة عميقة عبر مجالات القانون المختلفة، بما في ذلك قانون الشركات وقانون العقود وقانون العمل والملكية الفكرية والامتثال التنظيمي."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "How We Help",
+      "features": [
+        {
+          "title": "Legal Research",
+          "description": "Focused research that answers the questions that block progress.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-book",
+          "tone": ""
+        },
+        {
+          "title": "Risk Assessment",
+          "description": "Identify legal exposure before it becomes a costly problem.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-triangle-exclamation",
+          "tone": "purple"
+        },
+        {
+          "title": "Strategic Planning",
+          "description": "Legal strategy aligned with your business goals.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-compass",
+          "tone": "blue"
+        },
+        {
+          "title": "Compliance Advisory",
+          "description": "Ongoing advice to stay aligned with regulations that matter.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-gavel",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Consulting Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Consult",
+          "description": "Clarify objectives and legal context."
+        },
+        {
+          "number": "02",
+          "title": "Research",
+          "description": "Review regulations and case specifics."
+        },
+        {
+          "number": "03",
+          "title": "Advise",
+          "description": "Provide clear, actionable recommendations."
+        },
+        {
+          "number": "04",
+          "title": "Document",
+          "description": "Prepare the materials you need to act."
+        },
+        {
+          "number": "05",
+          "title": "Support",
+          "description": "Stay available through implementation."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "Adobe XD",
+          "image": "images/adobe xd.png"
+        },
+        {
+          "name": "Sketch",
+          "image": "images/sketch.png"
+        },
+        {
+          "name": "Photoshop",
+          "image": "images/photoshop.png"
+        },
+        {
+          "name": "Illustrator",
+          "image": "images/illasstrator.png"
+        },
+        {
+          "name": "InVision",
+          "image": "images/invision.png"
+        }
+      ],
+      "tagline": "Navigating legal challenges with expert guidance",
+      "slogan": "Ready For Legal Guidance That Moves With You?",
+      "ctaSupport": "Get practical counsel that protects the business while keeping growth on track."
+    },
+    {
+      "id": "contract-drafting",
+      "slug": "service-contract-drafting",
+      "category": "legal-services",
+      "title": "صياغة العقود والاتفاقيات",
+      "description": "احمِ مصالح عملك مع خدمات صياغة ومراجعة العقود الدقيقة والشاملة لدينا. الصياغة الدقيقة لتحويل التفاهمات الشفهية إلى نصوص قانونية واضحة تحمي حقوق العميل وتحدد التزاماته. فحص العقود المقدمة من الأطراف الأخرى، وتحديد النقاط الضبابية أو المجازفة، والتفاوض لتحسين شروطها وإدارة المخاطر القانونية الكاملة. التغطية الشاملة وصياغة أنواع مختلفة من العقود مثل عقود العمل والخدمات الاستشارية، عقود الشراكة والتأسيس، عقود الموردين والموزعين، اتفاقيات السرية والخصوصية.",
+      "lede": "We draft and review contracts that protect your interests with clear language and fewer loopholes.",
+      "headline": {
+        "before": "Contracts That",
+        "accent": "Protect Your Business"
+      },
+      "images": [
+        "images/services/photo-realistic-certificate-handshake-symbolizing-formal-thanks-with-space-text-adobe-sto.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "خدمات العقود الدقيقة",
+          "description": "نصوغ ونتحقق من جميع أنواع الاتفاقيات القانونية بما في ذلك عقود العمل وعقود الخدمة وعقود الشراكة وعقود الموردين والإيجارات التجارية. تضمن خدمات صياغة العقود لدينا أن اتفاقياتك واضحة وقانونية سليمة وتحمي مصالحك مع تقليل المخاطر."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Draft",
+      "features": [
+        {
+          "title": "Contract Drafting",
+          "description": "Custom agreements written for your real commercial terms.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-file-signature",
+          "tone": ""
+        },
+        {
+          "title": "Contract Review",
+          "description": "Careful review to spot risks before you sign.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-file-circle-check",
+          "tone": "purple"
+        },
+        {
+          "title": "Legal Agreements",
+          "description": "NDAs, service agreements and partnership documents done right.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-handshake",
+          "tone": "blue"
+        },
+        {
+          "title": "Risk Mitigation",
+          "description": "Clauses and structures that reduce exposure up front.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-shield",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Drafting Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Brief",
+          "description": "Capture parties, terms and deal goals."
+        },
+        {
+          "number": "02",
+          "title": "Draft",
+          "description": "Write clear, enforceable language."
+        },
+        {
+          "number": "03",
+          "title": "Review",
+          "description": "Stress-test clauses and edge cases."
+        },
+        {
+          "number": "04",
+          "title": "Negotiate",
+          "description": "Support revisions through to agreement."
+        },
+        {
+          "number": "05",
+          "title": "Finalize",
+          "description": "Deliver a clean, ready-to-sign contract."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "Adobe XD",
+          "image": "images/adobe xd.png"
+        },
+        {
+          "name": "Sketch",
+          "image": "images/sketch.png"
+        },
+        {
+          "name": "Photoshop",
+          "image": "images/photoshop.png"
+        },
+        {
+          "name": "Illustrator",
+          "image": "images/illasstrator.png"
+        },
+        {
+          "name": "InVision",
+          "image": "images/invision.png"
+        }
+      ],
+      "tagline": "Protecting your business interests with precise legal documents",
+      "slogan": "Ready To Sign With Confidence?",
+      "ctaSupport": "Protect every deal with documents that are precise, fair and business-ready."
+    },
+    {
+      "id": "compliance",
+      "slug": "service-compliance",
+      "category": "legal-services",
+      "title": "الامتثال",
+      "description": "تأكد من أن عملك يلبي جميع المتطلبات التنظيمية مع خدمات الامتثال الشاملة لدينا. نساعد المنظمات على التنقل في المشهد التنظيمي المعقد وضمان الالتزام باللوائح المحلية والدولية عبر مختلف الصناعات. تشمل خدمات الامتثال لدينا التحليل التنظيمي وتقييمات الامتثال وتطوير السياسات والتدريب والمراقبة المستمرة لمساعدتك على الحفاظ على الامتثال وتجنب الغرامات المكلفة.",
+      "lede": "We help you meet regulatory requirements with practical policies, assessments and ongoing monitoring.",
+      "headline": {
+        "before": "Stay Compliant.",
+        "accent": "Stay Confident."
+      },
+      "images": [
+        "images/services/people-working-table.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "الامتثال التنظيمي",
+          "description": "نساعد المنظمات على التنقل في المشهد التنظيمي المعقد وضمان الالتزام باللوائح المحلية والدولية عبر مختلف الصناعات. تشمل خدمات الامتثال لدينا التحليل التنظيمي وتقييمات الامتثال وتطوير السياسات والتدريب والمراقبة المستمرة لمساعدتك على الحفاظ على الامتثال وتجنب الغرامات المكلفة."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "What We Cover",
+      "features": [
+        {
+          "title": "Regulatory Analysis",
+          "description": "Know which rules apply — and what they mean for operations.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-section",
+          "tone": ""
+        },
+        {
+          "title": "Compliance Assessments",
+          "description": "Gap reviews that show where you stand today.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-list-check",
+          "tone": "purple"
+        },
+        {
+          "title": "Policy Development",
+          "description": "Practical policies your team can actually follow.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-file-lines",
+          "tone": "blue"
+        },
+        {
+          "title": "Ongoing Monitoring",
+          "description": "Cadence and checks that keep compliance from drifting.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-eye",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Compliance Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Identify",
+          "description": "Map applicable regulations and obligations."
+        },
+        {
+          "number": "02",
+          "title": "Assess",
+          "description": "Evaluate current policies and controls."
+        },
+        {
+          "number": "03",
+          "title": "Design",
+          "description": "Build practical policies and workflows."
+        },
+        {
+          "number": "04",
+          "title": "Implement",
+          "description": "Roll out changes across the team."
+        },
+        {
+          "number": "05",
+          "title": "Monitor",
+          "description": "Review regularly and update as rules change."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Analytics",
+          "image": "images/Analytics.png"
+        },
+        {
+          "name": "SEMrush",
+          "image": "images/SEMrush.png"
+        },
+        {
+          "name": "Ahrefs",
+          "image": "images/Ahrefs.png"
+        },
+        {
+          "name": "Search Console",
+          "image": "images/Search Console.png"
+        },
+        {
+          "name": "Moz",
+          "image": "images/Moz.png"
+        },
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        }
+      ],
+      "tagline": "Ensuring regulatory compliance across all industries",
+      "slogan": "Ready To Make Compliance A Strength?",
+      "ctaSupport": "Build a compliance system that protects the business without slowing it down."
+    },
+    {
+      "id": "dispute-resolution",
+      "slug": "service-dispute-resolution",
+      "category": "legal-services",
+      "title": "حل النزاعات",
+      "description": "حل نزاعات الأعمال بكفاءة وفعالية مع خدمات حل النزاعات الاحترافية لدينا. نوفر التمثيل في التقاضي ومفاوضات التسوية، مما يساعدك على تحقيق نتائج مواتية مع تقليل التكاليف وتعطيل الأعمال. تشمل خدمات حل النزاعات لدينا التفاوض والوساطة والتحكيم ودعم التقاضي عبر أنواع مختلفة من نزاعات الأعمال بما في ذلك نزاعات العقود ونزاعات العمل والنزاعات التجارية والمسائل التنظيمية.",
+      "lede": "We help resolve business disputes efficiently through negotiation, mediation and structured support.",
+      "headline": {
+        "before": "Resolve Disputes",
+        "accent": "With Confidence"
+      },
+      "images": [
+        "images/services/business-man-working-office-desktop.jpg",
+        "images/Modern Solutions.png"
+      ],
+      "extraContent": [
+        {
+          "title": "حل النزاعات الاحترافي",
+          "description": "نوفر التمثيل في التقاضي ومفاوضات التسوية، مما يساعدك على تحقيق نتائج مواتية مع تقليل التكاليف وتعطيل الأعمال. تشمل خدمات حل النزاعات لدينا التفاوض والوساطة والتحكيم ودعم التقاضي عبر أنواع مختلفة من نزاعات الأعمال بما في ذلك نزاعات العقود ونزاعات العمل والنزاعات التجارية والمسائل التنظيمية."
+        }
+      ],
+      "extraImages": [],
+      "featuresSectionTitle": "How We Resolve",
+      "features": [
+        {
+          "title": "Negotiation",
+          "description": "Direct talks aimed at a fair, fast commercial outcome.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-comments-dollar",
+          "tone": ""
+        },
+        {
+          "title": "Mediation",
+          "description": "Guided resolution that protects relationships where possible.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-people-arrows",
+          "tone": "purple"
+        },
+        {
+          "title": "Arbitration",
+          "description": "Structured private resolution when parties need a firm decision.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-landmark",
+          "tone": "blue"
+        },
+        {
+          "title": "Litigation Support",
+          "description": "Preparation and coordination when formal proceedings are required.",
+          "iconType": "fa",
+          "icon": "fa-solid fa-building-columns",
+          "tone": "pink"
+        }
+      ],
+      "processSectionTitle": "Our Resolution Process",
+      "process": [
+        {
+          "number": "01",
+          "title": "Assess",
+          "description": "Understand the dispute, stakes and options."
+        },
+        {
+          "number": "02",
+          "title": "Strategy",
+          "description": "Choose the path that protects your position."
+        },
+        {
+          "number": "03",
+          "title": "Engage",
+          "description": "Negotiate or mediate with a clear mandate."
+        },
+        {
+          "number": "04",
+          "title": "Resolve",
+          "description": "Document terms and close the conflict."
+        },
+        {
+          "number": "05",
+          "title": "Prevent",
+          "description": "Recommend changes to avoid repeat issues."
+        }
+      ],
+      "toolsSectionTitle": "Tools We Use",
+      "tools": [
+        {
+          "name": "Figma",
+          "image": "images/Figma.png"
+        },
+        {
+          "name": "Adobe XD",
+          "image": "images/adobe xd.png"
+        },
+        {
+          "name": "Sketch",
+          "image": "images/sketch.png"
+        },
+        {
+          "name": "Photoshop",
+          "image": "images/photoshop.png"
+        },
+        {
+          "name": "Illustrator",
+          "image": "images/illasstrator.png"
+        },
+        {
+          "name": "InVision",
+          "image": "images/invision.png"
+        }
+      ],
+      "tagline": "Resolving disputes efficiently while protecting your business",
+      "slogan": "Ready To Resolve This And Move Forward?",
+      "ctaSupport": "Get a clear path to resolution that protects your time, reputation and results."
+    }
+  ]
+}

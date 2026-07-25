@@ -2,33 +2,31 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Web Development | Falcon Codes</title>
-
-    <!-- Google Font -->
-
+    <!--
+      Service page (ecommerce) — content from data/services-details.json via js/service-page.js
+    -->
+    <title>Service | Falcon Codes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.css">
-
 </head>
 
-<body class="page-web" id="top">
+<body class="page-web page-service is-loading" id="top" data-service-id="ecommerce">
 
-    <!-- ================= NAVBAR (shared — same as home / about / services) ================= -->
+    <div class="service-loading" aria-live="polite" aria-busy="true">
+        <span class="service-loading-dot"></span>
+        <span class="service-loading-dot"></span>
+        <span class="service-loading-dot"></span>
+        <span class="visually-hidden">Loading service…</span>
+    </div>
+    <p class="service-load-error" role="alert" hidden>Unable to load this service. Please try again.</p>
+
     <div id="site-header">
         <header class="site-header">
             <nav class="nav" aria-label="Primary">
@@ -38,8 +36,8 @@
                 </a>
                 <div class="nav-links">
                     <a href="index.html" data-nav="home">Home</a>
-                    <a href="services.html" data-nav="services" class="is-active">Services</a>
                     <a href="about.html" data-nav="about">About</a>
+                    <a href="services.html" data-nav="services" class="is-active">Services</a>
                     <a href="index.html#projects" data-nav="portfolio">Portfolio</a>
                     <a href="contact.html" data-nav="contact">Contact</a>
                 </div>
@@ -51,376 +49,107 @@
         </header>
     </div>
 
-    <!-- ================= HERO ================= -->
-
     <section class="hero">
-
         <div class="container">
-
             <div class="hero-content">
-
                 <div class="hero-text">
-
                     <div class="breadcrumb">
-
                         <a href="index.html">Home</a>
-
                         <span>/</span>
-
                         <a href="services.html">Services</a>
-
                         <span>/</span>
-
-                        <strong>E-Commerce Solutions</strong>
-
+                        <strong><span data-bind="title"></span></strong>
                     </div>
-
-                    <h1>
-
-                E-Commerce Solutions
-
-                        <span>That Drive Sales</span>
-
-                    </h1>
-
-                    <p>
-                        We build secure, scalable and high-converting online stores
-                        for your business, optimized for the best shopping
-                        experience.
-                    </p>  
-
+                    <h1 data-bind="headline"></h1>
+                    <p data-bind="description"></p>
                     <div class="hero-buttons">
-
-                        <a href="contact.html" class="primary-btn">
-
-                            Get Started
-
-                        </a>
-
-                        <a href="index.html#projects" class="secondary-btn">
-
-                            Explore Work
-
-                        </a>
-
+                        <a href="contact.html" class="primary-btn">Get Started</a>
+                        <a href="index.html#projects" class="secondary-btn">Explore Work</a>
                     </div>
-
                 </div>
-
                 <div class="hero-image">
-
-                    <img src="images/تجاره.png" alt="Dashboard">
-
+                    <img data-bind="hero-image" alt="">
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-    <!-- ================= WHAT WE BUILD ================= -->
 
     <section class="services">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>
-
-                What We Offer
-
-                </h2>
-
+                <h2 data-bind="features-title"></h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="services-grid">
-
-                <!-- CARD 1 -->
-
-                <div class="service-card">
-
-                    <div class="icon">
-
-                        <img src="images/Online store.png" alt=""></i>
-
-                    </div>
-
-                    <h3>
-
-                    Online Store
-
-                    </h3>
-
-                    <p>
-
-                    Custom & feature-rich
-                    online storefronts.
-                    </p>
-
-                </div>
-
-                <!-- CARD 2 -->
-
-                <div class="service-card">
-
-                    <div class="icon purple">
-
-                        <img src="images/Payment Gateway.png" alt="">
-
-                    </div>
-
-                    <h3>
-
-                    Payment Gateway
-
-                    </h3>
-
-                    <p>
-                        Secure & multiple
-                        payment options.
-
-                    </p>
-
-                </div>
-
-                <!-- CARD 3 -->
-
-                <div class="service-card">
-
-                    <div class="icon blue">
-                        <img src="images/Product Mgmt.png" alt="">
-
-                    </div>
-
-                    <h3>
-
-                    Product Mgmt
-
-                    </h3>
-
-                    <p>
-
-                    Easy product & inventory
-                    management.
-                    </p>
-
-                </div>
-
-                <!-- CARD 4 -->
-
-                <div class="service-card">
-
-                    <div class="icon pink">
-
-                        <img src="images/Shipping.png" alt="">
-
-                    </div>
-
-                    <h3>
-
-                        Shipping
-
-                    </h3>
-
-                    <p>
-                        Real-time shipping &
-                        tracking integrations.
-                    </p>
-
-                </div>
-            </div>
-
+            <div class="services-grid" data-bind="features"></div>
         </div>
-
     </section>
-
-    <!--=========================================
-        DEVELOPMENT PROCESS
-==========================================-->
 
     <section class="process">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>Our E-Commerce Process</h2>
-
+                <h2 data-bind="process-title"></h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="timeline">
-
-                <div class="timeline-line"></div>
-
-                <div class="step active">
-
-                    <div class="circle">01</div>
-
-                    <h4>Requirement</h4>
-
-                    <p>Understanding your business
-                    needs.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">02</div>
-
-                    <h4>Store Design</h4>
-
-                    <p>UI/UX design for better
-                    conversions.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">03</div>
-
-                    <h4>Development</h4>
-
-                    <p>Build powerful & secure store.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">04</div>
-
-                    <h4>Testing </h4>
-
-                        <p>Test everything before launch.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">05</div>
-
-                    <h4>Launch</h4>
-
-                    <p>Go live & grow your business.</p>
-
-                </div>
-
-            </div>
-
+            <div class="timeline" data-bind="process"></div>
         </div>
-
     </section>
-
-    <!--=========================================
-        TECHNOLOGIES
-==========================================-->
 
     <section class="technologies">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>Platforms We Work With</h2>
-
+                <h2 data-bind="tools-title"></h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="tech-grid">
-                <div class="tech-item">
-                    <img src="images/Shopify.png" alt="">
-                    <span>Shopify</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/WooCommerce.png" alt="">
-                    <span>WooCommerce</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/Magento.png" alt="">
-                    <span>Magento </span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/OpenCart.png" alt="">
-                    <span>OpenCart</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/PrestaShop.png" alt="">
-                    <span>PrestaShop</span>
-                </div>
-
-                <div class="tech-item">
-                    <img src="images/Custom Solution.png" alt="">
-                    <span>Custom Solution</span>
-                </div>
-
-
-            </div>
-
+            <div class="tech-grid" data-bind="tools"></div>
         </div>
-
     </section>
 
-    <!--======================
-                CTA + FOOTER (overlapping zone — same as home / about / services)
-        =======================-->
+        <section class="related-services" aria-labelledby="related-services-heading">
+        <div class="container">
+            <div class="related-split">
+                <div class="related-column">
+                    <p class="related-eyebrow" data-bind="related-label"></p>
+                    <h2 id="related-services-heading" data-bind="related-heading">Related Services</h2>
+                    <p class="related-support" data-bind="related-support"></p>
+                    <div class="related-list" data-bind="related-services"></div>
+                </div>
+                <div class="related-column related-column--other">
+                    <p class="related-eyebrow">Explore more</p>
+                    <h2 data-bind="other-heading">Other Services</h2>
+                    <p class="related-support" data-bind="other-support"></p>
+                    <div class="related-list" data-bind="other-services"></div>
+                    <a class="related-all-link" href="services.html">View all services <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="footer-cta-zone">
-
-        <section class="cta" id="start" aria-labelledby="web-cta-heading">
-
+        <section class="cta" id="start" aria-labelledby="service-cta-heading">
             <div class="container">
-
                 <div class="cta-box">
-
                     <div class="cta-left">
-
                         <div class="cta-icon" aria-hidden="true">
                             <i class="fa-solid fa-rocket"></i>
                         </div>
-
                         <div class="cta-text">
-
-                            <h2 id="web-cta-heading">
-                                Let's Design Your Next Big Idea
-                            </h2>
-
-                            <p>
-                                Great designs are just the start. Let's create something amazing together.
-                            </p>
-
+                            <h2 id="service-cta-heading" data-bind="slogan"></h2>
+                            <p data-bind="cta-support"></p>
                         </div>
-
                     </div>
-
-
                 </div>
                 <div class="cta-visual">
-                    <img src="images/تجاره فوتر.png" alt="Improve Your Rankings">
+                    <img data-bind="cta-image" alt="">
                 </div>
-
             </div>
-
         </section>
 
         <footer>
-
             <div class="container">
-
                 <div class="footer-top">
-
                     <a href="index.html" class="footer-logo" aria-label="Falcon of Codes — Home">
                         <img src="images/falcon logo.svg" alt="Falcon of Codes">
                     </a>
-
                     <nav class="social-links" aria-label="Social links">
                         <a href="#">Dribbble</a>
                         <a href="#">Behance</a>
@@ -428,33 +157,22 @@
                         <a href="#">Instagram</a>
                         <a href="#">Twitter (X)</a>
                     </nav>
-
                 </div>
-
                 <hr>
-
                 <div class="footer-bottom">
-
                     <p>© 2024 Falcon of Codes. All rights reserved.</p>
-
                     <nav class="footer-legal" aria-label="Legal">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                     </nav>
-
                 </div>
-
             </div>
-
         </footer>
-
     </div>
 
-    <!-- ================= MOBILE NAV ================= -->
     <div id="site-mobile-nav">
         <nav class="mobile-tabbar" aria-label="Mobile navigation">
             <div class="mobile-tabbar-indicator" aria-hidden="true"></div>
-
             <a href="index.html" class="mobile-tab" data-page="home" aria-label="Home">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -463,7 +181,6 @@
                 </span>
                 <span class="mobile-tab-label">Home</span>
             </a>
-
             <a href="about.html" class="mobile-tab" data-page="about" aria-label="About">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -474,7 +191,6 @@
                 </span>
                 <span class="mobile-tab-label">About</span>
             </a>
-
             <a href="services.html" class="mobile-tab is-active" data-page="services" aria-label="Services">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -484,7 +200,6 @@
                 </span>
                 <span class="mobile-tab-label">Services</span>
             </a>
-
             <a href="index.html#projects" class="mobile-tab" data-page="portfolio" aria-label="Portfolio">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -494,7 +209,6 @@
                 </span>
                 <span class="mobile-tab-label">Portfolio</span>
             </a>
-
             <a href="contact.html" class="mobile-tab" data-page="contact" aria-label="Contact">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -507,27 +221,9 @@
     </div>
 
     <script src="js/header.js"></script>
+    <script src="js/services-data.js"></script>
+    <script src="js/service-page.js"></script>
     <script>
-        /* Page animations only — header / footer handled by header.js */
-        const revealElements = document.querySelectorAll(
-            ".hero-text, .hero-image, .service-card, .step, .tech-item"
-        );
-
-        if ("IntersectionObserver" in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) entry.target.classList.add("show");
-                });
-            }, { threshold: 0.15 });
-
-            revealElements.forEach((el) => {
-                el.classList.add("fade-up");
-                observer.observe(el);
-            });
-        } else {
-            revealElements.forEach((el) => el.classList.add("show"));
-        }
-
         const heroImage = document.querySelector(".hero-image");
         if (heroImage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             window.addEventListener("mousemove", (e) => {
@@ -536,12 +232,7 @@
                 heroImage.style.transform = `translate(${x}px, ${y}px)`;
             });
         }
-
-        document.querySelectorAll(".service-card").forEach((card, index) => {
-            card.style.animationDelay = `${index * 0.15}s`;
-        });
     </script>
-
 </body>
 
 </html>

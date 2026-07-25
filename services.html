@@ -17,47 +17,38 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="services.css">
 </head>
-<body>
+<body class="page-services page-services-list" id="top">
+
+    <div id="site-header">
+        <header class="site-header">
+            <nav class="nav" aria-label="Primary">
+                <a class="nav-logo" href="index.html" aria-label="Falcon of Codes — Home">
+                    <img src="images/falcon logo.svg" alt="Falcon of Codes — website builder and managed hosting"
+                        width="160" height="54" />
+                </a>
+                <div class="nav-links">
+                    <a href="index.html" data-nav="home">Home</a>
+                    <a href="about.html" data-nav="about">About</a>
+                    <a href="services.html" data-nav="services" class="is-active">Services</a>
+                    <a href="index.html#projects" data-nav="portfolio">Portfolio</a>
+                    <a href="contact.html" data-nav="contact">Contact</a>
+                </div>
+                <a class="btn btn-nav" href="contact.html">Let's Talk</a>
+                <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </header>
+    </div>
   
     <!-- =========================
          SERVICES PAGE
     ========================= -->
     
     <section class="services-page">
-    
-        <!-- =========================
-             NAVBAR
-        ========================= -->
-    
-        <header class="services-header">
-    
-            <a href="#" class="services-logo">
-                <img src="images/falcon logo.svg" alt="Falcon Codes">
-            </a>
-    
-            <nav class="services-navbar">
-    
-                <a href="index.html">Home</a>
-    
-                <a href="#" class="active">
-                    Services
-                </a>
-    
-                <a href="about.html">About</a>
-    
-                <a href="#">Portfolio</a>
-    
-                <a href="contact.html">Contact</a>
-    
-            </nav>
-    
-            <a href="#" class="services-talk-btn">
-                Let's Talk
-            </a>
-    
-        </header>
     
     
         <!-- =========================
@@ -87,7 +78,7 @@
     
                 <div class="services-buttons">
     
-                    <a href="#" class="explore-btn">
+                    <a href="#all-services" class="explore-btn">
                         Explore Services
     
                         <span class="arrow">
@@ -95,7 +86,7 @@
                         </span>
                     </a>
     
-                    <a href="#" class="started-btn">
+                    <a href="contact.html" class="started-btn">
                         Get Started
                     </a>
     
@@ -231,7 +222,7 @@
             </div>
     
     
-            <a href="#" class="learn-more-btn">
+            <a href="service-template.html?id=web-dev" class="learn-more-btn">
     
                 Learn More
     
@@ -242,7 +233,7 @@
             </a>
     
         </section>
-    <section class="all-services-section">
+    <section class="all-services-section" id="all-services">
     
         <div class="all-services-container">
     
@@ -250,183 +241,8 @@
                 All Services
             </h2>
     
-            <div class="services-grid">
-    
-                <!-- CARD 1 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/web developmenttt.png" alt="Web Development">
-                    </div>
-    
-                    <h3>Web Development</h3>
-    
-                    <p>
-                        Build fast, secure and scalable
-                        websites that drive growth.
-                    </p>
-    
-                    <a href="web.html" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 2 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/ديزاين.png" alt="UI UX Design">
-                    </div>
-    
-                    <h3>UI / UX Design</h3>
-    
-                    <p>
-                        Design beautiful and intuitive
-                        interfaces that users love.
-                    </p>
-    
-                    <a href="ui.html" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 3 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/seoservices.png" alt="SEO Services">
-                    </div>
-    
-                    <h3>SEO Services</h3>
-    
-                    <p>
-                        Improve your search rankings
-                        and drive organic traffic.
-                    </p>
-    
-                    <a href="#" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 4 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images//paid advertising.png" alt="Paid Advertising">
-                    </div>
-    
-                    <h3>Paid Advertising</h3>
-    
-                    <p>
-                        Run targeted ad campaigns
-                        that bring real results.
-                    </p>
-    
-                    <a href="#" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 5 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/cash flow.png" alt="Cash Flow Management">
-                    </div>
-    
-                    <h3>Cash Flow Management</h3>
-    
-                    <p>
-                        Manage cash flow and budgets
-                        to keep your business healthy.
-                    </p>
-    
-                    <a href="#" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 6 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/حسابات.png" alt="Accounting">
-                    </div>
-    
-                    <h3>Accounting</h3>
-    
-                    <p>
-                        Accurate accounting services
-                        to support your business.
-                    </p>
-    
-                    <a href="#" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 7 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/e-commerce.png" alt="E-Commerce Solutions">
-                    </div>
-    
-                    <h3>E-Commerce Solutions</h3>
-    
-                    <p>
-                        Build powerful online stores
-                        that increase your sales.
-                    </p>
-    
-                    <a href="#" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
-    
-                <!-- CARD 8 -->
-                <div class="service-card">
-    
-                    <div class="service-image">
-                        <img src="images/strategyyy.png" alt="Strategy Consulting">
-                    </div>
-    
-                    <h3>Strategy Consulting</h3>
-    
-                    <p>
-                        Smart strategies to help your
-                        business grow and scale.
-                    </p>
-    
-                    <a href="#" class="service-link">
-                        Learn More
-                        <span>→</span>
-                    </a>
-    
-                </div>
-    
+            <div class="services-grid" data-services-grid>
+                <!-- Filled by js/services-list.js from data/services-details.json -->
             </div>
     
         </div>
@@ -602,7 +418,7 @@
     
             </div>
     
-            <a href="#" class="cta-button">
+            <a href="contact.html" class="cta-button">
                 Let's Talk
                 <span>→</span>
             </a>
@@ -610,62 +426,97 @@
         </div>
     
     </section>
-   
 
+    </section>
 
-    
+    <!-- =========================
+         FOOTER
+    ========================= -->
+    <footer class="services-footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="footer-logo" aria-label="Falcon of Codes — Home">
+                    <img src="images/falcon logo.svg" alt="Falcon of Codes">
+                </a>
+                <nav class="social-links" aria-label="Social links">
+                    <a href="#">Dribbble</a>
+                    <a href="#">Behance</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter (X)</a>
+                </nav>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2024 Falcon of Codes. All rights reserved.</p>
+                <nav class="footer-legal" aria-label="Legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ================= MOBILE NAV ================= -->
+    <div id="site-mobile-nav">
+        <nav class="mobile-tabbar" aria-label="Mobile navigation">
+            <div class="mobile-tabbar-indicator" aria-hidden="true"></div>
+
+            <a href="index.html" class="mobile-tab" data-page="home" aria-label="Home">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1h-5v-6H9v6H4a1 1 0 01-1-1V9.5z" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Home</span>
+            </a>
+
+            <a href="about.html" class="mobile-tab" data-page="about" aria-label="About">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">About</span>
+            </a>
+
+            <a href="services.html" class="mobile-tab is-active" data-page="services" aria-label="Services">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="7" width="20" height="14" rx="2" />
+                        <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Services</span>
+            </a>
+
+            <a href="index.html#projects" class="mobile-tab" data-page="portfolio" aria-label="Portfolio">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 18 22 12 16 6" />
+                        <polyline points="8 6 2 12 8 18" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Portfolio</span>
+            </a>
+
+            <a href="contact.html" class="mobile-tab" data-page="contact" aria-label="Contact">
+                <span class="mobile-tab-icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                    </svg>
+                </span>
+                <span class="mobile-tab-label">Contact</span>
+            </a>
+        </nav>
+    </div>
+
+   <script src="js/header.js"></script>
+   <script src="js/services-data.js"></script>
+   <script src="js/services-list.js"></script>
    <script>
-
-    const serviceCards =
-        document.querySelectorAll(".service-card");
-
-    const serviceObserver =
-        new IntersectionObserver(
-
-            (entries) => {
-
-                entries.forEach((entry) => {
-
-                    if (entry.isIntersecting) {
-
-                        const card =
-                            entry.target;
-
-                        const delay =
-                            card.dataset.delay || 0;
-
-                        setTimeout(() => {
-
-                            card.classList.add("show");
-
-                        }, delay);
-
-                        serviceObserver.unobserve(card);
-
-                    }
-
-                });
-
-            },
-
-            {
-
-                threshold: 0.15
-
-            }
-
-        );
-
-
-    serviceCards.forEach((card, index) => {
-
-        card.dataset.delay =
-            (index % 4) * 120;
-
-        serviceObserver.observe(card);
-
-    });
-    
 
             const animatedElements =
             document.querySelectorAll(
@@ -722,6 +573,5 @@ animatedElements.forEach((element) => {
    
 
 </script>
-    </script>
 </body>
 </html>

@@ -1,0 +1,108 @@
+{
+  "heroSlider": {
+    "images": [
+      "assets/hero-slider/modern-printing-press-creates-colorful-documents-indoors-generated-by-ai.jpg",
+      "assets/hero-slider/future-begins-now-is-it-worth-investing-ai.jpg",
+      "assets/hero-slider/Cloud-IV.png",
+      "assets/hero-slider/homepage-concept-with-search-bar.jpg",
+      "assets/hero-slider/homepage-concept-with-search-bar.jpg",
+      "assets/profile/image.png",
+      "assets/profile/Redefining-AI-Hybrid-Cloud-and-Enterprise-Workloads-with-Cooling-Innovations-.png",
+      "assets/profile/Bild-7.png",
+      "assets/profile/497d232590e203ba033c3943332ec650.png",
+      "assets/profile/9b3a8945a2ca4541d322044fa7ff2bbd.png",
+      "assets/profile/guerreiros_internet_destaque.png",
+      "assets/profile/webp-net-resizeimage.png",
+      "assets/profile/Untitled20design2017c4e8.avif",
+      "assets/new/seo-stratergy-in-2023-12grids.png",
+      "assets/profile/173784-OX86Z9.jpg",
+      "assets/new/1_7s9-jNFns1p-5u5TQJjPeA.png",
+      "assets/new/1_BPorHmoclneKDm2g45MFOg.png",
+      "assets/new/1_zR4lS1veoQUbAVq7kwFMtw.png"
+    ],
+    "videos": [
+      "videos/bot-xm1.mp4",
+      "videos/cyboaf-AI.mp4",
+      "videos/cyboat-AI.mp4",
+      "videos/firstour_video.mp4",
+      "videos/network-hybo.mp4",
+      "videos/our_video-02.mp4",
+      "videos/bar_show_vdias.mp4",
+      "videos/bot-sd-angle-2.mp4",
+      "videos/sliding-imgs-x-y.mp4",
+      "videos/bot-hand-df.mp4",
+      "videos/bot-sd.mp4",
+      "videos/our-video-edited.mp4"
+    ]
+  },
+  "fullscreenGallery": {
+    "images": [
+      "assets/profile/Redefining-AI-Hybrid-Cloud-and-Enterprise-Workloads-with-Cooling-Innovations-.png",
+      "assets/hero-slider/future-begins-now-is-it-worth-investing-ai.jpg",
+      "assets/hero-slider/modern-printing-press-creates-colorful-documents-indoors-generated-by-ai.jpg",
+      "assets/profile/Bild-7.png",
+      "assets/profile/497d232590e203ba033c3943332ec650.png",
+      "assets/profile/9b3a8945a2ca4541d322044fa7ff2bbd.png",
+      "assets/profile/image.png",
+      "assets/profile/guerreiros_internet_destaque.png",
+      "assets/profile/webp-net-resizeimage.png",
+      "assets/profile/Untitled20design2017c4e8.avif",
+      "assets/new/seo-stratergy-in-2023-12grids.png",
+      "assets/profile/173784-OX86Z9.jpg",
+      "assets/new/1_7s9-jNFns1p-5u5TQJjPeA.png",
+      "assets/new/1_BPorHmoclneKDm2g45MFOg.png",
+      "assets/new/1_zR4lS1veoQUbAVq7kwFMtw.png"
+    ],
+    "videos": [
+      "videos/bar_show_vdias.mp4",
+      "videos/bot-sd-angle-2.mp4",
+      "videos/sliding-imgs-x-y.mp4",
+      "videos/bot-xm1.mp4",
+      "videos/cyboaf-AI.mp4",
+      "videos/cyboat-AI.mp4",
+      "videos/firstour_video.mp4",
+      "videos/network-hybo.mp4",
+      "videos/our_video-02.mp4",
+      "videos/bot-hand-df.mp4",
+      "videos/bot-sd.mp4",
+      "videos/our-video-edited.mp4"
+    ]
+  },
+  "gridGallery": {
+    "images": [
+      "assets/profile/Redefining-AI-Hybrid-Cloud-and-Enterprise-Workloads-with-Cooling-Innovations-.png",
+      "assets/profile/guerreiros_internet_destaque.png",
+      "assets/profile/webp-net-resizeimage.png",
+      "assets/profile/image.png",
+      "assets/profile/Untitled20design2017c4e8.avif",
+      "assets/new/seo-stratergy-in-2023-12grids.png",
+      "assets/profile/173784-OX86Z9.jpg",
+      "assets/new/1_7s9-jNFns1p-5u5TQJjPeA.png",
+      "assets/new/1_BPorHmoclneKDm2g45MFOg.png",
+      "assets/new/1_zR4lS1veoQUbAVq7kwFMtw.png",
+      "assets/profile/Bild-7.png",
+      "assets/profile/497d232590e203ba033c3943332ec650.png",
+      "assets/profile/9b3a8945a2ca4541d322044fa7ff2bbd.png",
+      "assets/hero-slider/modern-printing-press-creates-colorful-documents-indoors-generated-by-ai.jpg",
+      "assets/hero-slider/future-begins-now-is-it-worth-investing-ai.jpg",
+      "assets/hero-slider/Cloud-IV.png",
+      "assets/hero-slider/homepage-concept-with-search-bar.jpg",
+      "assets/hero-slider/homepage-concept-with-search-bar.jpg"
+    ],
+    "videos": [
+      "videos/bot-hand-df.mp4",
+      "videos/bot-sd.mp4",
+      "videos/our-video-edited.mp4",
+      "videos/bot-xm1.mp4",
+      "videos/cyboaf-AI.mp4",
+      "videos/cyboat-AI.mp4",
+      "videos/firstour_video.mp4",
+      "videos/network-hybo.mp4",
+      "videos/our_video-02.mp4",
+      "videos/bar_show_vdias.mp4",
+      "videos/bot-sd-angle-2.mp4",
+      "videos/sliding-imgs-x-y.mp4"
+    ]
+  }
+}
+

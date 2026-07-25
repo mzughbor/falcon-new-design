@@ -55,7 +55,7 @@ ul {
 .container {
 
     width: 90%;
-    max-width: 1300px;
+    max-width: 1500px;
     margin: auto;
 
 }
@@ -105,7 +105,7 @@ header:not(.site-header) {
 
     width: 90%;
 
-    max-width: 1300px;
+    max-width: 1500px;
 
     margin: auto;
 
@@ -1061,7 +1061,7 @@ header:not(.site-header) {
 
     .container {
 
-        width: 92%;
+        width: var(--mobile-rail, 90%);
 
     }
 
@@ -1574,7 +1574,7 @@ header:not(.site-header) {
     }
 
     .page-contact .contact-footer {
-        padding: 32px 0 calc(100px + env(safe-area-inset-bottom, 0px));
+        padding: var(--mobile-footer-pt, 56px) 0 var(--mobile-footer-pb, 28px);
         border-top: none;
     }
 
@@ -1601,7 +1601,7 @@ header:not(.site-header) {
 @media(max-width:480px) {
 
     .page-contact .container {
-        width: 92%;
+        width: var(--mobile-rail, 90%);
     }
 
     .contact-left,

@@ -2,33 +2,31 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Web Development | Falcon Codes</title>
-
-    <!-- Google Font -->
-
+    <!--
+      Service page (seo) — content from data/services-details.json via js/service-page.js
+    -->
+    <title>Service | Falcon Codes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="web.css">
-
 </head>
 
-<body class="page-web" id="top">
+<body class="page-web page-service is-loading" id="top" data-service-id="seo">
 
-    <!-- ================= NAVBAR (shared — same as home / about / services) ================= -->
+    <div class="service-loading" aria-live="polite" aria-busy="true">
+        <span class="service-loading-dot"></span>
+        <span class="service-loading-dot"></span>
+        <span class="service-loading-dot"></span>
+        <span class="visually-hidden">Loading service…</span>
+    </div>
+    <p class="service-load-error" role="alert" hidden>Unable to load this service. Please try again.</p>
+
     <div id="site-header">
         <header class="site-header">
             <nav class="nav" aria-label="Primary">
@@ -38,8 +36,8 @@
                 </a>
                 <div class="nav-links">
                     <a href="index.html" data-nav="home">Home</a>
-                    <a href="services.html" data-nav="services" class="is-active">Services</a>
                     <a href="about.html" data-nav="about">About</a>
+                    <a href="services.html" data-nav="services" class="is-active">Services</a>
                     <a href="index.html#projects" data-nav="portfolio">Portfolio</a>
                     <a href="contact.html" data-nav="contact">Contact</a>
                 </div>
@@ -51,375 +49,107 @@
         </header>
     </div>
 
-    <!-- ================= HERO ================= -->
-
     <section class="hero">
-
         <div class="container">
-
             <div class="hero-content">
-
                 <div class="hero-text">
-
                     <div class="breadcrumb">
-
                         <a href="index.html">Home</a>
-
                         <span>/</span>
-
                         <a href="services.html">Services</a>
-
                         <span>/</span>
-
-                        <strong>SEO Services</strong>
-
+                        <strong><span data-bind="title"></span></strong>
                     </div>
-
-                    <h1>
-
-                        Rank Higher. Get
-                        Found.
-
-                        <span>Grow Faster.</span>
-
-                    </h1>
-
-                    <p>
-                        We optimize your website to rank higher on Google and drive
-                        organic traffic, ensuring your business stays ahead of the
-                        competition.
-                    </p>
-
+                    <h1 data-bind="headline"></h1>
+                    <p data-bind="description"></p>
                     <div class="hero-buttons">
-
-                        <a href="contact.html" class="primary-btn">
-
-                            Get Started
-
-                        </a>
-
-                        <a href="index.html#projects" class="secondary-btn">
-
-                            Explore Work
-
-                        </a>
-
+                        <a href="contact.html" class="primary-btn">Get Started</a>
+                        <a href="index.html#projects" class="secondary-btn">Explore Work</a>
                     </div>
-
                 </div>
-
                 <div class="hero-image">
-
-                    <img src="images/SEO Services.png" alt="Dashboard">
-
+                    <img data-bind="hero-image" alt="">
                 </div>
-
             </div>
-
         </div>
-
     </section>
-
-    <!-- ================= WHAT WE BUILD ================= -->
 
     <section class="services">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>
-
-                    Our SEO Services
-
-                </h2>
-
+                <h2 data-bind="features-title"></h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="services-grid">
-
-                <!-- CARD 1 -->
-
-                <div class="service-card">
-
-                    <div class="icon">
-
-                        <img src="images/Technical SEO.png" alt=""></i>
-
-                    </div>
-
-                    <h3>
-
-                        Technical SEO
-                    </h3>
-
-                    <p>
-
-                        Improve website performance
-                        and core web vitals.
-                    </p>
-
-                </div>
-
-                <!-- CARD 2 -->
-
-                <div class="service-card">
-
-                    <div class="icon purple">
-
-                        <img src="images/On-Page SEO.png" alt="">
-
-                    </div>
-
-                    <h3>
-
-                        On-Page SEO
-
-                    </h3>
-
-                    <p>
-                        Optimize content structure
-                        and keyword density.
-
-                    </p>
-
-                </div>
-
-                <!-- CARD 3 -->
-
-                <div class="service-card">
-
-                    <div class="icon blue">
-                        <img src="images/Off-Page SEO.png" alt="">
-
-                    </div>
-
-                    <h3>
-
-                        Off-Page SEO
-
-                    </h3>
-
-                    <p>
-
-                        Build authority with high-
-                        quality backlinks.
-                    </p>
-
-                </div>
-
-                <!-- CARD 4 -->
-
-                <div class="service-card">
-
-                    <div class="icon pink">
-
-                        <img src="images/Content SEO.png" alt="">
-
-                    </div>
-
-                    <h3>
-
-                        Content SEO
-
-                    </h3>
-
-                    <p>
-                        High-quality & SEO friendly
-                        content creation.
-                    </p>
-
-                </div>
-                
-                </div>
-            </div>
-
+            <div class="services-grid" data-bind="features"></div>
         </div>
-
     </section>
-
-    <!--=========================================
-        DEVELOPMENT PROCESS
-==========================================-->
 
     <section class="process">
-
         <div class="container">
-
             <div class="section-title">
-
-                <h2>Our SEO Process</h2>
-
+                <h2 data-bind="process-title"></h2>
                 <div class="line"></div>
-
             </div>
-
-            <div class="timeline">
-
-                <div class="timeline-line"></div>
-
-                <div class="step active">
-
-                    <div class="circle">01</div>
-
-                    <h4>Audit</h4>
-
-                    <p>Comprehensive website SEO
-                    audit.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">02</div>
-
-                    <h4>Strategy</h4>
-
-                    <p>Custom SEO growth roadmap.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">03</div>
-
-                    <h4>Optimization</h4>
-
-                    <p>On-page & technical
-                    improvements.</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">04</div>
-
-                    <h4>Link Building</h4>
-
-                        <p>High-authority backlink outreach..</p>
-
-                </div>
-
-                <div class="step">
-
-                    <div class="circle">05</div>
-
-                    <h4>Reporting</h4>
-
-                    <p>Detailed monthly performance stats.</p>
-
-                </div>
-
-            </div>
-
+            <div class="timeline" data-bind="process"></div>
         </div>
-
     </section>
 
-    <!--=========================================
-            TECHNOLOGIES
-    ==========================================-->
-    
     <section class="technologies">
-    
         <div class="container">
-    
             <div class="section-title">
-                <h2>Tools We Use</h2>
+                <h2 data-bind="tools-title"></h2>
                 <div class="line"></div>
             </div>
-    
-            <div class="tech-grid">
-    
-                <div class="tech-item">
-                    <img src="images/Search Console.png" alt="Search Console">
-                    <span>Search Console</span>
-                </div>
-    
-                <div class="tech-item">
-                    <img src="images/Ahrefs.png" alt="Ahrefs">
-                    <span>Ahrefs</span>
-                </div>
-    
-                <div class="tech-item">
-                    <img src="images/SEMrush.png" alt="SEMrush">
-                    <span>SEMrush</span>
-                </div>
-    
-                <div class="tech-item">
-                    <img src="images/Screaming Frog.png" alt="Screaming Frog">
-                    <span>Screaming Frog</span>
-                </div>
-    
-                <div class="tech-item">
-                    <img src="images/Analytics.png" alt="Analytics">
-                    <span>Analytics</span>
-                </div>
-    
-                <div class="tech-item">
-                    <img src="images/Moz.png" alt="Moz">
-                    <span>Moz</span>
-                </div>
-    
-            </div>
-    
+            <div class="tech-grid" data-bind="tools"></div>
         </div>
-    
     </section>
 
-    <!--======================
-                CTA + FOOTER (overlapping zone — same as home / about / services)
-        =======================-->
+        <section class="related-services" aria-labelledby="related-services-heading">
+        <div class="container">
+            <div class="related-split">
+                <div class="related-column">
+                    <p class="related-eyebrow" data-bind="related-label"></p>
+                    <h2 id="related-services-heading" data-bind="related-heading">Related Services</h2>
+                    <p class="related-support" data-bind="related-support"></p>
+                    <div class="related-list" data-bind="related-services"></div>
+                </div>
+                <div class="related-column related-column--other">
+                    <p class="related-eyebrow">Explore more</p>
+                    <h2 data-bind="other-heading">Other Services</h2>
+                    <p class="related-support" data-bind="other-support"></p>
+                    <div class="related-list" data-bind="other-services"></div>
+                    <a class="related-all-link" href="services.html">View all services <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="footer-cta-zone">
-
-        <section class="cta" id="start" aria-labelledby="web-cta-heading">
-
+        <section class="cta" id="start" aria-labelledby="service-cta-heading">
             <div class="container">
-
                 <div class="cta-box">
-
                     <div class="cta-left">
-
                         <div class="cta-icon" aria-hidden="true">
                             <i class="fa-solid fa-rocket"></i>
                         </div>
-
                         <div class="cta-text">
-
-                            <h2 id="web-cta-heading">
-                                Let's Design Your Next Big Idea
-                            </h2>
-
-                            <p>
-                                Great designs are just the start. Let's create something amazing together.
-                            </p>
-
+                            <h2 id="service-cta-heading" data-bind="slogan"></h2>
+                            <p data-bind="cta-support"></p>
                         </div>
-
                     </div>
-
-
                 </div>
                 <div class="cta-visual">
-                    <img src="images/SEO Services فوتر.png" alt="Improve Your Rankings">
+                    <img data-bind="cta-image" alt="">
                 </div>
-
             </div>
-
         </section>
 
         <footer>
-
             <div class="container">
-
                 <div class="footer-top">
-
                     <a href="index.html" class="footer-logo" aria-label="Falcon of Codes — Home">
                         <img src="images/falcon logo.svg" alt="Falcon of Codes">
                     </a>
-
                     <nav class="social-links" aria-label="Social links">
                         <a href="#">Dribbble</a>
                         <a href="#">Behance</a>
@@ -427,33 +157,22 @@
                         <a href="#">Instagram</a>
                         <a href="#">Twitter (X)</a>
                     </nav>
-
                 </div>
-
                 <hr>
-
                 <div class="footer-bottom">
-
                     <p>© 2024 Falcon of Codes. All rights reserved.</p>
-
                     <nav class="footer-legal" aria-label="Legal">
                         <a href="#">Privacy Policy</a>
                         <a href="#">Terms of Service</a>
                     </nav>
-
                 </div>
-
             </div>
-
         </footer>
-
     </div>
 
-    <!-- ================= MOBILE NAV ================= -->
     <div id="site-mobile-nav">
         <nav class="mobile-tabbar" aria-label="Mobile navigation">
             <div class="mobile-tabbar-indicator" aria-hidden="true"></div>
-
             <a href="index.html" class="mobile-tab" data-page="home" aria-label="Home">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -462,7 +181,6 @@
                 </span>
                 <span class="mobile-tab-label">Home</span>
             </a>
-
             <a href="about.html" class="mobile-tab" data-page="about" aria-label="About">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -473,7 +191,6 @@
                 </span>
                 <span class="mobile-tab-label">About</span>
             </a>
-
             <a href="services.html" class="mobile-tab is-active" data-page="services" aria-label="Services">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -483,7 +200,6 @@
                 </span>
                 <span class="mobile-tab-label">Services</span>
             </a>
-
             <a href="index.html#projects" class="mobile-tab" data-page="portfolio" aria-label="Portfolio">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -493,7 +209,6 @@
                 </span>
                 <span class="mobile-tab-label">Portfolio</span>
             </a>
-
             <a href="contact.html" class="mobile-tab" data-page="contact" aria-label="Contact">
                 <span class="mobile-tab-icon" aria-hidden="true">
                     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -506,27 +221,9 @@
     </div>
 
     <script src="js/header.js"></script>
+    <script src="js/services-data.js"></script>
+    <script src="js/service-page.js"></script>
     <script>
-        /* Page animations only — header / footer handled by header.js */
-        const revealElements = document.querySelectorAll(
-            ".hero-text, .hero-image, .service-card, .step, .tech-item"
-        );
-
-        if ("IntersectionObserver" in window) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) entry.target.classList.add("show");
-                });
-            }, { threshold: 0.15 });
-
-            revealElements.forEach((el) => {
-                el.classList.add("fade-up");
-                observer.observe(el);
-            });
-        } else {
-            revealElements.forEach((el) => el.classList.add("show"));
-        }
-
         const heroImage = document.querySelector(".hero-image");
         if (heroImage && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             window.addEventListener("mousemove", (e) => {
@@ -535,12 +232,7 @@
                 heroImage.style.transform = `translate(${x}px, ${y}px)`;
             });
         }
-
-        document.querySelectorAll(".service-card").forEach((card, index) => {
-            card.style.animationDelay = `${index * 0.15}s`;
-        });
     </script>
-
 </body>
 
 </html>

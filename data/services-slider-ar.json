@@ -1,0 +1,39 @@
+{
+  "services": [
+    {
+      "id": 1,
+      "name": "خدمات تطوير المواقع",
+      "image": "images/ويب.png"
+    },
+    {
+      "id": 2,
+      "name": "تطوير تطبيقات الموبايل",
+      "image": "images/services/mobile-phone-background-images.jpg"
+    },
+    {
+      "id": 3,
+      "name": "إدارة منصات التواصل الاجتماعي",
+      "image": "images/services/pile-popular-social-media-logos.jpg"
+    },
+    {
+      "id": 4,
+      "name": "تصميم واجهة المستخدم وتجربته",
+      "image": "images/UI:UX Design.png"
+    },
+    {
+      "id": 5,
+      "name": "خدمات التسويق الإلكتروني",
+      "image": "images/services/close-up-smartphone-money-graphs-charts-workplace-office-business-concept.jpg"
+    },
+    {
+      "id": 6,
+      "name": "خدمات التقارير المالية",
+      "image": "images/services/money-around-world.jpg"
+    },
+    {
+      "id": 7,
+      "name": "حلول التجارة الإلكترونية",
+      "image": "images/تجاره.png"
+    }
+  ]
+}
